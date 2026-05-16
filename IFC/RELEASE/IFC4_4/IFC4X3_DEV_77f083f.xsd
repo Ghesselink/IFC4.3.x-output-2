@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='ASCII'?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ifc="https://standards.buildingsmart.org/IFC/RELEASE/IFC4/3/DEV/53e65c5" targetNamespace="https://standards.buildingsmart.org/IFC/RELEASE/IFC4/3/DEV/53e65c5" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ifc="https://standards.buildingsmart.org/IFC/RELEASE/IFC4/3/DEV/77f083f" targetNamespace="https://standards.buildingsmart.org/IFC/RELEASE/IFC4/3/DEV/77f083f" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xs:element name="uos" type="ifc:uos" abstract="true"/>
 	<xs:simpleType name="Seq-anyURI">
 		<xs:list itemType="xs:anyURI"/>
@@ -436,6 +436,22 @@
 						</xs:complexType>
 					</xs:element>
 				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="IfcArchElement" type="ifc:IfcArchElement" substitutionGroup="ifc:IfcBuiltElement" nillable="true"/>
+	<xs:complexType name="IfcArchElement">
+		<xs:complexContent>
+			<xs:extension base="ifc:IfcBuiltElement">
+				<xs:attribute name="PredefinedType" type="ifc:IfcArchElementTypeEnum" use="optional"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="IfcArchElementType" type="ifc:IfcArchElementType" substitutionGroup="ifc:IfcBuiltElementType" nillable="true"/>
+	<xs:complexType name="IfcArchElementType">
+		<xs:complexContent>
+			<xs:extension base="ifc:IfcBuiltElementType">
+				<xs:attribute name="PredefinedType" type="ifc:IfcArchElementTypeEnum" use="optional"/>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
@@ -11558,6 +11574,15 @@
 			<xs:enumeration value="survey"/>
 			<xs:enumeration value="symbol"/>
 			<xs:enumeration value="text"/>
+			<xs:enumeration value="userdefined"/>
+			<xs:enumeration value="notdefined"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="IfcArchElementTypeEnum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="lining"/>
+			<xs:enumeration value="segment"/>
+			<xs:enumeration value="steelrib"/>
 			<xs:enumeration value="userdefined"/>
 			<xs:enumeration value="notdefined"/>
 		</xs:restriction>

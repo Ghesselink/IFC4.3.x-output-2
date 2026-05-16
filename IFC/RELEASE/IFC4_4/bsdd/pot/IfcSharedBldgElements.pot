@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: bsdd_support@buildingsmart.org\n"
-"POT-Creation-Date: 2026-04-22 00:00\n"
+"POT-Creation-Date: 2026-05-16 00:00\n"
 "X-Crowdin-SourceKey: msgstr\n"
 "Language-Team: buildingSMART community\n"
 
@@ -885,4 +885,112 @@ msgstr "HasSillInternal"
 
 msgid "HasSillInternal_DESCRIPTION"
 msgstr "Technical note: in IFC this property takes IfcBoolean as value."
+
+msgid "IfcArchElement"
+msgstr "ArchElement"
+
+msgid "Thickness"
+msgstr "Thickness"
+
+msgid "Thickness_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveLengthMeasure as value."
+
+msgid "InnerRadius"
+msgstr "InnerRadius"
+
+msgid "InnerRadius_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveLengthMeasure as value."
+
+msgid "OuterRadius"
+msgstr "OuterRadius"
+
+msgid "OuterRadius_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveLengthMeasure as value."
+
+msgid "CentroidRadius"
+msgstr "CentroidRadius"
+
+msgid "CentroidRadius_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveLengthMeasure as value."
+
+msgid "LongitudinalJointType"
+msgstr "LongitudinalJointType"
+
+msgid "LongitudinalJointType_FLAT"
+msgstr "[[FLAT]]"
+
+msgid "LongitudinalJointType_TONGUE_GROOVE"
+msgstr "[[TONGUE_GROOVE]]"
+
+msgid "LongitudinalJointType_CONVEX_CONVEX"
+msgstr "[[CONVEX_CONVEX]]"
+
+msgid "LongitudinalJointType_CONCAVE_CONVEX"
+msgstr "[[CONCAVE_CONVEX]]"
+
+msgid "LongitudinalJointType_OTHER"
+msgstr "[[OTHER]]"
+
+msgid "LongitudinalJointType_NOTKNOWN"
+msgstr "[[NOTKNOWN]]"
+
+msgid "LongitudinalJointType_UNSET"
+msgstr "[[UNSET]]"
+
+msgid "RadialJointType"
+msgstr "RadialJointType"
+
+msgid "RadialJointType_FLAT"
+msgstr "[[FLAT]]"
+
+msgid "RadialJointType_TONGUE_GROOVE"
+msgstr "[[TONGUE_GROOVE]]"
+
+msgid "RadialJointType_CONVEX_CONVEX"
+msgstr "[[CONVEX_CONVEX]]"
+
+msgid "RadialJointType_CONCAVE_CONVEX"
+msgstr "[[CONCAVE_CONVEX]]"
+
+msgid "RadialJointType_OTHER"
+msgstr "[[OTHER]]"
+
+msgid "RadialJointType_NOTKNOWN"
+msgstr "[[NOTKNOWN]]"
+
+msgid "RadialJointType_UNSET"
+msgstr "[[UNSET]]"
+
+msgid "LongitudinalJointConnections"
+msgstr "LongitudinalJointConnections"
+
+msgid "LongitudinalJointConnections_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLabel as value."
+
+msgid "RadialJointConnections"
+msgstr "RadialJointConnections"
+
+msgid "RadialJointConnections_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLabel as value."
+
+msgid "Mountings"
+msgstr "Mountings"
+
+msgid "Mountings_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLabel as value."
+
+msgid "SectionProfile"
+msgstr "SectionProfile"
+
+msgid "SectionProfile_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLabel as value."
+
+msgid "Spacing"
+msgstr "Spacing"
+
+msgid "Spacing_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveLengthMeasure as value."
+
+msgid "InnerSurfaceArea"
+msgstr "InnerSurfaceArea"
 

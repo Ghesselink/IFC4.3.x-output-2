@@ -12,7 +12,7 @@
     "MoreInfoUrl": "https://ifc43-docs.standards.buildingsmart.org/",
     "QualityAssuranceProcedure": "IFC is a standardized digital description            of built environment created by buildingSMART International and its            community members. For more information read ISO 16739 and IFC schema documentation.",
     "QualityAssuranceProcedureUrl": "https://technical.buildingsmart.org/standards/ifc/",
-    "ReleaseDate": "2026-04-22",
+    "ReleaseDate": "2026-05-16",
     "Classes": [
         {
             "Code": "IfcPcurve",
@@ -16694,6 +16694,99 @@
             ]
         },
         {
+            "Code": "IfcArchElement",
+            "Name": "ArchElement",
+            "Definition": "",
+            "ClassType": "Class",
+            "ClassProperties": [
+                {
+                    "PropertyCode": "LoadBearing",
+                    "Code": "LoadBearing_from_ArchElementCommon",
+                    "PropertySet": "Pset_ArchElementCommon"
+                },
+                {
+                    "PropertyCode": "Thickness",
+                    "Code": "Thickness_from_ArchElementCommon",
+                    "PropertySet": "Pset_ArchElementCommon"
+                },
+                {
+                    "PropertyCode": "InnerRadius",
+                    "Code": "InnerRadius_from_ArchElementCommon",
+                    "PropertySet": "Pset_ArchElementCommon"
+                },
+                {
+                    "PropertyCode": "OuterRadius",
+                    "Code": "OuterRadius_from_ArchElementCommon",
+                    "PropertySet": "Pset_ArchElementCommon"
+                },
+                {
+                    "PropertyCode": "CentroidRadius",
+                    "Code": "CentroidRadius_from_ArchElementCommon",
+                    "PropertySet": "Pset_ArchElementCommon"
+                },
+                {
+                    "PropertyCode": "LongitudinalJointType",
+                    "Code": "LongitudinalJointType_from_ArchElementTypeSegment",
+                    "PropertySet": "Pset_ArchElementTypeSegment"
+                },
+                {
+                    "PropertyCode": "RadialJointType",
+                    "Code": "RadialJointType_from_ArchElementTypeSegment",
+                    "PropertySet": "Pset_ArchElementTypeSegment"
+                },
+                {
+                    "PropertyCode": "LongitudinalJointConnections",
+                    "Code": "LongitudinalJointConnections_from_ArchEl...egment",
+                    "PropertySet": "Pset_ArchElementTypeSegment"
+                },
+                {
+                    "PropertyCode": "RadialJointConnections",
+                    "Code": "RadialJointConnections_from_ArchElementTypeSegment",
+                    "PropertySet": "Pset_ArchElementTypeSegment"
+                },
+                {
+                    "PropertyCode": "Mountings",
+                    "Code": "Mountings_from_ArchElementTypeSegment",
+                    "PropertySet": "Pset_ArchElementTypeSegment"
+                },
+                {
+                    "PropertyCode": "SectionProfile",
+                    "Code": "SectionProfile_from_ArchElementTypeSteelRib",
+                    "PropertySet": "Pset_ArchElementTypeSteelRib"
+                },
+                {
+                    "PropertyCode": "Spacing",
+                    "Code": "Spacing_from_ArchElementTypeSteelRib",
+                    "PropertySet": "Pset_ArchElementTypeSteelRib"
+                },
+                {
+                    "PropertyCode": "Length",
+                    "Code": "Length_from_ArchElementBaseQuantities",
+                    "PropertySet": "Qto_ArchElementBaseQuantities"
+                },
+                {
+                    "PropertyCode": "Volume",
+                    "Code": "Volume_from_ArchElementBaseQuantities",
+                    "PropertySet": "Qto_ArchElementBaseQuantities"
+                },
+                {
+                    "PropertyCode": "CrossSectionArea",
+                    "Code": "CrossSectionArea_from_ArchElementBaseQuantities",
+                    "PropertySet": "Qto_ArchElementBaseQuantities"
+                },
+                {
+                    "PropertyCode": "OuterSurfaceArea",
+                    "Code": "OuterSurfaceArea_from_ArchElementBaseQuantities",
+                    "PropertySet": "Qto_ArchElementBaseQuantities"
+                },
+                {
+                    "PropertyCode": "InnerSurfaceArea",
+                    "Code": "InnerSurfaceArea_from_ArchElementBaseQuantities",
+                    "PropertySet": "Qto_ArchElementBaseQuantities"
+                }
+            ]
+        },
+        {
             "Code": "IfcStructuralLoad",
             "Name": "StructuralLoad",
             "Definition": "",
@@ -21535,7 +21628,6 @@
                     "Description": "[[UNSET]]"
                 }
             ],
-            "Dimension": "1 0 0 0 0 0 0",
             "DataType": "String"
         },
         {
@@ -29938,6 +30030,7 @@
                     "Description": "[[UNSET]]"
                 }
             ],
+            "Dimension": "0 0 0 0 0 0 0",
             "DataType": "String"
         },
         {
@@ -35777,6 +35870,172 @@
             "Description": "Technical note: in IFC this property takes IfcBoolean as value."
         },
         {
+            "Code": "Thickness",
+            "Name": "Thickness",
+            "Definition": "",
+            "PropertyValueKind": "Single",
+            "Description": "Technical note: in IFC this property takes IfcPositiveLengthMeasure as value.",
+            "Dimension": "0 0 0 0 0 0 0"
+        },
+        {
+            "Code": "InnerRadius",
+            "Name": "InnerRadius",
+            "Definition": "",
+            "PropertyValueKind": "Single",
+            "Description": "Technical note: in IFC this property takes IfcPositiveLengthMeasure as value.",
+            "Dimension": "0 0 0 0 0 0 0"
+        },
+        {
+            "Code": "OuterRadius",
+            "Name": "OuterRadius",
+            "Definition": "",
+            "PropertyValueKind": "Single",
+            "Description": "Technical note: in IFC this property takes IfcPositiveLengthMeasure as value.",
+            "Dimension": "0 0 0 0 0 0 0"
+        },
+        {
+            "Code": "CentroidRadius",
+            "Name": "CentroidRadius",
+            "Definition": "",
+            "PropertyValueKind": "Single",
+            "Description": "Technical note: in IFC this property takes IfcPositiveLengthMeasure as value.",
+            "Dimension": "0 0 0 0 0 0 0"
+        },
+        {
+            "Code": "LongitudinalJointType",
+            "Name": "LongitudinalJointType",
+            "Definition": "",
+            "PropertyValueKind": "Single",
+            "AllowedValues": [
+                {
+                    "Code": "FLAT",
+                    "Value": "FLAT",
+                    "Description": "[[FLAT]]"
+                },
+                {
+                    "Code": "TONGUE_GROOVE",
+                    "Value": "TONGUE_GROOVE",
+                    "Description": "[[TONGUE_GROOVE]]"
+                },
+                {
+                    "Code": "CONVEX_CONVEX",
+                    "Value": "CONVEX_CONVEX",
+                    "Description": "[[CONVEX_CONVEX]]"
+                },
+                {
+                    "Code": "CONCAVE_CONVEX",
+                    "Value": "CONCAVE_CONVEX",
+                    "Description": "[[CONCAVE_CONVEX]]"
+                },
+                {
+                    "Code": "OTHER",
+                    "Value": "OTHER",
+                    "Description": "[[OTHER]]"
+                },
+                {
+                    "Code": "NOTKNOWN",
+                    "Value": "NOTKNOWN",
+                    "Description": "[[NOTKNOWN]]"
+                },
+                {
+                    "Code": "UNSET",
+                    "Value": "UNSET",
+                    "Description": "[[UNSET]]"
+                }
+            ],
+            "Dimension": "0 0 0 0 0 0 0",
+            "DataType": "String"
+        },
+        {
+            "Code": "RadialJointType",
+            "Name": "RadialJointType",
+            "Definition": "",
+            "PropertyValueKind": "Single",
+            "AllowedValues": [
+                {
+                    "Code": "FLAT",
+                    "Value": "FLAT",
+                    "Description": "[[FLAT]]"
+                },
+                {
+                    "Code": "TONGUE_GROOVE",
+                    "Value": "TONGUE_GROOVE",
+                    "Description": "[[TONGUE_GROOVE]]"
+                },
+                {
+                    "Code": "CONVEX_CONVEX",
+                    "Value": "CONVEX_CONVEX",
+                    "Description": "[[CONVEX_CONVEX]]"
+                },
+                {
+                    "Code": "CONCAVE_CONVEX",
+                    "Value": "CONCAVE_CONVEX",
+                    "Description": "[[CONCAVE_CONVEX]]"
+                },
+                {
+                    "Code": "OTHER",
+                    "Value": "OTHER",
+                    "Description": "[[OTHER]]"
+                },
+                {
+                    "Code": "NOTKNOWN",
+                    "Value": "NOTKNOWN",
+                    "Description": "[[NOTKNOWN]]"
+                },
+                {
+                    "Code": "UNSET",
+                    "Value": "UNSET",
+                    "Description": "[[UNSET]]"
+                }
+            ],
+            "Dimension": "0 0 0 0 0 0 0",
+            "DataType": "String"
+        },
+        {
+            "Code": "LongitudinalJointConnections",
+            "Name": "LongitudinalJointConnections",
+            "Definition": "",
+            "PropertyValueKind": "Single",
+            "Description": "Technical note: in IFC this property takes IfcLabel as value."
+        },
+        {
+            "Code": "RadialJointConnections",
+            "Name": "RadialJointConnections",
+            "Definition": "",
+            "PropertyValueKind": "Single",
+            "Description": "Technical note: in IFC this property takes IfcLabel as value."
+        },
+        {
+            "Code": "Mountings",
+            "Name": "Mountings",
+            "Definition": "",
+            "PropertyValueKind": "Single",
+            "Description": "Technical note: in IFC this property takes IfcLabel as value."
+        },
+        {
+            "Code": "SectionProfile",
+            "Name": "SectionProfile",
+            "Definition": "",
+            "PropertyValueKind": "Single",
+            "Description": "Technical note: in IFC this property takes IfcLabel as value."
+        },
+        {
+            "Code": "Spacing",
+            "Name": "Spacing",
+            "Definition": "",
+            "PropertyValueKind": "Single",
+            "Description": "Technical note: in IFC this property takes IfcPositiveLengthMeasure as value.",
+            "Dimension": "0 0 0 0 0 0 0"
+        },
+        {
+            "Code": "InnerSurfaceArea",
+            "Name": "InnerSurfaceArea",
+            "Definition": "",
+            "PropertyValueKind": "Single",
+            "Dimension": "0 0 0 0 0 0 0",
+            "DataType": "Real"
+        },
+        {
             "Code": "DeliveryType",
             "Name": "DeliveryType",
             "Definition": "",
@@ -36520,13 +36779,6 @@
             "Definition": "",
             "PropertyValueKind": "Single",
             "Description": "Technical note: in IFC this property takes IfcLabel as value."
-        },
-        {
-            "Code": "Thickness",
-            "Name": "Thickness",
-            "Definition": "",
-            "PropertyValueKind": "Single",
-            "DataType": "Real"
         },
         {
             "Code": "SpreadingRate",
