@@ -1,0 +1,66 @@
+# Industry Foundation Classes IFC.
+# Copyright (C) 2026 buildingSMART
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: bsdd_support@buildingsmart.org\n"
+"POT-Creation-Date: 2026-10-26 00:00\n"
+"X-Crowdin-SourceKey: msgstr\n"
+"Language-Team: buildingSMART community\n"
+
+msgid "IfcDistributionPort"
+msgstr "DistributionPort"
+
+msgid "PortNumber"
+msgstr "PortNumber"
+
+msgid "PortNumber_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcInteger as value."
+
+msgid "ColourCode"
+msgstr "ColourCode"
+
+msgid "ColourCode_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLabel as value."
+
+msgid "IfcDistributionSystem"
+msgstr "DistributionSystem"
+
+msgid "IfcDistributionCircuit"
+msgstr "DistributionCircuit"
+
+msgid "IfcDistributionControlElement"
+msgstr "DistributionControlElement"
+
+msgid "IfcDistributionFlowElement"
+msgstr "DistributionFlowElement"
+
+msgid "IfcDistributionChamberElement"
+msgstr "DistributionChamberElement"
+
+msgid "IfcEnergyConversionDevice"
+msgstr "EnergyConversionDevice"
+
+msgid "IfcFlowController"
+msgstr "FlowController"
+
+msgid "IfcFlowFitting"
+msgstr "FlowFitting"
+
+msgid "IfcFlowMovingDevice"
+msgstr "FlowMovingDevice"
+
+msgid "IfcFlowSegment"
+msgstr "FlowSegment"
+
+msgid "IfcFlowStorageDevice"
+msgstr "FlowStorageDevice"
+
+msgid "IfcFlowTerminal"
+msgstr "FlowTerminal"
+
+msgid "IfcFlowTreatmentDevice"
+msgstr "FlowTreatmentDevice"
+

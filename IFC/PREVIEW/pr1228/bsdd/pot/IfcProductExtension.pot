@@ -1,0 +1,1531 @@
+# Industry Foundation Classes IFC.
+# Copyright (C) 2026 buildingSMART
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: bsdd_support@buildingsmart.org\n"
+"POT-Creation-Date: 2026-10-26 00:00\n"
+"X-Crowdin-SourceKey: msgstr\n"
+"Language-Team: buildingSMART community\n"
+
+msgid "IfcAnnotation"
+msgstr "Annotation"
+
+msgid "SetbackDistance"
+msgstr "SetbackDistance"
+
+msgid "SetbackDistance_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveLengthMeasure as value."
+
+msgid "VisibleAngleLeft"
+msgstr "VisibleAngleLeft"
+
+msgid "VisibleAngleLeft_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositivePlaneAngleMeasure as value."
+
+msgid "VisibleAngleRight"
+msgstr "VisibleAngleRight"
+
+msgid "VisibleAngleRight_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositivePlaneAngleMeasure as value."
+
+msgid "RoadVisibleDistanceLeft"
+msgstr "RoadVisibleDistanceLeft"
+
+msgid "RoadVisibleDistanceLeft_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveLengthMeasure as value."
+
+msgid "RoadVisibleDistanceRight"
+msgstr "RoadVisibleDistanceRight"
+
+msgid "RoadVisibleDistanceRight_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveLengthMeasure as value."
+
+msgid "SoundScale"
+msgstr "SoundScale"
+
+msgid "SoundScale_DBA"
+msgstr "DBA: Decibels in an A-weighted scale
+DBB: Decibels in an B-weighted scale
+DBC: Decibels in an C-weighted scale
+NC: Noise criteria
+NR: Noise rating"
+
+msgid "SoundScale_DBB"
+msgstr "DBA: Decibels in an A-weighted scale
+DBB: Decibels in an B-weighted scale
+DBC: Decibels in an C-weighted scale
+NC: Noise criteria
+NR: Noise rating"
+
+msgid "SoundScale_DBC"
+msgstr "DBA: Decibels in an A-weighted scale
+DBB: Decibels in an B-weighted scale
+DBC: Decibels in an C-weighted scale
+NC: Noise criteria
+NR: Noise rating"
+
+msgid "SoundScale_NC"
+msgstr "The reference sound scale"
+
+msgid "SoundScale_NR"
+msgstr "DBA: Decibels in an A-weighted scale
+DBB: Decibels in an B-weighted scale
+DBC: Decibels in an C-weighted scale
+NC: Noise criteria
+NR: Noise rating"
+
+msgid "SoundFrequency"
+msgstr "SoundFrequency"
+
+msgid "SoundPressure"
+msgstr "SoundPressure"
+
+msgid "SoundPressure_DESCRIPTION"
+msgstr "Technical note: this is a specific property from IFC that takes as its value a reference to IfcTimeSeries."
+
+msgid "IfcElement"
+msgstr "Element"
+
+msgid "IfcLinearElement"
+msgstr "LinearElement"
+
+msgid "IfcPort"
+msgstr "Port"
+
+msgid "IfcPositioningElement"
+msgstr "PositioningElement"
+
+msgid "IfcSpatialElement"
+msgstr "SpatialElement"
+
+msgid "CoolingAirFlowRate"
+msgstr "CoolingAirFlowRate"
+
+msgid "CoolingAirFlowRate_DESCRIPTION"
+msgstr "Technical note: this is a specific property from IFC that takes as its value a reference to IfcTimeSeries."
+
+msgid "HeatingAirFlowRate"
+msgstr "HeatingAirFlowRate"
+
+msgid "HeatingAirFlowRate_DESCRIPTION"
+msgstr "Technical note: this is a specific property from IFC that takes as its value a reference to IfcTimeSeries."
+
+msgid "VentilationAirFlowRateHistory"
+msgstr "VentilationAirFlowRateHistory"
+
+msgid "VentilationAirFlowRateHistory_DESCRIPTION"
+msgstr "Technical note: this is a specific property from IFC that takes as its value a reference to IfcTimeSeries."
+
+msgid "ExhaustAirFlowRate"
+msgstr "ExhaustAirFlowRate"
+
+msgid "ExhaustAirFlowRate_DESCRIPTION"
+msgstr "Technical note: this is a specific property from IFC that takes as its value a reference to IfcTimeSeries."
+
+msgid "SpaceTemperatureHistory"
+msgstr "SpaceTemperatureHistory"
+
+msgid "SpaceTemperatureHistory_DESCRIPTION"
+msgstr "Technical note: this is a specific property from IFC that takes as its value a reference to IfcTimeSeries."
+
+msgid "SpaceRelativeHumidity"
+msgstr "SpaceRelativeHumidity"
+
+msgid "SpaceRelativeHumidity_DESCRIPTION"
+msgstr "Technical note: this is a specific property from IFC that takes as its value a reference to IfcTimeSeries."
+
+msgid "IsExternal"
+msgstr "IsExternal"
+
+msgid "IsExternal_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcBoolean as value."
+
+msgid "GrossPlannedArea"
+msgstr "GrossPlannedArea"
+
+msgid "GrossPlannedArea_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcAreaMeasure as value."
+
+msgid "NetPlannedArea"
+msgstr "NetPlannedArea"
+
+msgid "NetPlannedArea_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcAreaMeasure as value."
+
+msgid "PubliclyAccessible"
+msgstr "PubliclyAccessible"
+
+msgid "PubliclyAccessible_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcBoolean as value."
+
+msgid "HandicapAccessible"
+msgstr "HandicapAccessible"
+
+msgid "HandicapAccessible_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcBoolean as value."
+
+msgid "FloorCovering"
+msgstr "FloorCovering"
+
+msgid "FloorCovering_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLabel as value."
+
+msgid "FloorCoveringThickness"
+msgstr "FloorCoveringThickness"
+
+msgid "FloorCoveringThickness_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveLengthMeasure as value."
+
+msgid "WallCovering"
+msgstr "WallCovering"
+
+msgid "WallCovering_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLabel as value."
+
+msgid "WallCoveringThickness"
+msgstr "WallCoveringThickness"
+
+msgid "WallCoveringThickness_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveLengthMeasure as value."
+
+msgid "CeilingCovering"
+msgstr "CeilingCovering"
+
+msgid "CeilingCovering_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLabel as value."
+
+msgid "CeilingCoveringThickness"
+msgstr "CeilingCoveringThickness"
+
+msgid "CeilingCoveringThickness_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveLengthMeasure as value."
+
+msgid "SkirtingBoard"
+msgstr "SkirtingBoard"
+
+msgid "SkirtingBoard_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLabel as value."
+
+msgid "SkirtingBoardHeight"
+msgstr "SkirtingBoardHeight"
+
+msgid "SkirtingBoardHeight_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveLengthMeasure as value."
+
+msgid "Molding"
+msgstr "Molding"
+
+msgid "Molding_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLabel as value."
+
+msgid "MoldingHeight"
+msgstr "MoldingHeight"
+
+msgid "MoldingHeight_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveLengthMeasure as value."
+
+msgid "ConcealedFlooring"
+msgstr "ConcealedFlooring"
+
+msgid "ConcealedFlooring_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcBoolean as value."
+
+msgid "ConcealedFlooringOffset"
+msgstr "ConcealedFlooringOffset"
+
+msgid "ConcealedFlooringOffset_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcNonNegativeLengthMeasure as value."
+
+msgid "ConcealedCeiling"
+msgstr "ConcealedCeiling"
+
+msgid "ConcealedCeiling_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcBoolean as value."
+
+msgid "ConcealedCeilingOffset"
+msgstr "ConcealedCeilingOffset"
+
+msgid "ConcealedCeilingOffset_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcNonNegativeLengthMeasure as value."
+
+msgid "FireRiskFactor"
+msgstr "FireRiskFactor"
+
+msgid "FireRiskFactor_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLabel as value."
+
+msgid "FlammableStorage"
+msgstr "FlammableStorage"
+
+msgid "FlammableStorage_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcBoolean as value."
+
+msgid "FireExit"
+msgstr "FireExit"
+
+msgid "FireExit_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcBoolean as value."
+
+msgid "SprinklerProtection"
+msgstr "SprinklerProtection"
+
+msgid "SprinklerProtection_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcBoolean as value."
+
+msgid "SprinklerProtectionAutomatic"
+msgstr "SprinklerProtectionAutomatic"
+
+msgid "SprinklerProtectionAutomatic_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcBoolean as value."
+
+msgid "AirPressurization"
+msgstr "AirPressurization"
+
+msgid "AirPressurization_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcBoolean as value."
+
+msgid "TemperatureSetPoint"
+msgstr "TemperatureSetPoint"
+
+msgid "TemperatureSetPoint_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcThermodynamicTemperatureMeasure as value."
+
+msgid "TemperatureMax"
+msgstr "TemperatureMax"
+
+msgid "TemperatureMax_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcThermodynamicTemperatureMeasure as value."
+
+msgid "TemperatureMin"
+msgstr "TemperatureMin"
+
+msgid "TemperatureMin_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcThermodynamicTemperatureMeasure as value."
+
+msgid "TemperatureSummerMax"
+msgstr "TemperatureSummerMax"
+
+msgid "TemperatureSummerMax_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcThermodynamicTemperatureMeasure as value."
+
+msgid "TemperatureSummerMin"
+msgstr "TemperatureSummerMin"
+
+msgid "TemperatureSummerMin_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcThermodynamicTemperatureMeasure as value."
+
+msgid "TemperatureWinterMax"
+msgstr "TemperatureWinterMax"
+
+msgid "TemperatureWinterMax_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcThermodynamicTemperatureMeasure as value."
+
+msgid "TemperatureWinterMin"
+msgstr "TemperatureWinterMin"
+
+msgid "TemperatureWinterMin_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcThermodynamicTemperatureMeasure as value."
+
+msgid "HumiditySetPoint"
+msgstr "HumiditySetPoint"
+
+msgid "HumiditySetPoint_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveRatioMeasure as value."
+
+msgid "HumidityMax"
+msgstr "HumidityMax"
+
+msgid "HumidityMax_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveRatioMeasure as value."
+
+msgid "HumidityMin"
+msgstr "HumidityMin"
+
+msgid "HumidityMin_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveRatioMeasure as value."
+
+msgid "HumiditySummer"
+msgstr "HumiditySummer"
+
+msgid "HumiditySummer_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveRatioMeasure as value."
+
+msgid "HumidityWinter"
+msgstr "HumidityWinter"
+
+msgid "HumidityWinter_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveRatioMeasure as value."
+
+msgid "DiscontinuedHeating"
+msgstr "DiscontinuedHeating"
+
+msgid "DiscontinuedHeating_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcBoolean as value."
+
+msgid "NaturalVentilation"
+msgstr "NaturalVentilation"
+
+msgid "NaturalVentilation_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcBoolean as value."
+
+msgid "NaturalVentilationRate"
+msgstr "NaturalVentilationRate"
+
+msgid "NaturalVentilationRate_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcNumericMeasure as value."
+
+msgid "MechanicalVentilation"
+msgstr "MechanicalVentilation"
+
+msgid "MechanicalVentilation_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcBoolean as value."
+
+msgid "MechanicalVentilationRate"
+msgstr "MechanicalVentilationRate"
+
+msgid "MechanicalVentilationRate_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcNumericMeasure as value."
+
+msgid "AirConditioning"
+msgstr "AirConditioning"
+
+msgid "AirConditioning_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcBoolean as value."
+
+msgid "AirConditioningCentral"
+msgstr "AirConditioningCentral"
+
+msgid "AirConditioningCentral_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcBoolean as value."
+
+msgid "AirHandlingName"
+msgstr "AirHandlingName"
+
+msgid "AirHandlingName_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLabel as value."
+
+msgid "ArtificialLighting"
+msgstr "ArtificialLighting"
+
+msgid "ArtificialLighting_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcBoolean as value."
+
+msgid "Illuminance"
+msgstr "Illuminance"
+
+msgid "Illuminance_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcIlluminanceMeasure as value."
+
+msgid "OccupancyType"
+msgstr "OccupancyType"
+
+msgid "OccupancyType_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLabel as value."
+
+msgid "OccupancyNumber"
+msgstr "OccupancyNumber"
+
+msgid "OccupancyNumber_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcCountMeasure as value."
+
+msgid "OccupancyNumberPeak"
+msgstr "OccupancyNumberPeak"
+
+msgid "OccupancyNumberPeak_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcCountMeasure as value."
+
+msgid "OccupancyTimePerDay"
+msgstr "OccupancyTimePerDay"
+
+msgid "OccupancyTimePerDay_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcTimeMeasure as value."
+
+msgid "AreaPerOccupant"
+msgstr "AreaPerOccupant"
+
+msgid "AreaPerOccupant_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcAreaMeasure as value."
+
+msgid "MinimumHeadroom"
+msgstr "MinimumHeadroom"
+
+msgid "MinimumHeadroom_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLengthMeasure as value."
+
+msgid "IsOutlookDesirable"
+msgstr "IsOutlookDesirable"
+
+msgid "IsOutlookDesirable_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcBoolean as value."
+
+msgid "AirSideSystemType"
+msgstr "AirSideSystemType"
+
+msgid "AirSideSystemType_CONSTANTVOLUME"
+msgstr "[[CONSTANTVOLUME]]"
+
+msgid "AirSideSystemType_CONSTANTVOLUMEBYPASS"
+msgstr "[[CONSTANTVOLUMEBYPASS]]"
+
+msgid "AirSideSystemType_CONSTANTVOLUMEMULTIPLEZONEREHEAT"
+msgstr "[[CONSTANTVOLUMEMULTIPLEZONEREHEAT]]"
+
+msgid "AirSideSystemType_CONSTANTVOLUMESINGLEZONE"
+msgstr "[[CONSTANTVOLUMESINGLEZONE]]"
+
+msgid "AirSideSystemType_VARIABLEAIRVOLUME"
+msgstr "[[VARIABLEAIRVOLUME]]"
+
+msgid "AirSideSystemType_VARIABLEAIRVOLUMEDUALCONDUIT"
+msgstr "[[VARIABLEAIRVOLUMEDUALCONDUIT]]"
+
+msgid "AirSideSystemType_VARIABLEAIRVOLUMEFANPOWERED"
+msgstr "[[VARIABLEAIRVOLUMEFANPOWERED]]"
+
+msgid "AirSideSystemType_VARIABLEAIRVOLUMEINDUCTION"
+msgstr "[[VARIABLEAIRVOLUMEINDUCTION]]"
+
+msgid "AirSideSystemType_VARIABLEAIRVOLUMEREHEAT"
+msgstr "[[VARIABLEAIRVOLUMEREHEAT]]"
+
+msgid "AirSideSystemType_VARIABLEAIRVOLUMEVARIABLEDIFFUSERS"
+msgstr "[[VARIABLEAIRVOLUMEVARIABLEDIFFUSERS]]"
+
+msgid "AirSideSystemType_VARIABLEAIRVOLUMEVARIABLETEMPERATURE"
+msgstr "[[VARIABLEAIRVOLUMEVARIABLETEMPERATURE]]"
+
+msgid "AirSideSystemType_OTHER"
+msgstr "[[OTHER]]"
+
+msgid "AirSideSystemType_NOTKNOWN"
+msgstr "[[NOTKNOWN]]"
+
+msgid "AirSideSystemType_UNSET"
+msgstr "[[UNSET]]"
+
+msgid "AirSideSystemDistributionType"
+msgstr "AirSideSystemDistributionType"
+
+msgid "AirSideSystemDistributionType_DUALDUCT"
+msgstr "DualDuct"
+
+msgid "AirSideSystemDistributionType_MULTIZONE"
+msgstr "Multizone"
+
+msgid "AirSideSystemDistributionType_SINGLEDUCT"
+msgstr "SingleDuct"
+
+msgid "AirSideSystemDistributionType_OTHER"
+msgstr "[[OTHER]]"
+
+msgid "AirSideSystemDistributionType_NOTKNOWN"
+msgstr "[[NOTKNOWN]]"
+
+msgid "AirSideSystemDistributionType_UNSET"
+msgstr "[[UNSET]]"
+
+msgid "TotalAirFlow"
+msgstr "TotalAirFlow"
+
+msgid "TotalAirFlow_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcVolumetricFlowRateMeasure as value."
+
+msgid "EnergyGainTotal"
+msgstr "EnergyGainTotal"
+
+msgid "EnergyGainTotal_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPowerMeasure as value."
+
+msgid "AirFlowSensible"
+msgstr "AirFlowSensible"
+
+msgid "AirFlowSensible_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcVolumetricFlowRateMeasure as value."
+
+msgid "EnergyGainSensible"
+msgstr "EnergyGainSensible"
+
+msgid "EnergyGainSensible_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPowerMeasure as value."
+
+msgid "EnergyLoss"
+msgstr "EnergyLoss"
+
+msgid "EnergyLoss_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPowerMeasure as value."
+
+msgid "InfiltrationDiversitySummer"
+msgstr "InfiltrationDiversitySummer"
+
+msgid "InfiltrationDiversitySummer_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveRatioMeasure as value."
+
+msgid "InfiltrationDiversityWinter"
+msgstr "InfiltrationDiversityWinter"
+
+msgid "InfiltrationDiversityWinter_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveRatioMeasure as value."
+
+msgid "ApplianceDiversity"
+msgstr "ApplianceDiversity"
+
+msgid "ApplianceDiversity_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveRatioMeasure as value."
+
+msgid "HeatingTemperatureDelta"
+msgstr "HeatingTemperatureDelta"
+
+msgid "HeatingTemperatureDelta_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcThermodynamicTemperatureMeasure as value."
+
+msgid "CoolingTemperatureDelta"
+msgstr "CoolingTemperatureDelta"
+
+msgid "CoolingTemperatureDelta_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcThermodynamicTemperatureMeasure as value."
+
+msgid "Ventilation"
+msgstr "Ventilation"
+
+msgid "Ventilation_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcVolumetricFlowRateMeasure as value."
+
+msgid "FanPower"
+msgstr "FanPower"
+
+msgid "FanPower_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPowerMeasure as value."
+
+msgid "CoolingDesignAirFlow"
+msgstr "CoolingDesignAirFlow"
+
+msgid "CoolingDesignAirFlow_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcVolumetricFlowRateMeasure as value."
+
+msgid "HeatingDesignAirFlow"
+msgstr "HeatingDesignAirFlow"
+
+msgid "HeatingDesignAirFlow_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcVolumetricFlowRateMeasure as value."
+
+msgid "SensibleHeatGain"
+msgstr "SensibleHeatGain"
+
+msgid "SensibleHeatGain_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPowerMeasure as value."
+
+msgid "TotalHeatGain"
+msgstr "TotalHeatGain"
+
+msgid "TotalHeatGain_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPowerMeasure as value."
+
+msgid "TotalHeatLoss"
+msgstr "TotalHeatLoss"
+
+msgid "TotalHeatLoss_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPowerMeasure as value."
+
+msgid "CoolingDryBulb"
+msgstr "CoolingDryBulb"
+
+msgid "CoolingDryBulb_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcThermodynamicTemperatureMeasure as value."
+
+msgid "CoolingRelativeHumidity"
+msgstr "CoolingRelativeHumidity"
+
+msgid "CoolingRelativeHumidity_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveRatioMeasure as value."
+
+msgid "HeatingDryBulb"
+msgstr "HeatingDryBulb"
+
+msgid "HeatingDryBulb_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcThermodynamicTemperatureMeasure as value."
+
+msgid "HeatingRelativeHumidity"
+msgstr "HeatingRelativeHumidity"
+
+msgid "HeatingRelativeHumidity_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveRatioMeasure as value."
+
+msgid "VentilationDesignAirFlow"
+msgstr "VentilationDesignAirFlow"
+
+msgid "VentilationDesignAirFlow_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcVolumetricFlowRateMeasure as value."
+
+msgid "DesignAirFlow"
+msgstr "DesignAirFlow"
+
+msgid "DesignAirFlow_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcVolumetricFlowRateMeasure as value."
+
+msgid "CeilingRAPlenum"
+msgstr "CeilingRAPlenum"
+
+msgid "CeilingRAPlenum_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcBoolean as value."
+
+msgid "BoundaryAreaHeatLoss"
+msgstr "BoundaryAreaHeatLoss"
+
+msgid "BoundaryAreaHeatLoss_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcHeatFluxDensityMeasure as value."
+
+msgid "People"
+msgstr "People"
+
+msgid "Lighting"
+msgstr "Lighting"
+
+msgid "EquipmentSensible"
+msgstr "EquipmentSensible"
+
+msgid "VentilationIndoorAir"
+msgstr "VentilationIndoorAir"
+
+msgid "VentilationOutdoorAir"
+msgstr "VentilationOutdoorAir"
+
+msgid "RecirculatedAir"
+msgstr "RecirculatedAir"
+
+msgid "ExhaustAir"
+msgstr "ExhaustAir"
+
+msgid "AirExchangeRate"
+msgstr "AirExchangeRate"
+
+msgid "DryBulbTemperature"
+msgstr "DryBulbTemperature"
+
+msgid "RelativeHumidity"
+msgstr "RelativeHumidity"
+
+msgid "InfiltrationSensible"
+msgstr "InfiltrationSensible"
+
+msgid "TotalSensibleLoad"
+msgstr "TotalSensibleLoad"
+
+msgid "TotalLatentLoad"
+msgstr "TotalLatentLoad"
+
+msgid "TotalRadiantLoad"
+msgstr "TotalRadiantLoad"
+
+msgid "PeopleHistory"
+msgstr "PeopleHistory"
+
+msgid "PeopleHistory_DESCRIPTION"
+msgstr "Technical note: this is a specific property from IFC that takes as its value a reference to IfcTimeSeries."
+
+msgid "LightingHistory"
+msgstr "LightingHistory"
+
+msgid "LightingHistory_DESCRIPTION"
+msgstr "Technical note: this is a specific property from IFC that takes as its value a reference to IfcTimeSeries."
+
+msgid "EquipmentSensibleHistory"
+msgstr "EquipmentSensibleHistory"
+
+msgid "EquipmentSensibleHistory_DESCRIPTION"
+msgstr "Technical note: this is a specific property from IFC that takes as its value a reference to IfcTimeSeries."
+
+msgid "VentilationIndoorAirHistory"
+msgstr "VentilationIndoorAirHistory"
+
+msgid "VentilationIndoorAirHistory_DESCRIPTION"
+msgstr "Technical note: this is a specific property from IFC that takes as its value a reference to IfcTimeSeries."
+
+msgid "VentilationOutdoorAirHistory"
+msgstr "VentilationOutdoorAirHistory"
+
+msgid "VentilationOutdoorAirHistory_DESCRIPTION"
+msgstr "Technical note: this is a specific property from IFC that takes as its value a reference to IfcTimeSeries."
+
+msgid "RecirculatedAirHistory"
+msgstr "RecirculatedAirHistory"
+
+msgid "RecirculatedAirHistory_DESCRIPTION"
+msgstr "Technical note: this is a specific property from IFC that takes as its value a reference to IfcTimeSeries."
+
+msgid "ExhaustAirHistory"
+msgstr "ExhaustAirHistory"
+
+msgid "ExhaustAirHistory_DESCRIPTION"
+msgstr "Technical note: this is a specific property from IFC that takes as its value a reference to IfcTimeSeries."
+
+msgid "AirExchangeRateTimeHistory"
+msgstr "AirExchangeRateTimeHistory"
+
+msgid "AirExchangeRateTimeHistory_DESCRIPTION"
+msgstr "Technical note: this is a specific property from IFC that takes as its value a reference to IfcTimeSeries."
+
+msgid "DryBulbTemperatureHistory"
+msgstr "DryBulbTemperatureHistory"
+
+msgid "DryBulbTemperatureHistory_DESCRIPTION"
+msgstr "Technical note: this is a specific property from IFC that takes as its value a reference to IfcTimeSeries."
+
+msgid "RelativeHumidityHistory"
+msgstr "RelativeHumidityHistory"
+
+msgid "RelativeHumidityHistory_DESCRIPTION"
+msgstr "Technical note: this is a specific property from IFC that takes as its value a reference to IfcTimeSeries."
+
+msgid "InfiltrationSensibleHistory"
+msgstr "InfiltrationSensibleHistory"
+
+msgid "InfiltrationSensibleHistory_DESCRIPTION"
+msgstr "Technical note: this is a specific property from IFC that takes as its value a reference to IfcTimeSeries."
+
+msgid "TotalSensibleLoadHistory"
+msgstr "TotalSensibleLoadHistory"
+
+msgid "TotalSensibleLoadHistory_DESCRIPTION"
+msgstr "Technical note: this is a specific property from IFC that takes as its value a reference to IfcTimeSeries."
+
+msgid "TotalLatentLoadHistory"
+msgstr "TotalLatentLoadHistory"
+
+msgid "TotalLatentLoadHistory_DESCRIPTION"
+msgstr "Technical note: this is a specific property from IFC that takes as its value a reference to IfcTimeSeries."
+
+msgid "TotalRadiantLoadHistory"
+msgstr "TotalRadiantLoadHistory"
+
+msgid "TotalRadiantLoadHistory_DESCRIPTION"
+msgstr "Technical note: this is a specific property from IFC that takes as its value a reference to IfcTimeSeries."
+
+msgid "OccupancyDiversity"
+msgstr "OccupancyDiversity"
+
+msgid "OccupancyDiversity_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveRatioMeasure as value."
+
+msgid "LightingDiversity"
+msgstr "LightingDiversity"
+
+msgid "LightingDiversity_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveRatioMeasure as value."
+
+msgid "OutsideAirPerPerson"
+msgstr "OutsideAirPerPerson"
+
+msgid "OutsideAirPerPerson_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcVolumetricFlowRateMeasure as value."
+
+msgid "ReceptacleLoadIntensity"
+msgstr "ReceptacleLoadIntensity"
+
+msgid "ReceptacleLoadIntensity_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcHeatFluxDensityMeasure as value."
+
+msgid "AppliancePercentLoadToRadiant"
+msgstr "AppliancePercentLoadToRadiant"
+
+msgid "AppliancePercentLoadToRadiant_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveRatioMeasure as value."
+
+msgid "LightingLoadIntensity"
+msgstr "LightingLoadIntensity"
+
+msgid "LightingLoadIntensity_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcHeatFluxDensityMeasure as value."
+
+msgid "LightingPercentLoadToReturnAir"
+msgstr "LightingPercentLoadToReturnAir"
+
+msgid "LightingPercentLoadToReturnAir_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveRatioMeasure as value."
+
+msgid "TotalCoolingLoad"
+msgstr "TotalCoolingLoad"
+
+msgid "TotalCoolingLoad_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPowerMeasure as value."
+
+msgid "TotalHeatingLoad"
+msgstr "TotalHeatingLoad"
+
+msgid "TotalHeatingLoad_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPowerMeasure as value."
+
+msgid "LoadSafetyFactor"
+msgstr "LoadSafetyFactor"
+
+msgid "LoadSafetyFactor_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveRatioMeasure as value."
+
+msgid "IfcSystem"
+msgstr "System"
+
+msgid "IfcBuiltElement"
+msgstr "BuiltElement"
+
+msgid "IfcBuiltSystem"
+msgstr "BuiltSystem"
+
+msgid "ProcessItem"
+msgstr "ProcessItem"
+
+msgid "ProcessItem_BARREL"
+msgstr "[[BARREL]]"
+
+msgid "ProcessItem_CGT"
+msgstr "CGT"
+
+msgid "ProcessItem_PASSENGER"
+msgstr "passengers or vehicles that pass through the system"
+
+msgid "ProcessItem_TEU"
+msgstr "TEU"
+
+msgid "ProcessItem_TONNE"
+msgstr "[[TONNE]]"
+
+msgid "ProcessItem_VEHICLE"
+msgstr "passengers or vehicles that pass through the system"
+
+msgid "ProcessItem_OTHER"
+msgstr "[[OTHER]]"
+
+msgid "ProcessItem_NOTKNOWN"
+msgstr "[[NOTKNOWN]]"
+
+msgid "ProcessItem_UNSET"
+msgstr "[[UNSET]]"
+
+msgid "ProcessCapacity"
+msgstr "ProcessCapacity"
+
+msgid "ProcessCapacity_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcCountMeasure as value."
+
+msgid "ProcessPerformance"
+msgstr "ProcessPerformance"
+
+msgid "ProcessPerformance_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcDuration as value."
+
+msgid "DownstreamConnections"
+msgstr "DownstreamConnections"
+
+msgid "UpstreamConnections"
+msgstr "UpstreamConnections"
+
+msgid "IfcDistributionElement"
+msgstr "DistributionElement"
+
+msgid "IfcElementAssembly"
+msgstr "ElementAssembly"
+
+msgid "IfcExternalSpatialStructureElement"
+msgstr "ExternalSpatialStructureElement"
+
+msgid "IfcFeatureElement"
+msgstr "FeatureElement"
+
+msgid "IfcFurnishingElement"
+msgstr "FurnishingElement"
+
+msgid "IfcGeographicElement"
+msgstr "GeographicElement"
+
+msgid "IfcGrid"
+msgstr "Grid"
+
+msgid "IfcLinearPositioningElement"
+msgstr "LinearPositioningElement"
+
+msgid "IfcReferent"
+msgstr "Referent"
+
+msgid "LRMName"
+msgstr "LRMName"
+
+msgid "LRMName_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLabel as value."
+
+msgid "LRMType"
+msgstr "LRMType"
+
+msgid "LRMType_LRM_ABSOLUTE"
+msgstr "[[LRM_ABSOLUTE]]"
+
+msgid "LRMType_LRM_INTERPOLATIVE"
+msgstr "[[LRM_INTERPOLATIVE]]"
+
+msgid "LRMType_LRM_RELATIVE"
+msgstr "[[LRM_RELATIVE]]"
+
+msgid "LRMType_LRM_USERDEFINED"
+msgstr "In this Pset this is handled by adding the enumeration constant [[LRM_USERDEFINED]] and the additional property [[UserDefinedLRMType]]"
+
+msgid "UserDefinedLRMType"
+msgstr "UserDefinedLRMType"
+
+msgid "UserDefinedLRMType_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLabel as value."
+
+msgid "LRMUnit"
+msgstr "LRMUnit"
+
+msgid "LRMUnit_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLabel as value."
+
+msgid "LRMConstraint"
+msgstr "LRMConstraint"
+
+msgid "LRMConstraint_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLabel as value."
+
+msgid "NameFormat"
+msgstr "NameFormat"
+
+msgid "NameFormat_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLabel as value."
+
+msgid "IncomingStation"
+msgstr "IncomingStation"
+
+msgid "IncomingStation_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLengthMeasure as value."
+
+msgid "Station"
+msgstr "Station"
+
+msgid "Station_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLengthMeasure as value."
+
+msgid "HasIncreasingStation"
+msgstr "HasIncreasingStation"
+
+msgid "HasIncreasingStation_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcBoolean as value."
+
+msgid "IfcSpatialStructureElement"
+msgstr "SpatialStructureElement"
+
+msgid "AgreementType"
+msgstr "AgreementType"
+
+msgid "AgreementType_ASSIGNMENT"
+msgstr "[[ASSIGNMENT]]"
+
+msgid "AgreementType_LEASE"
+msgstr "[[LEASE]]"
+
+msgid "AgreementType_TENANT"
+msgstr "[[TENANT]]"
+
+msgid "AgreementType_OTHER"
+msgstr "[[OTHER]]"
+
+msgid "AgreementType_NOTKNOWN"
+msgstr "[[NOTKNOWN]]"
+
+msgid "AgreementType_UNSET"
+msgstr "[[UNSET]]"
+
+msgid "TrackingIdentifier"
+msgstr "TrackingIdentifier"
+
+msgid "TrackingIdentifier_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcIdentifier as value."
+
+msgid "AgreementVersion"
+msgstr "AgreementVersion"
+
+msgid "AgreementVersion_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLabel as value."
+
+msgid "AgreementDate"
+msgstr "AgreementDate"
+
+msgid "AgreementDate_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcDate as value."
+
+msgid "PropertyName"
+msgstr "PropertyName"
+
+msgid "PropertyName_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLabel as value."
+
+msgid "CommencementDate"
+msgstr "CommencementDate"
+
+msgid "CommencementDate_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcDate as value."
+
+msgid "TerminationDate"
+msgstr "TerminationDate"
+
+msgid "TerminationDate_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcDate as value."
+
+msgid "Options"
+msgstr "Options"
+
+msgid "ConditionCommencement"
+msgstr "ConditionCommencement"
+
+msgid "Restrictions"
+msgstr "Restrictions"
+
+msgid "ConditionTermination"
+msgstr "ConditionTermination"
+
+msgid "IfcSpatialZone"
+msgstr "SpatialZone"
+
+msgid "Width"
+msgstr "Width"
+
+msgid "Height"
+msgstr "Height"
+
+msgid "IfcTransportationDevice"
+msgstr "TransportationDevice"
+
+msgid "CapacityPeople"
+msgstr "CapacityPeople"
+
+msgid "CapacityPeople_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcCountMeasure as value."
+
+msgid "CapacityWeight"
+msgstr "CapacityWeight"
+
+msgid "CapacityWeight_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcMassMeasure as value."
+
+msgid "IfcVirtualElement"
+msgstr "VirtualElement"
+
+msgid "IfcZone"
+msgstr "Zone"
+
+msgid "IfcAlignment"
+msgstr "Alignment"
+
+msgid "IfcBuildingStorey"
+msgstr "BuildingStorey"
+
+msgid "EntranceLevel"
+msgstr "EntranceLevel"
+
+msgid "EntranceLevel_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcBoolean as value."
+
+msgid "AboveGround"
+msgstr "AboveGround"
+
+msgid "AboveGround_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLogical as value."
+
+msgid "LoadBearingCapacity"
+msgstr "LoadBearingCapacity"
+
+msgid "LoadBearingCapacity_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPlanarForceMeasure as value."
+
+msgid "ElevationOfSSLRelative"
+msgstr "ElevationOfSSLRelative"
+
+msgid "ElevationOfSSLRelative_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLengthMeasure as value."
+
+msgid "ElevationOfFFLRelative"
+msgstr "ElevationOfFFLRelative"
+
+msgid "ElevationOfFFLRelative_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLengthMeasure as value."
+
+msgid "GrossHeight"
+msgstr "GrossHeight"
+
+msgid "NetHeight"
+msgstr "NetHeight"
+
+msgid "GrossPerimeter"
+msgstr "GrossPerimeter"
+
+msgid "GrossFloorArea"
+msgstr "GrossFloorArea"
+
+msgid "NetFloorArea"
+msgstr "NetFloorArea"
+
+msgid "IfcExternalSpatialElement"
+msgstr "ExternalSpatialElement"
+
+msgid "IfcFacility"
+msgstr "Facility"
+
+msgid "IfcFacilityPart"
+msgstr "FacilityPart"
+
+msgid "Area"
+msgstr "Area"
+
+msgid "IfcFeatureElementAddition"
+msgstr "FeatureElementAddition"
+
+msgid "IfcFeatureElementSubtraction"
+msgstr "FeatureElementSubtraction"
+
+msgid "IfcImpactProtectionDevice"
+msgstr "ImpactProtectionDevice"
+
+msgid "IfcSite"
+msgstr "Site"
+
+msgid "LandID"
+msgstr "LandID"
+
+msgid "LandID_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcIdentifier as value."
+
+msgid "IsPermanentID"
+msgstr "IsPermanentID"
+
+msgid "IsPermanentID_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcBoolean as value."
+
+msgid "LandTitleID"
+msgstr "LandTitleID"
+
+msgid "LandTitleID_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcIdentifier as value."
+
+msgid "BuildableArea"
+msgstr "BuildableArea"
+
+msgid "BuildableArea_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcAreaMeasure as value."
+
+msgid "SiteCoverageRatio"
+msgstr "SiteCoverageRatio"
+
+msgid "SiteCoverageRatio_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveRatioMeasure as value."
+
+msgid "FloorAreaRatio"
+msgstr "FloorAreaRatio"
+
+msgid "FloorAreaRatio_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveRatioMeasure as value."
+
+msgid "BuildingHeightLimit"
+msgstr "BuildingHeightLimit"
+
+msgid "BuildingHeightLimit_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveLengthMeasure as value."
+
+msgid "TotalArea"
+msgstr "TotalArea"
+
+msgid "TotalArea_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcAreaMeasure as value."
+
+msgid "GrossArea"
+msgstr "GrossArea"
+
+msgid "MaxAmbientTemp"
+msgstr "MaxAmbientTemp"
+
+msgid "MaxAmbientTemp_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcThermodynamicTemperatureMeasure as value."
+
+msgid "MinAmbientTemp"
+msgstr "MinAmbientTemp"
+
+msgid "MinAmbientTemp_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcThermodynamicTemperatureMeasure as value."
+
+msgid "IfcSpace"
+msgstr "Space"
+
+msgid "FinishCeilingHeight"
+msgstr "FinishCeilingHeight"
+
+msgid "FinishFloorHeight"
+msgstr "FinishFloorHeight"
+
+msgid "NetPerimeter"
+msgstr "NetPerimeter"
+
+msgid "GrossWallArea"
+msgstr "GrossWallArea"
+
+msgid "NetWallArea"
+msgstr "NetWallArea"
+
+msgid "GrossCeilingArea"
+msgstr "GrossCeilingArea"
+
+msgid "NetCeilingArea"
+msgstr "NetCeilingArea"
+
+msgid "IfcTransportElement"
+msgstr "TransportElement"
+
+msgid "IfcVehicle"
+msgstr "Vehicle"
+
+msgid "IfcVibrationDamper"
+msgstr "VibrationDamper"
+
+msgid "IfcBridge"
+msgstr "Bridge"
+
+msgid "StructureIndicator"
+msgstr "StructureIndicator"
+
+msgid "StructureIndicator_COATED"
+msgstr "coated"
+
+msgid "StructureIndicator_COMPOSITE"
+msgstr "The type of bridge structure (composite"
+
+msgid "StructureIndicator_HOMOGENEOUS"
+msgstr "homogeneous or other)"
+
+msgid "IfcBridgePart"
+msgstr "BridgePart"
+
+msgid "IfcBuilding"
+msgstr "Building"
+
+msgid "BuildingID"
+msgstr "BuildingID"
+
+msgid "BuildingID_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcIdentifier as value."
+
+msgid "ConstructionMethod"
+msgstr "ConstructionMethod"
+
+msgid "ConstructionMethod_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLabel as value."
+
+msgid "FireProtectionClass"
+msgstr "FireProtectionClass"
+
+msgid "FireProtectionClass_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLabel as value."
+
+msgid "NumberOfStoreys"
+msgstr "NumberOfStoreys"
+
+msgid "NumberOfStoreys_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcCountMeasure as value."
+
+msgid "YearOfConstruction"
+msgstr "YearOfConstruction"
+
+msgid "YearOfConstruction_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLabel as value."
+
+msgid "YearOfLastRefurbishment"
+msgstr "YearOfLastRefurbishment"
+
+msgid "YearOfLastRefurbishment_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLabel as value."
+
+msgid "IsLandmarked"
+msgstr "IsLandmarked"
+
+msgid "IsLandmarked_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLogical as value."
+
+msgid "ElevationOfRefHeight"
+msgstr "ElevationOfRefHeight"
+
+msgid "ElevationOfRefHeight_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLengthMeasure as value."
+
+msgid "ElevationOfTerrain"
+msgstr "ElevationOfTerrain"
+
+msgid "ElevationOfTerrain_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLengthMeasure as value."
+
+msgid "MarketCategory"
+msgstr "MarketCategory"
+
+msgid "MarketCategory_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLabel as value."
+
+msgid "MarketSubCategory"
+msgstr "MarketSubCategory"
+
+msgid "MarketSubCategory_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLabel as value."
+
+msgid "PlanningControlStatus"
+msgstr "PlanningControlStatus"
+
+msgid "PlanningControlStatus_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLabel as value."
+
+msgid "NarrativeText"
+msgstr "NarrativeText"
+
+msgid "VacancyRateInCategoryNow"
+msgstr "VacancyRateInCategoryNow"
+
+msgid "VacancyRateInCategoryNow_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveRatioMeasure as value."
+
+msgid "TenureModesAvailableNow"
+msgstr "TenureModesAvailableNow"
+
+msgid "MarketSubCategoriesAvailableNow"
+msgstr "MarketSubCategoriesAvailableNow"
+
+msgid "RentalRatesInCategoryNow"
+msgstr "RentalRatesInCategoryNow"
+
+msgid "VacancyRateInCategoryFuture"
+msgstr "VacancyRateInCategoryFuture"
+
+msgid "VacancyRateInCategoryFuture_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPositiveRatioMeasure as value."
+
+msgid "TenureModesAvailableFuture"
+msgstr "TenureModesAvailableFuture"
+
+msgid "MarketSubCategoriesAvailableFuture"
+msgstr "MarketSubCategoriesAvailableFuture"
+
+msgid "RentalRatesInCategoryFuture"
+msgstr "RentalRatesInCategoryFuture"
+
+msgid "EavesHeight"
+msgstr "EavesHeight"
+
+msgid "HeatingWetBulb"
+msgstr "HeatingWetBulb"
+
+msgid "HeatingWetBulb_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcThermodynamicTemperatureMeasure as value."
+
+msgid "HeatingDesignDay"
+msgstr "HeatingDesignDay"
+
+msgid "HeatingDesignDay_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcDateTime as value."
+
+msgid "CoolingWetBulb"
+msgstr "CoolingWetBulb"
+
+msgid "CoolingWetBulb_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcThermodynamicTemperatureMeasure as value."
+
+msgid "CoolingDesignDay"
+msgstr "CoolingDesignDay"
+
+msgid "CoolingDesignDay_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcDateTime as value."
+
+msgid "WeatherDataStation"
+msgstr "WeatherDataStation"
+
+msgid "WeatherDataDate"
+msgstr "WeatherDataDate"
+
+msgid "WeatherDataDate_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcDateTime as value."
+
+msgid "BuildingThermalExposure"
+msgstr "BuildingThermalExposure"
+
+msgid "BuildingThermalExposure_HEAVY"
+msgstr "[[HEAVY]]"
+
+msgid "BuildingThermalExposure_LIGHT"
+msgstr "[[LIGHT]]"
+
+msgid "BuildingThermalExposure_MEDIUM"
+msgstr "[[MEDIUM]]"
+
+msgid "BuildingThermalExposure_NOTKNOWN"
+msgstr "[[NOTKNOWN]]"
+
+msgid "BuildingThermalExposure_UNSET"
+msgstr "[[UNSET]]"
+
+msgid "PrevailingWindDirection"
+msgstr "PrevailingWindDirection"
+
+msgid "PrevailingWindDirection_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcPlaneAngleMeasure as value."
+
+msgid "PrevailingWindVelocity"
+msgstr "PrevailingWindVelocity"
+
+msgid "PrevailingWindVelocity_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLinearVelocityMeasure as value."
+
+msgid "Heat"
+msgstr "Heat"
+
+msgid "Heat_DESCRIPTION"
+msgstr "Technical note: this is a specific property from IFC that takes as its value a reference to IfcTimeSeries."
+
+msgid "Electricity"
+msgstr "Electricity"
+
+msgid "Electricity_DESCRIPTION"
+msgstr "Technical note: this is a specific property from IFC that takes as its value a reference to IfcTimeSeries."
+
+msgid "Water"
+msgstr "Water"
+
+msgid "Water_DESCRIPTION"
+msgstr "Technical note: this is a specific property from IFC that takes as its value a reference to IfcTimeSeries."
+
+msgid "Fuel"
+msgstr "Fuel"
+
+msgid "Fuel_DESCRIPTION"
+msgstr "Technical note: this is a specific property from IFC that takes as its value a reference to IfcTimeSeries."
+
+msgid "Steam"
+msgstr "Steam"
+
+msgid "Steam_DESCRIPTION"
+msgstr "Technical note: this is a specific property from IFC that takes as its value a reference to IfcTimeSeries."
+
+msgid "IfcFacilityPartCommon"
+msgstr "FacilityPartCommon"
+
+msgid "IfcOpeningElement"
+msgstr "OpeningElement"
+
+msgid "FireRating"
+msgstr "FireRating"
+
+msgid "FireRating_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLabel as value."
+
+msgid "AcousticRating"
+msgstr "AcousticRating"
+
+msgid "AcousticRating_DESCRIPTION"
+msgstr "Technical note: in IFC this property takes IfcLabel as value."
+
+msgid "Depth"
+msgstr "Depth"
+
+msgid "IfcProjectionElement"
+msgstr "ProjectionElement"
+

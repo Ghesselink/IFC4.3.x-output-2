@@ -1,0 +1,453 @@
+<html lang="en">
+<head>
+<link href="../../../../../assets/css/mini-default.css" rel="stylesheet"/>
+<link href="../../../../../assets/css/style.css" rel="stylesheet"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta charset="utf-8"/>
+<title>4.2.2.1.12 Sine Spiral Transition Segment - IFC 4.3.2.0 Documentation</title>
+<link href="../../../../../assets/img/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="../../../../.." id="site-root"/>
+<script>window.is_iso = false;</script>
+</head>
+<body class="">
+<div class="container">
+<div class="row">
+<header>
+<div><img src="../../../../../assets/img/buildingSMART_RGB_IFC4_3_v4_transparent.png"/></div>
+<p class="header-title">IFC 4.3.2.0 build 20261026 (IFC4X3_ADD2_DEV_20260526)
+                            <small style="background-color: #b3cde3;">⚠ buildingSMART Working Draft. All content is under development.</small>
+</p>
+<ul>
+<li>
+<select id="language-selector" onchange="setLanguagePreference(this.value)" style="border: none; background: none; color: inherit;">
+<option selected="" value="english-default">
+                                🌐 English (default)
+                        </option>
+<option value="arabic">
+                        🇸🇦 Arabic
+                        </option>
+<option value="chinese-simplified">
+                        🇨🇳 Chinese Simplified
+                        </option>
+<option value="croatian">
+                        🇭🇷 Croatian
+                        </option>
+<option value="czech">
+                        🇨🇿 Czech
+                        </option>
+<option value="danish">
+                        🇩🇰 Danish
+                        </option>
+<option value="dutch">
+                        🇳🇱 Dutch
+                        </option>
+<option value="finnish">
+                        🇫🇮 Finnish
+                        </option>
+<option value="french">
+                        🇫🇷 French
+                        </option>
+<option value="german">
+                        🇩🇪 German
+                        </option>
+<option value="greek">
+                        🇬🇷 Greek
+                        </option>
+<option value="hindi">
+                        🇮🇳 Hindi
+                        </option>
+<option value="icelandic">
+                        🇮🇸 Icelandic
+                        </option>
+<option value="italian">
+                        🇮🇹 Italian
+                        </option>
+<option value="japanese">
+                        🇯🇵 Japanese
+                        </option>
+<option value="korean">
+                        🇰🇷 Korean
+                        </option>
+<option value="lithuanian">
+                        🇱🇹 Lithuanian
+                        </option>
+<option value="norwegian">
+                        🇳🇴 Norwegian
+                        </option>
+<option value="polish">
+                        🇵🇱 Polish
+                        </option>
+<option value="portuguese">
+                        🇵🇹 Portuguese
+                        </option>
+<option value="portuguese-brazilian">
+                        🇧🇷 Portuguese, Brazilian
+                        </option>
+<option value="romanian">
+                        🇷🇴 Romanian
+                        </option>
+<option value="serbian">
+                        🇷🇸 Serbian
+                        </option>
+<option value="slovenian">
+                        🇸🇮 Slovenian
+                        </option>
+<option value="spanish">
+                        🇪🇸 Spanish
+                        </option>
+<option value="swedish">
+                        🇸🇪 Swedish
+                        </option>
+<option value="turkish">
+                        🇹🇷 Turkish
+                        </option>
+</select>
+</li>
+<li>
+<a href="https://github.com/buildingSMART/IFC4.x-development/issues/">
+<i data-feather="message-circle"></i>
+                                Help suggest improvements
+                            </a>
+</li>
+<li>
+<a href="https://forums.buildingsmart.org/">
+<i data-feather="help-circle"></i>
+                            Get user or developer support
+                        </a>
+</li>
+<!--
+                    <li>
+                        <a href="#todo">
+                            <i data-feather="code"></i>
+                            Get started with software development
+                        </a>
+                    </li>
+                    -->
+</ul>
+</header>
+</div>
+<div class="row">
+<div class="col-md-2">
+<form action="../../../../../search.html" class="search" method="get" style="padding:0px;">
+<div class="row">
+<div class="col-md-8">
+<input class="search-input" name="query" placeholder="Search" type="text" value=""/>
+</div>
+<div class="col-md-4">
+<button class="primary" type="submit" value="Search">
+<span class="icon-search inverse"></span>
+</button>
+</div>
+</div>
+</form>
+<nav>
+<div>
+<a href="../../../../..">
+                             Cover
+                        </a>
+<a href="../../../../../toc.html">
+                             Contents
+                        </a>
+<a href="../../../../../content/foreword.html">
+                             Foreword
+                        </a>
+<a href="../../../../../content/introduction.html">
+                             Introduction
+                        </a>
+</div>
+<div>
+<a href="../../../../../content/scope.html">
+                            1 Scope
+                        </a>
+<a href="../../../../../content/normative_references.html">
+                            2 Normative references
+                        </a>
+<a href="../../../../../content/terms_and_definitions.html">
+                            3 Terms, definitions, and abbreviated terms
+                        </a>
+<a class="current" href="../../../../content.html">
+                            4 Fundamental concepts and assumptions
+                        </a>
+<a href="../../../../../chapter-5.html">
+                            5 Core data schemas
+                        </a>
+<a href="../../../../../chapter-6.html">
+                            6 Shared element data schemas
+                        </a>
+<a href="../../../../../chapter-7.html">
+                            7 Domain specific data schemas
+                        </a>
+<a href="../../../../../chapter-8.html">
+                            8 Resource definition data schemas
+                        </a>
+</div>
+<div>
+<a href="../../../../../annex-a.html">
+                            A Computer interpretable listings
+                        </a>
+<a href="../../../../../annex-b.html">
+                            B Alphabetical listings
+                        </a>
+<a href="../../../../../annex-c.html">
+                            C Inheritance listings
+                        </a>
+<a href="../../../../../annex-d.html">
+                            D Diagrams
+                        </a>
+<a href="../../../../../annex-e.html">
+                            E Examples
+                        </a>
+<a href="../../../../../annex-f.html">
+                            F Change logs
+                        </a>
+</div>
+<div>
+<a href="../../../../../content/bibliography.html">
+                             Bibliography
+                        </a>
+<a href="../../../../../indices.html">
+                             Index
+                        </a>
+</div>
+</nav>
+</div>
+<div class="col-md-8" id="main-content">
+<h1>4.2.2.1.12 Sine Spiral Transition Segment</h1>
+<p>The sine spiral transition segment is a special case of a spiral where the curvature rate of change is a sine function and the terms are dependent on the length L measured from the inflection point. The parameter value is defined as the deflection i.e. bearing angle &amp;Theta.</p>
+<p>The values of its individual terms are identical and equal to the length of the segment L:
+SineTerm = L
+LinearTerm = L</p>
+<p class="search-skip">
+    The following diagram shows the generic classes and relationships used when applying this concept.
+</p>
+<figure><a class="anchor" id="Figure-4.2.2.1.12.A"></a><div class="concept-diagram-canvas" data-diagram="concept">
+
+<svg height="354px" viewbox="0.00 0.00 986.00 472.00" width="738px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g class="graph" id="graph0" transform="scale(1 1) rotate(0) translate(4 468)">
+<title>%3</title>
+<polygon fill="transparent" points="-4,4 -4,-468 982,-468 982,4 -4,4" stroke="transparent"></polygon>
+<!-- IfcCurveSegment -->
+<g class="node" id="node1">
+<title>IfcCurveSegment</title>
+<g id="a_node1_0"><a xlink:href="../../../../../lexical/IfcCurveSegment.html" xlink:title="IfcCurveSegment">
+<polygon fill="#1976d2" points="8,-426 8,-460 258,-460 258,-426 8,-426" stroke="transparent"></polygon>
+<polyline fill="none" points="8,-426 258,-426 " stroke="black"></polyline>
+<text fill="white" font-family="Arial" font-size="20.00" font-weight="bold" text-anchor="start" x="14" y="-439">IfcCurveSegment</text>
+</a>
+</g>
+<polygon fill="#1976d2" points="258,-426 258,-460 302,-460 302,-426 258,-426" stroke="transparent"></polygon>
+<polyline fill="none" points="258,-426 302,-426 " stroke="black"></polyline>
+<polygon fill="white" points="8,-396 8,-426 258,-426 258,-396 8,-396" stroke="transparent"></polygon>
+<polyline fill="none" points="8,-396 258,-396 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="14" y="-407.2">      LayerAssignment</text>
+<polygon fill="white" points="258,-396 258,-426 302,-426 302,-396 258,-396" stroke="transparent"></polygon>
+<polyline fill="none" points="258,-396 302,-396 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="264" y="-407.2">[0:1]</text>
+<polygon fill="white" points="8,-366 8,-396 258,-396 258,-366 8,-366" stroke="transparent"></polygon>
+<polyline fill="none" points="8,-366 258,-366 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="14" y="-377.2">      StyledByItem</text>
+<polygon fill="white" points="258,-366 258,-396 302,-396 302,-366 258,-366" stroke="transparent"></polygon>
+<polyline fill="none" points="258,-366 302,-366 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="264" y="-377.2">[0:1]</text>
+<polygon fill="white" points="8,-336 8,-366 258,-366 258,-336 8,-336" stroke="transparent"></polygon>
+<polyline fill="none" points="8,-336 258,-336 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="14" y="-347.2">1. Transition</text>
+<polygon fill="white" points="258,-336 258,-366 302,-366 302,-336 258,-336" stroke="transparent"></polygon>
+<polyline fill="none" points="258,-336 302,-336 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="264" y="-347.2">[1:1]</text>
+<polygon fill="white" points="8,-306 8,-336 258,-336 258,-306 8,-306" stroke="transparent"></polygon>
+<polyline fill="none" points="8,-306 258,-306 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="14" y="-317.2">      UsingCurves</text>
+<polygon fill="white" points="258,-306 258,-336 302,-336 302,-306 258,-306" stroke="transparent"></polygon>
+<polyline fill="none" points="258,-306 302,-306 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="264" y="-317.2">[1:?]</text>
+<polygon fill="white" points="8,-276 8,-306 258,-306 258,-276 8,-276" stroke="transparent"></polygon>
+<polyline fill="none" points="8,-276 258,-276 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="14" y="-287.2">2. Placement</text>
+<polygon fill="white" points="258,-276 258,-306 302,-306 302,-276 258,-276" stroke="transparent"></polygon>
+<polyline fill="none" points="258,-276 302,-276 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="264" y="-287.2">[1:1]</text>
+<polygon fill="#dddddd" points="8,-246 8,-276 258,-276 258,-246 8,-246" stroke="transparent"></polygon>
+<polyline fill="none" points="8,-246 258,-246 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="14" y="-257.2">3. SegmentStart</text>
+<polygon fill="#dddddd" points="258,-246 258,-276 302,-276 302,-246 258,-246" stroke="transparent"></polygon>
+<polyline fill="none" points="258,-246 302,-246 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="264" y="-257.2">[1:1]</text>
+<polygon fill="#dddddd" points="8,-216 8,-246 258,-246 258,-216 8,-216" stroke="transparent"></polygon>
+<polyline fill="none" points="8,-216 258,-216 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="14" y="-227.2">4. SegmentLength</text>
+<polygon fill="#dddddd" points="258,-216 258,-246 302,-246 302,-216 258,-216" stroke="transparent"></polygon>
+<polyline fill="none" points="258,-216 302,-216 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="264" y="-227.2">[1:1]</text>
+<polygon fill="#dddddd" points="8,-186 8,-216 258,-216 258,-186 8,-186" stroke="transparent"></polygon>
+<polyline fill="none" points="8,-186 258,-186 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="14" y="-197.2">5. ParentCurve</text>
+<polygon fill="#dddddd" points="258,-186 258,-216 302,-216 302,-186 258,-186" stroke="transparent"></polygon>
+<polyline fill="none" points="258,-186 302,-186 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="264" y="-197.2">[1:1]</text>
+</g>
+<!-- IfcSineSpiral -->
+<g class="node" id="node2">
+<title>IfcSineSpiral</title>
+<g id="a_node2_1"><a xlink:href="../../../../../lexical/IfcSineSpiral.html" xlink:title="IfcSineSpiral">
+<polygon fill="#1976d2" points="354,-184 354,-218 604,-218 604,-184 354,-184" stroke="transparent"></polygon>
+<polyline fill="none" points="354,-184 604,-184 " stroke="black"></polyline>
+<text fill="white" font-family="Arial" font-size="20.00" font-weight="bold" text-anchor="start" x="360" y="-197">IfcSineSpiral</text>
+</a>
+</g>
+<polygon fill="#1976d2" points="604,-184 604,-218 648,-218 648,-184 604,-184" stroke="transparent"></polygon>
+<polyline fill="none" points="604,-184 648,-184 " stroke="black"></polyline>
+<polygon fill="white" points="354,-154 354,-184 604,-184 604,-154 354,-154" stroke="transparent"></polygon>
+<polyline fill="none" points="354,-154 604,-154 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="360" y="-165.2">      LayerAssignment</text>
+<polygon fill="white" points="604,-154 604,-184 648,-184 648,-154 604,-154" stroke="transparent"></polygon>
+<polyline fill="none" points="604,-154 648,-154 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="610" y="-165.2">[0:1]</text>
+<polygon fill="white" points="354,-124 354,-154 604,-154 604,-124 354,-124" stroke="transparent"></polygon>
+<polyline fill="none" points="354,-124 604,-124 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="360" y="-135.2">      StyledByItem</text>
+<polygon fill="white" points="604,-124 604,-154 648,-154 648,-124 604,-124" stroke="transparent"></polygon>
+<polyline fill="none" points="604,-124 648,-124 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="610" y="-135.2">[0:1]</text>
+<polygon fill="white" points="354,-94 354,-124 604,-124 604,-94 354,-94" stroke="transparent"></polygon>
+<polyline fill="none" points="354,-94 604,-94 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="360" y="-105.2">1. Position</text>
+<polygon fill="white" points="604,-94 604,-124 648,-124 648,-94 604,-94" stroke="transparent"></polygon>
+<polyline fill="none" points="604,-94 648,-94 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="610" y="-105.2">[1:1]</text>
+<polygon fill="#dddddd" points="354,-64 354,-94 604,-94 604,-64 354,-64" stroke="transparent"></polygon>
+<polyline fill="none" points="354,-64 604,-64 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="360" y="-75.2">2. SineTerm</text>
+<polygon fill="#dddddd" points="604,-64 604,-94 648,-94 648,-64 604,-64" stroke="transparent"></polygon>
+<polyline fill="none" points="604,-64 648,-64 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="610" y="-75.2">[1:1]</text>
+<polygon fill="#dddddd" points="354,-34 354,-64 604,-64 604,-34 354,-34" stroke="transparent"></polygon>
+<polyline fill="none" points="354,-34 604,-34 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="360" y="-45.2">3. LinearTerm</text>
+<polygon fill="#dddddd" points="604,-34 604,-64 648,-64 648,-34 604,-34" stroke="transparent"></polygon>
+<polyline fill="none" points="604,-34 648,-34 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="610" y="-45.2">[0:1]</text>
+<polygon fill="white" points="354,-4 354,-34 604,-34 604,-4 354,-4" stroke="transparent"></polygon>
+<polyline fill="none" points="354,-4 604,-4 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="360" y="-15.2">4. ConstantTerm</text>
+<polygon fill="white" points="604,-4 604,-34 648,-34 648,-4 604,-4" stroke="transparent"></polygon>
+<polyline fill="none" points="604,-4 648,-4 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="610" y="-15.2">[0:1]</text>
+</g>
+<!-- IfcCurveSegment&#45;&gt;IfcSineSpiral -->
+<g class="edge" id="edge1">
+<title>IfcCurveSegment:ParentCurve1-&gt;IfcSineSpiral:IfcSineSpiral0</title>
+<path d="M303,-201C303,-201 328.27,-201 342.88,-201" fill="none" stroke="black"></path>
+<polygon fill="black" points="343,-204.5 353,-201 343,-197.5 343,-204.5" stroke="black"></polygon>
+</g>
+<!-- IfcLengthMeasure_0 -->
+<g class="node" id="node3">
+<title>IfcLengthMeasure_0</title>
+<g id="a_node3_2"><a xlink:href="../../../../../lexical/IfcLengthMeasure.html" xlink:title="IfcLengthMeasure">
+<polygon fill="#1976d2" points="700,-196 700,-230 950,-230 950,-196 700,-196" stroke="transparent"></polygon>
+<polyline fill="none" points="700,-196 950,-196 " stroke="black"></polyline>
+<text fill="white" font-family="Arial" font-size="20.00" font-weight="bold" text-anchor="start" x="706" y="-209">IfcLengthMeasure</text>
+</a>
+</g>
+<polygon fill="#1976d2" points="950,-196 950,-230 970,-230 970,-196 950,-196" stroke="transparent"></polygon>
+<polyline fill="none" points="950,-196 970,-196 " stroke="black"></polyline>
+</g>
+<!-- IfcCurveSegment&#45;&gt;IfcLengthMeasure_0 -->
+<g class="edge" id="edge2">
+<title>IfcCurveSegment:SegmentStart1-&gt;IfcLengthMeasure_0:IfcLengthMeasure0</title>
+<path d="M303,-261C303,-261 656,-238 656,-238 656,-238 677.73,-225.36 690.3,-218.06" fill="none" stroke="black"></path>
+<polygon fill="black" points="692.11,-221.05 699,-213 688.6,-215 692.11,-221.05" stroke="black"></polygon>
+</g>
+<!-- IfcLengthMeasure_1 -->
+<g class="node" id="node4">
+<title>IfcLengthMeasure_1</title>
+<g id="a_node4_3"><a xlink:href="../../../../../lexical/IfcLengthMeasure.html" xlink:title="IfcLengthMeasure">
+<polygon fill="#1976d2" points="700,-107 700,-141 950,-141 950,-107 700,-107" stroke="transparent"></polygon>
+<polyline fill="none" points="700,-107 950,-107 " stroke="black"></polyline>
+<text fill="white" font-family="Arial" font-size="20.00" font-weight="bold" text-anchor="start" x="706" y="-120">IfcLengthMeasure</text>
+</a>
+</g>
+<polygon fill="#1976d2" points="950,-107 950,-141 970,-141 970,-107 950,-107" stroke="transparent"></polygon>
+<polyline fill="none" points="950,-107 970,-107 " stroke="black"></polyline>
+</g>
+<!-- IfcCurveSegment&#45;&gt;IfcLengthMeasure_1 -->
+<g class="edge" id="edge3">
+<title>IfcCurveSegment:SegmentLength1-&gt;IfcLengthMeasure_1:IfcLengthMeasure0</title>
+<path d="M303,-231C303,-231 656,-225 656,-225 656,-225 684.39,-158.32 695.03,-133.32" fill="none" stroke="black"></path>
+<polygon fill="black" points="698.3,-134.57 699,-124 691.86,-131.83 698.3,-134.57" stroke="black"></polygon>
+</g>
+<!-- IfcSineSpiral&#45;&gt;IfcLengthMeasure_0 -->
+<g class="edge" id="edge4">
+<title>IfcSineSpiral:SineTerm1-&gt;IfcLengthMeasure_0:IfcLengthMeasure0</title>
+<path d="M649,-79C649,-79 683.94,-172.64 695.4,-203.36" fill="none" stroke="black"></path>
+<polygon fill="black" points="692.22,-204.85 699,-213 698.78,-202.41 692.22,-204.85" stroke="black"></polygon>
+</g>
+<!-- IfcSineSpiral&#45;&gt;IfcLengthMeasure_1 -->
+<g class="edge" id="edge5">
+<title>IfcSineSpiral:LinearTerm1-&gt;IfcLengthMeasure_1:IfcLengthMeasure0</title>
+<path d="M649,-49C649,-49 680.13,-95.7 693.26,-115.4" fill="none" stroke="black"></path>
+<polygon fill="black" points="690.54,-117.62 699,-124 696.37,-113.74 690.54,-117.62" stroke="black"></polygon>
+</g>
+</g>
+</svg></div><figcaption>Figure 4.2.2.1.12.A<a class="link" href="#Figure-4.2.2.1.12.A"><i data-feather="link"></i></a></figcaption></figure>
+</div>
+<div class="col-md-2 rightpanel">
+<div class="card fluid shadowed">
+<p>
+<a class="button primary edit-github" href="https://github.com/buildingSMART/IFC4.x-development/blob/preview/pr1228/docs/templates/Partial Templates/Geometry/Curve Segment Geometry/Sine Spiral Transition Segment/README.md"><span class="icon-edit inverse"></span> Edit on Github</a>
+</p>
+<p>
+<small>
+<span id="contributors">1 contributor(s):
+<img alt="Thomas Krijnen" class="contributor-icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj4KICA8Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxNiIgZmlsbD0iIzljYTNhZiIvPgogIDx0ZXh0IHg9IjE2IiB5PSIxNiIKICAgICAgICB0ZXh0LWFuY2hvcj0ibWlkZGxlIgogICAgICAgIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIgogICAgICAgIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIgogICAgICAgIGZvbnQtc2l6ZT0iMTEiCiAgICAgICAgZm9udC13ZWlnaHQ9IjYwMCIKICAgICAgICBmaWxsPSJ3aGl0ZSI+VEs8L3RleHQ+Cjwvc3ZnPg==" title="Thomas Krijnen"/> </span><br/>
+<span id="last-change">Last change: <em>Update Curve_Segment_Geometry templates in accordance with <a href="../../../../../lexical/IfcCurveSegment.html">IfcCurveSegment</a> proposition</em> by Thomas Krijnen on 2023-10-01T10:19:22+02:00</span>
+</small>
+</p>
+<p>
+<small>
+                            Is this page difficult to understand? <a href="https://github.com/buildingSMART/IFC4.x-development/issues/371">Let us know!</a>
+</small>
+</p>
+</div>
+<div class="card fluid shadowed hidden" id="section-navigation">
+<p>
+</p><center><small>Jump to section</small></center>
+<ol class="referenced-list small"></ol>
+</div>
+</div>
+</div>
+<div class="row">
+<footer>
+<p>
+<a href="http://creativecommons.org/licenses/by-nd/4.0/" rel="license"><img alt="Creative Commons License" src="../../../../../assets/lib/img/cc-by-nd-4.0-88x31.png" style="border-width:0"/></a>
+<small>
+                        Copyright © 1996-2025 buildingSMART International Limited. Some rights reserved. Any technical documentation made available by buildingSMART International Limited is the copyrighted work of buildingSMART International Limited and is owned by buildingSMART International Limited. The Industry Foundation Classes are published under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Read the <a href="https://creativecommons.org/licenses/by-nd/4.0/legalcode">full license text here</a>. For more information please refer to our <a href="https://app.box.com/s/rg081ahyq1euw8uw6efql6m2fcofm558">IP Policy.</a>
+</small>
+</p>
+<a class="button" id="back-to-top"><i data-feather="arrow-up-circle"></i></a>
+</footer>
+</div>
+</div>
+<script>
+        window.appconfig = {
+            'path': 'docs/templates/Partial Templates/Geometry/Curve Segment Geometry/Sine Spiral Transition Segment/README.md',
+            'base': '',
+            'repo': 'buildingSMART/IFC4.x-development',
+            'resourceApi': null,
+        };
+    </script>
+<script>
+        window.MathJax = {
+            loader: {
+                load: ['output/svg']
+            },
+            startup: {
+                output: 'svg',
+            },
+        };
+    </script>
+<script src="../../../../../assets/lib/feather-icons/feather.min.js"></script>
+<script async="" id="MathJax-script" src="../../../../../assets/lib/mathjax/tex-mml-svg.js"></script>
+<script src="../../../../../assets/js/app.js" type="text/javascript"></script>
+</body>
+</html>

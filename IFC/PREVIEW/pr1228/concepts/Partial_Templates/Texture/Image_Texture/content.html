@@ -1,0 +1,769 @@
+<html lang="en">
+<head>
+<link href="../../../../assets/css/mini-default.css" rel="stylesheet"/>
+<link href="../../../../assets/css/style.css" rel="stylesheet"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta charset="utf-8"/>
+<title>4.2.11.1 Image Texture - IFC 4.3.2.0 Documentation</title>
+<link href="../../../../assets/img/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="../../../.." id="site-root"/>
+<script>window.is_iso = false;</script>
+</head>
+<body class="">
+<div class="container">
+<div class="row">
+<header>
+<div><img src="../../../../assets/img/buildingSMART_RGB_IFC4_3_v4_transparent.png"/></div>
+<p class="header-title">IFC 4.3.2.0 build 20261026 (IFC4X3_ADD2_DEV_20260526)
+                            <small style="background-color: #b3cde3;">⚠ buildingSMART Working Draft. All content is under development.</small>
+</p>
+<ul>
+<li>
+<select id="language-selector" onchange="setLanguagePreference(this.value)" style="border: none; background: none; color: inherit;">
+<option selected="" value="english-default">
+                                🌐 English (default)
+                        </option>
+<option value="arabic">
+                        🇸🇦 Arabic
+                        </option>
+<option value="chinese-simplified">
+                        🇨🇳 Chinese Simplified
+                        </option>
+<option value="croatian">
+                        🇭🇷 Croatian
+                        </option>
+<option value="czech">
+                        🇨🇿 Czech
+                        </option>
+<option value="danish">
+                        🇩🇰 Danish
+                        </option>
+<option value="dutch">
+                        🇳🇱 Dutch
+                        </option>
+<option value="finnish">
+                        🇫🇮 Finnish
+                        </option>
+<option value="french">
+                        🇫🇷 French
+                        </option>
+<option value="german">
+                        🇩🇪 German
+                        </option>
+<option value="greek">
+                        🇬🇷 Greek
+                        </option>
+<option value="hindi">
+                        🇮🇳 Hindi
+                        </option>
+<option value="icelandic">
+                        🇮🇸 Icelandic
+                        </option>
+<option value="italian">
+                        🇮🇹 Italian
+                        </option>
+<option value="japanese">
+                        🇯🇵 Japanese
+                        </option>
+<option value="korean">
+                        🇰🇷 Korean
+                        </option>
+<option value="lithuanian">
+                        🇱🇹 Lithuanian
+                        </option>
+<option value="norwegian">
+                        🇳🇴 Norwegian
+                        </option>
+<option value="polish">
+                        🇵🇱 Polish
+                        </option>
+<option value="portuguese">
+                        🇵🇹 Portuguese
+                        </option>
+<option value="portuguese-brazilian">
+                        🇧🇷 Portuguese, Brazilian
+                        </option>
+<option value="romanian">
+                        🇷🇴 Romanian
+                        </option>
+<option value="serbian">
+                        🇷🇸 Serbian
+                        </option>
+<option value="slovenian">
+                        🇸🇮 Slovenian
+                        </option>
+<option value="spanish">
+                        🇪🇸 Spanish
+                        </option>
+<option value="swedish">
+                        🇸🇪 Swedish
+                        </option>
+<option value="turkish">
+                        🇹🇷 Turkish
+                        </option>
+</select>
+</li>
+<li>
+<a href="https://github.com/buildingSMART/IFC4.x-development/issues/">
+<i data-feather="message-circle"></i>
+                                Help suggest improvements
+                            </a>
+</li>
+<li>
+<a href="https://forums.buildingsmart.org/">
+<i data-feather="help-circle"></i>
+                            Get user or developer support
+                        </a>
+</li>
+<!--
+                    <li>
+                        <a href="#todo">
+                            <i data-feather="code"></i>
+                            Get started with software development
+                        </a>
+                    </li>
+                    -->
+</ul>
+</header>
+</div>
+<div class="row">
+<div class="col-md-2">
+<form action="../../../../search.html" class="search" method="get" style="padding:0px;">
+<div class="row">
+<div class="col-md-8">
+<input class="search-input" name="query" placeholder="Search" type="text" value=""/>
+</div>
+<div class="col-md-4">
+<button class="primary" type="submit" value="Search">
+<span class="icon-search inverse"></span>
+</button>
+</div>
+</div>
+</form>
+<nav>
+<div>
+<a href="../../../..">
+                             Cover
+                        </a>
+<a href="../../../../toc.html">
+                             Contents
+                        </a>
+<a href="../../../../content/foreword.html">
+                             Foreword
+                        </a>
+<a href="../../../../content/introduction.html">
+                             Introduction
+                        </a>
+</div>
+<div>
+<a href="../../../../content/scope.html">
+                            1 Scope
+                        </a>
+<a href="../../../../content/normative_references.html">
+                            2 Normative references
+                        </a>
+<a href="../../../../content/terms_and_definitions.html">
+                            3 Terms, definitions, and abbreviated terms
+                        </a>
+<a class="current" href="../../../content.html">
+                            4 Fundamental concepts and assumptions
+                        </a>
+<a href="../../../../chapter-5.html">
+                            5 Core data schemas
+                        </a>
+<a href="../../../../chapter-6.html">
+                            6 Shared element data schemas
+                        </a>
+<a href="../../../../chapter-7.html">
+                            7 Domain specific data schemas
+                        </a>
+<a href="../../../../chapter-8.html">
+                            8 Resource definition data schemas
+                        </a>
+</div>
+<div>
+<a href="../../../../annex-a.html">
+                            A Computer interpretable listings
+                        </a>
+<a href="../../../../annex-b.html">
+                            B Alphabetical listings
+                        </a>
+<a href="../../../../annex-c.html">
+                            C Inheritance listings
+                        </a>
+<a href="../../../../annex-d.html">
+                            D Diagrams
+                        </a>
+<a href="../../../../annex-e.html">
+                            E Examples
+                        </a>
+<a href="../../../../annex-f.html">
+                            F Change logs
+                        </a>
+</div>
+<div>
+<a href="../../../../content/bibliography.html">
+                             Bibliography
+                        </a>
+<a href="../../../../indices.html">
+                             Index
+                        </a>
+</div>
+</nav>
+</div>
+<div class="col-md-8" id="main-content">
+<h1>4.2.11.1 Image Texture</h1>
+<p>Image textures are based on external files in common image formats such as PNG or JPEG. Such files may be located on servers according to absolute URLs, on the same server as the IFC file according to relative URLs, within the same local directory according to relative file path, within an IFC-ZIP file according to relative file path, or within an arbitrary directory according to absolute file path.</p>
+<p>Absolute URLs are recommended for textures published at a location deemed to be permanent (independent of the building model data), while relative URLs are recommended for all other sharing scenarios. Local file paths should be avoided.</p>
+<p class="search-skip">
+    The following diagram shows the generic classes and relationships used when applying this concept.
+</p>
+<figure><a class="anchor" id="Figure-4.2.11.1.A"></a><div class="concept-diagram-canvas" data-diagram="concept">
+
+<svg height="627px" viewbox="0.00 0.00 1575.00 837.00" width="1179px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g class="graph" id="graph0" transform="scale(1 1) rotate(0) translate(4 833)">
+<title>%3</title>
+<polygon fill="transparent" points="-4,4 -4,-833 1571,-833 1571,4 -4,4" stroke="transparent"></polygon>
+<!-- IfcImageTexture -->
+<g class="node" id="node1">
+<title>IfcImageTexture</title>
+<g id="a_node1_0"><a xlink:href="../../../../lexical/IfcImageTexture.html" xlink:title="IfcImageTexture">
+<polygon fill="#1976d2" points="8,-573 8,-607 258,-607 258,-573 8,-573" stroke="transparent"></polygon>
+<polyline fill="none" points="8,-573 258,-573 " stroke="black"></polyline>
+<text fill="white" font-family="Arial" font-size="20.00" font-weight="bold" text-anchor="start" x="14" y="-586">IfcImageTexture</text>
+</a>
+</g>
+<polygon fill="#1976d2" points="258,-573 258,-607 302,-607 302,-573 258,-573" stroke="transparent"></polygon>
+<polyline fill="none" points="258,-573 302,-573 " stroke="black"></polyline>
+<polygon fill="white" points="8,-543 8,-573 258,-573 258,-543 8,-543" stroke="transparent"></polygon>
+<polyline fill="none" points="8,-543 258,-543 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="14" y="-554.2">1. RepeatS</text>
+<polygon fill="white" points="258,-543 258,-573 302,-573 302,-543 258,-543" stroke="transparent"></polygon>
+<polyline fill="none" points="258,-543 302,-543 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="264" y="-554.2">[1:1]</text>
+<polygon fill="white" points="8,-513 8,-543 258,-543 258,-513 8,-513" stroke="transparent"></polygon>
+<polyline fill="none" points="8,-513 258,-513 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="14" y="-524.2">2. RepeatT</text>
+<polygon fill="white" points="258,-513 258,-543 302,-543 302,-513 258,-513" stroke="transparent"></polygon>
+<polyline fill="none" points="258,-513 302,-513 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="264" y="-524.2">[1:1]</text>
+<polygon fill="#dddddd" points="8,-483 8,-513 258,-513 258,-483 8,-483" stroke="transparent"></polygon>
+<polyline fill="none" points="8,-483 258,-483 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="14" y="-494.2">3. Mode</text>
+<polygon fill="#dddddd" points="258,-483 258,-513 302,-513 302,-483 258,-483" stroke="transparent"></polygon>
+<polyline fill="none" points="258,-483 302,-483 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="264" y="-494.2">[0:1]</text>
+<polygon fill="#dddddd" points="8,-453 8,-483 258,-483 258,-453 8,-453" stroke="transparent"></polygon>
+<polyline fill="none" points="8,-453 258,-453 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="14" y="-464.2">4. TextureTransform</text>
+<polygon fill="#dddddd" points="258,-453 258,-483 302,-483 302,-453 258,-453" stroke="transparent"></polygon>
+<polyline fill="none" points="258,-453 302,-453 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="264" y="-464.2">[0:1]</text>
+<polygon fill="#dddddd" points="8,-423 8,-453 258,-453 258,-423 8,-423" stroke="transparent"></polygon>
+<polyline fill="none" points="8,-423 258,-423 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="14" y="-434.2">5. Parameter</text>
+<polygon fill="#dddddd" points="258,-423 258,-453 302,-453 302,-423 258,-423" stroke="transparent"></polygon>
+<polyline fill="none" points="258,-423 302,-423 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="264" y="-434.2">[1:?]</text>
+<polygon fill="white" points="8,-393 8,-423 258,-423 258,-393 8,-393" stroke="transparent"></polygon>
+<polyline fill="none" points="8,-393 258,-393 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="14" y="-404.2">      IsMappedBy</text>
+<polygon fill="white" points="258,-393 258,-423 302,-423 302,-393 258,-393" stroke="transparent"></polygon>
+<polyline fill="none" points="258,-393 302,-393 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="264" y="-404.2">[0:?]</text>
+<polygon fill="white" points="8,-363 8,-393 258,-393 258,-363 8,-363" stroke="transparent"></polygon>
+<polyline fill="none" points="8,-363 258,-363 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="14" y="-374.2">      UsedInStyles</text>
+<polygon fill="white" points="258,-363 258,-393 302,-393 302,-363 258,-363" stroke="transparent"></polygon>
+<polyline fill="none" points="258,-363 302,-363 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="264" y="-374.2">[0:?]</text>
+<polygon fill="#dddddd" points="8,-333 8,-363 258,-363 258,-333 8,-333" stroke="transparent"></polygon>
+<polyline fill="none" points="8,-333 258,-333 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="14" y="-344.2">6. URLReference</text>
+<polygon fill="#dddddd" points="258,-333 258,-363 302,-363 302,-333 258,-333" stroke="transparent"></polygon>
+<polyline fill="none" points="258,-333 302,-333 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="264" y="-344.2">[1:1]</text>
+</g>
+<!-- IfcIdentifier_0 -->
+<g class="node" id="node2">
+<title>IfcIdentifier_0</title>
+<g id="a_node2_1"><a xlink:href="../../../../lexical/IfcIdentifier.html" xlink:title="IfcIdentifier">
+<polygon fill="#1976d2" points="487.5,-729 487.5,-763 737.5,-763 737.5,-729 487.5,-729" stroke="transparent"></polygon>
+<polyline fill="none" points="487.5,-729 737.5,-729 " stroke="black"></polyline>
+<text fill="white" font-family="Arial" font-size="20.00" font-weight="bold" text-anchor="start" x="493.5" y="-742">IfcIdentifier</text>
+</a>
+</g>
+<polygon fill="#1976d2" points="737.5,-729 737.5,-763 757.5,-763 757.5,-729 737.5,-729" stroke="transparent"></polygon>
+<polyline fill="none" points="737.5,-729 757.5,-729 " stroke="black"></polyline>
+</g>
+<!-- IfcImageTexture&#45;&gt;IfcIdentifier_0 -->
+<g class="edge" id="edge1">
+<title>IfcImageTexture:Mode1-&gt;IfcIdentifier_0:IfcIdentifier0</title>
+<path d="M303,-498C303,-498 346,-721 346,-721 346,-721 444.18,-738.47 476.4,-744.2" fill="none" stroke="black"></path>
+<polygon fill="black" points="476.04,-747.69 486.5,-746 477.27,-740.8 476.04,-747.69" stroke="black"></polygon>
+</g>
+<!-- IfcCartesianTransformationOperator2D -->
+<g class="node" id="node3">
+<title>IfcCartesianTransformationOperator2D</title>
+<g id="a_node3_2"><a xlink:href="../../../../lexical/IfcCartesianTransformationOperator2D.html" xlink:title="IfcCartesianTransformationOperator2D">
+<polygon fill="#1976d2" points="410.5,-680 410.5,-714 791.5,-714 791.5,-680 410.5,-680" stroke="transparent"></polygon>
+<polyline fill="none" points="410.5,-680 791.5,-680 " stroke="black"></polyline>
+<text fill="white" font-family="Arial" font-size="20.00" font-weight="bold" text-anchor="start" x="416.5" y="-693">IfcCartesianTransformationOperator2D</text>
+</a>
+</g>
+<polygon fill="#1976d2" points="791.5,-680 791.5,-714 835.5,-714 835.5,-680 791.5,-680" stroke="transparent"></polygon>
+<polyline fill="none" points="791.5,-680 835.5,-680 " stroke="black"></polyline>
+<polygon fill="white" points="410.5,-650 410.5,-680 791.5,-680 791.5,-650 410.5,-650" stroke="transparent"></polygon>
+<polyline fill="none" points="410.5,-650 791.5,-650 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="416.5" y="-661.2">      LayerAssignment</text>
+<polygon fill="white" points="791.5,-650 791.5,-680 835.5,-680 835.5,-650 791.5,-650" stroke="transparent"></polygon>
+<polyline fill="none" points="791.5,-650 835.5,-650 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="797.5" y="-661.2">[0:1]</text>
+<polygon fill="white" points="410.5,-620 410.5,-650 791.5,-650 791.5,-620 410.5,-620" stroke="transparent"></polygon>
+<polyline fill="none" points="410.5,-620 791.5,-620 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="416.5" y="-631.2">      StyledByItem</text>
+<polygon fill="white" points="791.5,-620 791.5,-650 835.5,-650 835.5,-620 791.5,-620" stroke="transparent"></polygon>
+<polyline fill="none" points="791.5,-620 835.5,-620 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="797.5" y="-631.2">[0:1]</text>
+<polygon fill="#dddddd" points="410.5,-590 410.5,-620 791.5,-620 791.5,-590 410.5,-590" stroke="transparent"></polygon>
+<polyline fill="none" points="410.5,-590 791.5,-590 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="416.5" y="-601.2">1. Axis1</text>
+<polygon fill="#dddddd" points="791.5,-590 791.5,-620 835.5,-620 835.5,-590 791.5,-590" stroke="transparent"></polygon>
+<polyline fill="none" points="791.5,-590 835.5,-590 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="797.5" y="-601.2">[0:1]</text>
+<polygon fill="#dddddd" points="410.5,-560 410.5,-590 791.5,-590 791.5,-560 410.5,-560" stroke="transparent"></polygon>
+<polyline fill="none" points="410.5,-560 791.5,-560 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="416.5" y="-571.2">2. Axis2</text>
+<polygon fill="#dddddd" points="791.5,-560 791.5,-590 835.5,-590 835.5,-560 791.5,-560" stroke="transparent"></polygon>
+<polyline fill="none" points="791.5,-560 835.5,-560 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="797.5" y="-571.2">[0:1]</text>
+<polygon fill="#dddddd" points="410.5,-530 410.5,-560 791.5,-560 791.5,-530 410.5,-530" stroke="transparent"></polygon>
+<polyline fill="none" points="410.5,-530 791.5,-530 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="416.5" y="-541.2">3. LocalOrigin</text>
+<polygon fill="#dddddd" points="791.5,-530 791.5,-560 835.5,-560 835.5,-530 791.5,-530" stroke="transparent"></polygon>
+<polyline fill="none" points="791.5,-530 835.5,-530 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="797.5" y="-541.2">[1:1]</text>
+<polygon fill="white" points="410.5,-500 410.5,-530 791.5,-530 791.5,-500 410.5,-500" stroke="transparent"></polygon>
+<polyline fill="none" points="410.5,-500 791.5,-500 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="416.5" y="-511.2">4. Scale</text>
+<polygon fill="white" points="791.5,-500 791.5,-530 835.5,-530 835.5,-500 791.5,-500" stroke="transparent"></polygon>
+<polyline fill="none" points="791.5,-500 835.5,-500 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="797.5" y="-511.2">[0:1]</text>
+</g>
+<!-- IfcImageTexture&#45;&gt;IfcCartesianTransformationOperator2D -->
+<g class="edge" id="edge2">
+<title>IfcImageTexture:TextureTransform1-&gt;IfcCartesianTransformationOperator2D:IfcCartesianTransformationOperator2D0</title>
+<path d="M303,-468C303,-468 385.27,-644.9 405.19,-687.74" fill="none" stroke="black"></path>
+<polygon fill="black" points="402.11,-689.41 409.5,-697 408.46,-686.46 402.11,-689.41" stroke="black"></polygon>
+</g>
+<!-- IfcCartesianTransformationOperator2DnonUniform -->
+<g class="node" id="node4">
+<title>IfcCartesianTransformationOperator2DnonUniform</title>
+<g id="a_node4_3"><a xlink:href="../../../../lexical/IfcCartesianTransformationOperator2DnonUniform.html" xlink:title="IfcCartesianTransformationOperator2DnonUniform">
+<polygon fill="#1976d2" points="354.5,-451 354.5,-485 847.5,-485 847.5,-451 354.5,-451" stroke="transparent"></polygon>
+<polyline fill="none" points="354.5,-451 847.5,-451 " stroke="black"></polyline>
+<text fill="white" font-family="Arial" font-size="20.00" font-weight="bold" text-anchor="start" x="360.5" y="-464">IfcCartesianTransformationOperator2DnonUniform</text>
+</a>
+</g>
+<polygon fill="#1976d2" points="847.5,-451 847.5,-485 891.5,-485 891.5,-451 847.5,-451" stroke="transparent"></polygon>
+<polyline fill="none" points="847.5,-451 891.5,-451 " stroke="black"></polyline>
+<polygon fill="white" points="354.5,-421 354.5,-451 847.5,-451 847.5,-421 354.5,-421" stroke="transparent"></polygon>
+<polyline fill="none" points="354.5,-421 847.5,-421 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="360.5" y="-432.2">      LayerAssignment</text>
+<polygon fill="white" points="847.5,-421 847.5,-451 891.5,-451 891.5,-421 847.5,-421" stroke="transparent"></polygon>
+<polyline fill="none" points="847.5,-421 891.5,-421 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="853.5" y="-432.2">[0:1]</text>
+<polygon fill="white" points="354.5,-391 354.5,-421 847.5,-421 847.5,-391 354.5,-391" stroke="transparent"></polygon>
+<polyline fill="none" points="354.5,-391 847.5,-391 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="360.5" y="-402.2">      StyledByItem</text>
+<polygon fill="white" points="847.5,-391 847.5,-421 891.5,-421 891.5,-391 847.5,-391" stroke="transparent"></polygon>
+<polyline fill="none" points="847.5,-391 891.5,-391 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="853.5" y="-402.2">[0:1]</text>
+<polygon fill="#dddddd" points="354.5,-361 354.5,-391 847.5,-391 847.5,-361 354.5,-361" stroke="transparent"></polygon>
+<polyline fill="none" points="354.5,-361 847.5,-361 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="360.5" y="-372.2">1. Axis1</text>
+<polygon fill="#dddddd" points="847.5,-361 847.5,-391 891.5,-391 891.5,-361 847.5,-361" stroke="transparent"></polygon>
+<polyline fill="none" points="847.5,-361 891.5,-361 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="853.5" y="-372.2">[0:1]</text>
+<polygon fill="#dddddd" points="354.5,-331 354.5,-361 847.5,-361 847.5,-331 354.5,-331" stroke="transparent"></polygon>
+<polyline fill="none" points="354.5,-331 847.5,-331 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="360.5" y="-342.2">2. Axis2</text>
+<polygon fill="#dddddd" points="847.5,-331 847.5,-361 891.5,-361 891.5,-331 847.5,-331" stroke="transparent"></polygon>
+<polyline fill="none" points="847.5,-331 891.5,-331 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="853.5" y="-342.2">[0:1]</text>
+<polygon fill="#dddddd" points="354.5,-301 354.5,-331 847.5,-331 847.5,-301 354.5,-301" stroke="transparent"></polygon>
+<polyline fill="none" points="354.5,-301 847.5,-301 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="360.5" y="-312.2">3. LocalOrigin</text>
+<polygon fill="#dddddd" points="847.5,-301 847.5,-331 891.5,-331 891.5,-301 847.5,-301" stroke="transparent"></polygon>
+<polyline fill="none" points="847.5,-301 891.5,-301 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="853.5" y="-312.2">[1:1]</text>
+<polygon fill="white" points="354.5,-271 354.5,-301 847.5,-301 847.5,-271 354.5,-271" stroke="transparent"></polygon>
+<polyline fill="none" points="354.5,-271 847.5,-271 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="360.5" y="-282.2">4. Scale</text>
+<polygon fill="white" points="847.5,-271 847.5,-301 891.5,-301 891.5,-271 847.5,-271" stroke="transparent"></polygon>
+<polyline fill="none" points="847.5,-271 891.5,-271 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="853.5" y="-282.2">[0:1]</text>
+<polygon fill="white" points="354.5,-241 354.5,-271 847.5,-271 847.5,-241 354.5,-241" stroke="transparent"></polygon>
+<polyline fill="none" points="354.5,-241 847.5,-241 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="360.5" y="-252.2">5. Scale2</text>
+<polygon fill="white" points="847.5,-241 847.5,-271 891.5,-271 891.5,-241 847.5,-241" stroke="transparent"></polygon>
+<polyline fill="none" points="847.5,-241 891.5,-241 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="853.5" y="-252.2">[0:1]</text>
+</g>
+<!-- IfcImageTexture&#45;&gt;IfcCartesianTransformationOperator2DnonUniform -->
+<g class="edge" id="edge3">
+<title>IfcImageTexture:TextureTransform1-&gt;IfcCartesianTransformationOperator2DnonUniform:IfcCartesianTransformationOperator2DnonUniform0</title>
+<path d="M303,-468C303,-468 328.52,-468 343.28,-468" fill="none" stroke="black"></path>
+<polygon fill="black" points="343.5,-471.5 353.5,-468 343.5,-464.5 343.5,-471.5" stroke="black"></polygon>
+</g>
+<!-- IfcIdentifier_1 -->
+<g class="node" id="node5">
+<title>IfcIdentifier_1</title>
+<g id="a_node5_4"><a xlink:href="../../../../lexical/IfcIdentifier.html" xlink:title="IfcIdentifier">
+<polygon fill="#1976d2" points="487.5,-192 487.5,-226 737.5,-226 737.5,-192 487.5,-192" stroke="transparent"></polygon>
+<polyline fill="none" points="487.5,-192 737.5,-192 " stroke="black"></polyline>
+<text fill="white" font-family="Arial" font-size="20.00" font-weight="bold" text-anchor="start" x="493.5" y="-205">IfcIdentifier</text>
+</a>
+</g>
+<polygon fill="#1976d2" points="737.5,-192 737.5,-226 757.5,-226 757.5,-192 737.5,-192" stroke="transparent"></polygon>
+<polyline fill="none" points="737.5,-192 757.5,-192 " stroke="black"></polyline>
+</g>
+<!-- IfcImageTexture&#45;&gt;IfcIdentifier_1 -->
+<g class="edge" id="edge4">
+<title>IfcImageTexture:Parameter1-&gt;IfcIdentifier_1:IfcIdentifier0</title>
+<path d="M303,-438C303,-438 346,-234 346,-234 346,-234 444.18,-216.53 476.4,-210.8" fill="none" stroke="black"></path>
+<polygon fill="black" points="477.27,-214.2 486.5,-209 476.04,-207.31 477.27,-214.2" stroke="black"></polygon>
+</g>
+<!-- IfcURIReference -->
+<g class="node" id="node6">
+<title>IfcURIReference</title>
+<g id="a_node6_5"><a xlink:href="../../../../lexical/IfcURIReference.html" xlink:title="IfcURIReference">
+<polygon fill="#1976d2" points="487.5,-143 487.5,-177 737.5,-177 737.5,-143 487.5,-143" stroke="transparent"></polygon>
+<polyline fill="none" points="487.5,-143 737.5,-143 " stroke="black"></polyline>
+<text fill="white" font-family="Arial" font-size="20.00" font-weight="bold" text-anchor="start" x="493.5" y="-156">IfcURIReference</text>
+</a>
+</g>
+<polygon fill="#1976d2" points="737.5,-143 737.5,-177 757.5,-177 757.5,-143 737.5,-143" stroke="transparent"></polygon>
+<polyline fill="none" points="737.5,-143 757.5,-143 " stroke="black"></polyline>
+</g>
+<!-- IfcImageTexture&#45;&gt;IfcURIReference -->
+<g class="edge" id="edge5">
+<title>IfcImageTexture:URLReference1-&gt;IfcURIReference:IfcURIReference0</title>
+<path d="M303,-348C303,-348 346,-185 346,-185 346,-185 444.18,-167.53 476.4,-161.8" fill="none" stroke="black"></path>
+<polygon fill="black" points="477.27,-165.2 486.5,-160 476.04,-158.31 477.27,-165.2" stroke="black"></polygon>
+</g>
+<!-- IfcDirection_0 -->
+<g class="node" id="node7">
+<title>IfcDirection_0</title>
+<g id="a_node7_6"><a xlink:href="../../../../lexical/IfcDirection.html" xlink:title="IfcDirection">
+<polygon fill="#1976d2" points="943,-791 943,-825 1193,-825 1193,-791 943,-791" stroke="transparent"></polygon>
+<polyline fill="none" points="943,-791 1193,-791 " stroke="black"></polyline>
+<text fill="white" font-family="Arial" font-size="20.00" font-weight="bold" text-anchor="start" x="949" y="-804">IfcDirection</text>
+</a>
+</g>
+<polygon fill="#1976d2" points="1193,-791 1193,-825 1237,-825 1237,-791 1193,-791" stroke="transparent"></polygon>
+<polyline fill="none" points="1193,-791 1237,-791 " stroke="black"></polyline>
+<polygon fill="white" points="943,-761 943,-791 1193,-791 1193,-761 943,-761" stroke="transparent"></polygon>
+<polyline fill="none" points="943,-761 1193,-761 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="949" y="-772.2">      LayerAssignment</text>
+<polygon fill="white" points="1193,-761 1193,-791 1237,-791 1237,-761 1193,-761" stroke="transparent"></polygon>
+<polyline fill="none" points="1193,-761 1237,-761 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="1199" y="-772.2">[0:1]</text>
+<polygon fill="white" points="943,-731 943,-761 1193,-761 1193,-731 943,-731" stroke="transparent"></polygon>
+<polyline fill="none" points="943,-731 1193,-731 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="949" y="-742.2">      StyledByItem</text>
+<polygon fill="white" points="1193,-731 1193,-761 1237,-761 1237,-731 1193,-731" stroke="transparent"></polygon>
+<polyline fill="none" points="1193,-731 1237,-731 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="1199" y="-742.2">[0:1]</text>
+<polygon fill="white" points="943,-701 943,-731 1193,-731 1193,-701 943,-701" stroke="transparent"></polygon>
+<polyline fill="none" points="943,-701 1193,-701 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="949" y="-712.2">1. DirectionRatios</text>
+<polygon fill="white" points="1193,-701 1193,-731 1237,-731 1237,-701 1193,-701" stroke="transparent"></polygon>
+<polyline fill="none" points="1193,-701 1237,-701 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="1199" y="-712.2">[2:3]</text>
+</g>
+<!-- IfcCartesianTransformationOperator2D&#45;&gt;IfcDirection_0 -->
+<g class="edge" id="edge6">
+<title>IfcCartesianTransformationOperator2D:Axis11-&gt;IfcDirection_0:IfcDirection0</title>
+<path d="M836.5,-605C836.5,-605 899,-722 899,-722 899,-722 926.31,-776.61 937.4,-798.8" fill="none" stroke="black"></path>
+<polygon fill="black" points="934.4,-800.62 942,-808 940.66,-797.49 934.4,-800.62" stroke="black"></polygon>
+</g>
+<!-- IfcDirection_1 -->
+<g class="node" id="node8">
+<title>IfcDirection_1</title>
+<g id="a_node8_7"><a xlink:href="../../../../lexical/IfcDirection.html" xlink:title="IfcDirection">
+<polygon fill="#1976d2" points="943,-652 943,-686 1193,-686 1193,-652 943,-652" stroke="transparent"></polygon>
+<polyline fill="none" points="943,-652 1193,-652 " stroke="black"></polyline>
+<text fill="white" font-family="Arial" font-size="20.00" font-weight="bold" text-anchor="start" x="949" y="-665">IfcDirection</text>
+</a>
+</g>
+<polygon fill="#1976d2" points="1193,-652 1193,-686 1237,-686 1237,-652 1193,-652" stroke="transparent"></polygon>
+<polyline fill="none" points="1193,-652 1237,-652 " stroke="black"></polyline>
+<polygon fill="white" points="943,-622 943,-652 1193,-652 1193,-622 943,-622" stroke="transparent"></polygon>
+<polyline fill="none" points="943,-622 1193,-622 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="949" y="-633.2">      LayerAssignment</text>
+<polygon fill="white" points="1193,-622 1193,-652 1237,-652 1237,-622 1193,-622" stroke="transparent"></polygon>
+<polyline fill="none" points="1193,-622 1237,-622 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="1199" y="-633.2">[0:1]</text>
+<polygon fill="white" points="943,-592 943,-622 1193,-622 1193,-592 943,-592" stroke="transparent"></polygon>
+<polyline fill="none" points="943,-592 1193,-592 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="949" y="-603.2">      StyledByItem</text>
+<polygon fill="white" points="1193,-592 1193,-622 1237,-622 1237,-592 1193,-592" stroke="transparent"></polygon>
+<polyline fill="none" points="1193,-592 1237,-592 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="1199" y="-603.2">[0:1]</text>
+<polygon fill="white" points="943,-562 943,-592 1193,-592 1193,-562 943,-562" stroke="transparent"></polygon>
+<polyline fill="none" points="943,-562 1193,-562 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="949" y="-573.2">1. DirectionRatios</text>
+<polygon fill="white" points="1193,-562 1193,-592 1237,-592 1237,-562 1193,-562" stroke="transparent"></polygon>
+<polyline fill="none" points="1193,-562 1237,-562 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="1199" y="-573.2">[2:3]</text>
+</g>
+<!-- IfcCartesianTransformationOperator2D&#45;&gt;IfcDirection_1 -->
+<g class="edge" id="edge7">
+<title>IfcCartesianTransformationOperator2D:Axis21-&gt;IfcDirection_1:IfcDirection0</title>
+<path d="M836.5,-575C836.5,-575 910.22,-640.69 934.41,-662.24" fill="none" stroke="black"></path>
+<polygon fill="black" points="932.21,-664.96 942,-669 936.86,-659.73 932.21,-664.96" stroke="black"></polygon>
+</g>
+<!-- IfcCartesianPoint_0 -->
+<g class="node" id="node9">
+<title>IfcCartesianPoint_0</title>
+<g id="a_node9_8"><a xlink:href="../../../../lexical/IfcCartesianPoint.html" xlink:title="IfcCartesianPoint">
+<polygon fill="#1976d2" points="943,-513 943,-547 1193,-547 1193,-513 943,-513" stroke="transparent"></polygon>
+<polyline fill="none" points="943,-513 1193,-513 " stroke="black"></polyline>
+<text fill="white" font-family="Arial" font-size="20.00" font-weight="bold" text-anchor="start" x="949" y="-526">IfcCartesianPoint</text>
+</a>
+</g>
+<polygon fill="#1976d2" points="1193,-513 1193,-547 1237,-547 1237,-513 1193,-513" stroke="transparent"></polygon>
+<polyline fill="none" points="1193,-513 1237,-513 " stroke="black"></polyline>
+<polygon fill="white" points="943,-483 943,-513 1193,-513 1193,-483 943,-483" stroke="transparent"></polygon>
+<polyline fill="none" points="943,-483 1193,-483 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="949" y="-494.2">      LayerAssignment</text>
+<polygon fill="white" points="1193,-483 1193,-513 1237,-513 1237,-483 1193,-483" stroke="transparent"></polygon>
+<polyline fill="none" points="1193,-483 1237,-483 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="1199" y="-494.2">[0:1]</text>
+<polygon fill="white" points="943,-453 943,-483 1193,-483 1193,-453 943,-453" stroke="transparent"></polygon>
+<polyline fill="none" points="943,-453 1193,-453 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="949" y="-464.2">      StyledByItem</text>
+<polygon fill="white" points="1193,-453 1193,-483 1237,-483 1237,-453 1193,-453" stroke="transparent"></polygon>
+<polyline fill="none" points="1193,-453 1237,-453 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="1199" y="-464.2">[0:1]</text>
+<polygon fill="#dddddd" points="943,-423 943,-453 1193,-453 1193,-423 943,-423" stroke="transparent"></polygon>
+<polyline fill="none" points="943,-423 1193,-423 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="949" y="-434.2">1. Coordinates</text>
+<polygon fill="#dddddd" points="1193,-423 1193,-453 1237,-453 1237,-423 1193,-423" stroke="transparent"></polygon>
+<polyline fill="none" points="1193,-423 1237,-423 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="1199" y="-434.2">[1:3]</text>
+</g>
+<!-- IfcCartesianTransformationOperator2D&#45;&gt;IfcCartesianPoint_0 -->
+<g class="edge" id="edge8">
+<title>IfcCartesianTransformationOperator2D:LocalOrigin1-&gt;IfcCartesianPoint_0:IfcCartesianPoint0</title>
+<path d="M836.5,-545C836.5,-545 905.48,-535.19 931.88,-531.44" fill="none" stroke="black"></path>
+<polygon fill="black" points="932.59,-534.87 942,-530 931.61,-527.94 932.59,-534.87" stroke="black"></polygon>
+</g>
+<!-- IfcDirection_2 -->
+<g class="node" id="node11">
+<title>IfcDirection_2</title>
+<g id="a_node11_9"><a xlink:href="../../../../lexical/IfcDirection.html" xlink:title="IfcDirection">
+<polygon fill="#1976d2" points="943,-374 943,-408 1193,-408 1193,-374 943,-374" stroke="transparent"></polygon>
+<polyline fill="none" points="943,-374 1193,-374 " stroke="black"></polyline>
+<text fill="white" font-family="Arial" font-size="20.00" font-weight="bold" text-anchor="start" x="949" y="-387">IfcDirection</text>
+</a>
+</g>
+<polygon fill="#1976d2" points="1193,-374 1193,-408 1237,-408 1237,-374 1193,-374" stroke="transparent"></polygon>
+<polyline fill="none" points="1193,-374 1237,-374 " stroke="black"></polyline>
+<polygon fill="white" points="943,-344 943,-374 1193,-374 1193,-344 943,-344" stroke="transparent"></polygon>
+<polyline fill="none" points="943,-344 1193,-344 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="949" y="-355.2">      LayerAssignment</text>
+<polygon fill="white" points="1193,-344 1193,-374 1237,-374 1237,-344 1193,-344" stroke="transparent"></polygon>
+<polyline fill="none" points="1193,-344 1237,-344 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="1199" y="-355.2">[0:1]</text>
+<polygon fill="white" points="943,-314 943,-344 1193,-344 1193,-314 943,-314" stroke="transparent"></polygon>
+<polyline fill="none" points="943,-314 1193,-314 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="949" y="-325.2">      StyledByItem</text>
+<polygon fill="white" points="1193,-314 1193,-344 1237,-344 1237,-314 1193,-314" stroke="transparent"></polygon>
+<polyline fill="none" points="1193,-314 1237,-314 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="1199" y="-325.2">[0:1]</text>
+<polygon fill="white" points="943,-284 943,-314 1193,-314 1193,-284 943,-284" stroke="transparent"></polygon>
+<polyline fill="none" points="943,-284 1193,-284 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="949" y="-295.2">1. DirectionRatios</text>
+<polygon fill="white" points="1193,-284 1193,-314 1237,-314 1237,-284 1193,-284" stroke="transparent"></polygon>
+<polyline fill="none" points="1193,-284 1237,-284 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="1199" y="-295.2">[2:3]</text>
+</g>
+<!-- IfcCartesianTransformationOperator2DnonUniform&#45;&gt;IfcDirection_2 -->
+<g class="edge" id="edge10">
+<title>IfcCartesianTransformationOperator2DnonUniform:Axis11-&gt;IfcDirection_2:IfcDirection0</title>
+<path d="M892.5,-376C892.5,-376 917.52,-383.58 931.98,-387.96" fill="none" stroke="black"></path>
+<polygon fill="black" points="931.41,-391.45 942,-391 933.44,-384.75 931.41,-391.45" stroke="black"></polygon>
+</g>
+<!-- IfcDirection_3 -->
+<g class="node" id="node12">
+<title>IfcDirection_3</title>
+<g id="a_node12_10"><a xlink:href="../../../../lexical/IfcDirection.html" xlink:title="IfcDirection">
+<polygon fill="#1976d2" points="943,-235 943,-269 1193,-269 1193,-235 943,-235" stroke="transparent"></polygon>
+<polyline fill="none" points="943,-235 1193,-235 " stroke="black"></polyline>
+<text fill="white" font-family="Arial" font-size="20.00" font-weight="bold" text-anchor="start" x="949" y="-248">IfcDirection</text>
+</a>
+</g>
+<polygon fill="#1976d2" points="1193,-235 1193,-269 1237,-269 1237,-235 1193,-235" stroke="transparent"></polygon>
+<polyline fill="none" points="1193,-235 1237,-235 " stroke="black"></polyline>
+<polygon fill="white" points="943,-205 943,-235 1193,-235 1193,-205 943,-205" stroke="transparent"></polygon>
+<polyline fill="none" points="943,-205 1193,-205 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="949" y="-216.2">      LayerAssignment</text>
+<polygon fill="white" points="1193,-205 1193,-235 1237,-235 1237,-205 1193,-205" stroke="transparent"></polygon>
+<polyline fill="none" points="1193,-205 1237,-205 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="1199" y="-216.2">[0:1]</text>
+<polygon fill="white" points="943,-175 943,-205 1193,-205 1193,-175 943,-175" stroke="transparent"></polygon>
+<polyline fill="none" points="943,-175 1193,-175 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="949" y="-186.2">      StyledByItem</text>
+<polygon fill="white" points="1193,-175 1193,-205 1237,-205 1237,-175 1193,-175" stroke="transparent"></polygon>
+<polyline fill="none" points="1193,-175 1237,-175 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="1199" y="-186.2">[0:1]</text>
+<polygon fill="white" points="943,-145 943,-175 1193,-175 1193,-145 943,-145" stroke="transparent"></polygon>
+<polyline fill="none" points="943,-145 1193,-145 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="949" y="-156.2">1. DirectionRatios</text>
+<polygon fill="white" points="1193,-145 1193,-175 1237,-175 1237,-145 1193,-145" stroke="transparent"></polygon>
+<polyline fill="none" points="1193,-145 1237,-145 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="1199" y="-156.2">[2:3]</text>
+</g>
+<!-- IfcCartesianTransformationOperator2DnonUniform&#45;&gt;IfcDirection_3 -->
+<g class="edge" id="edge11">
+<title>IfcCartesianTransformationOperator2DnonUniform:Axis21-&gt;IfcDirection_3:IfcDirection0</title>
+<path d="M892.5,-346C892.5,-346 924.86,-284.54 937.25,-261.01" fill="none" stroke="black"></path>
+<polygon fill="black" points="940.44,-262.48 942,-252 934.24,-259.22 940.44,-262.48" stroke="black"></polygon>
+</g>
+<!-- IfcCartesianPoint_1 -->
+<g class="node" id="node13">
+<title>IfcCartesianPoint_1</title>
+<g id="a_node13_11"><a xlink:href="../../../../lexical/IfcCartesianPoint.html" xlink:title="IfcCartesianPoint">
+<polygon fill="#1976d2" points="943,-96 943,-130 1193,-130 1193,-96 943,-96" stroke="transparent"></polygon>
+<polyline fill="none" points="943,-96 1193,-96 " stroke="black"></polyline>
+<text fill="white" font-family="Arial" font-size="20.00" font-weight="bold" text-anchor="start" x="949" y="-109">IfcCartesianPoint</text>
+</a>
+</g>
+<polygon fill="#1976d2" points="1193,-96 1193,-130 1237,-130 1237,-96 1193,-96" stroke="transparent"></polygon>
+<polyline fill="none" points="1193,-96 1237,-96 " stroke="black"></polyline>
+<polygon fill="white" points="943,-66 943,-96 1193,-96 1193,-66 943,-66" stroke="transparent"></polygon>
+<polyline fill="none" points="943,-66 1193,-66 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="949" y="-77.2">      LayerAssignment</text>
+<polygon fill="white" points="1193,-66 1193,-96 1237,-96 1237,-66 1193,-66" stroke="transparent"></polygon>
+<polyline fill="none" points="1193,-66 1237,-66 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="1199" y="-77.2">[0:1]</text>
+<polygon fill="white" points="943,-36 943,-66 1193,-66 1193,-36 943,-36" stroke="transparent"></polygon>
+<polyline fill="none" points="943,-36 1193,-36 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="949" y="-47.2">      StyledByItem</text>
+<polygon fill="white" points="1193,-36 1193,-66 1237,-66 1237,-36 1193,-36" stroke="transparent"></polygon>
+<polyline fill="none" points="1193,-36 1237,-36 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="1199" y="-47.2">[0:1]</text>
+<polygon fill="#dddddd" points="943,-6 943,-36 1193,-36 1193,-6 943,-6" stroke="transparent"></polygon>
+<polyline fill="none" points="943,-6 1193,-6 " stroke="black"></polyline>
+<text fill="#333333" font-family="Arial" font-size="16.00" text-anchor="start" x="949" y="-17.2">1. Coordinates</text>
+<polygon fill="#dddddd" points="1193,-6 1193,-36 1237,-36 1237,-6 1193,-6" stroke="transparent"></polygon>
+<polyline fill="none" points="1193,-6 1237,-6 " stroke="black"></polyline>
+<text font-family="Arial" font-size="16.00" text-anchor="start" x="1199" y="-17.2">[1:3]</text>
+</g>
+<!-- IfcCartesianTransformationOperator2DnonUniform&#45;&gt;IfcCartesianPoint_1 -->
+<g class="edge" id="edge12">
+<title>IfcCartesianTransformationOperator2DnonUniform:LocalOrigin1-&gt;IfcCartesianPoint_1:IfcCartesianPoint0</title>
+<path d="M892.5,-316C892.5,-316 935,-138 935,-138 935,-138 937.28,-129.87 939.23,-122.88" fill="none" stroke="black"></path>
+<polygon fill="black" points="942.67,-123.57 942,-113 935.93,-121.69 942.67,-123.57" stroke="black"></polygon>
+</g>
+<!-- IfcLengthMeasure_0 -->
+<g class="node" id="node10">
+<title>IfcLengthMeasure_0</title>
+<g id="a_node10_12"><a xlink:href="../../../../lexical/IfcLengthMeasure.html" xlink:title="IfcLengthMeasure">
+<polygon fill="#1976d2" points="1289,-421 1289,-455 1539,-455 1539,-421 1289,-421" stroke="transparent"></polygon>
+<polyline fill="none" points="1289,-421 1539,-421 " stroke="black"></polyline>
+<text fill="white" font-family="Arial" font-size="20.00" font-weight="bold" text-anchor="start" x="1295" y="-434">IfcLengthMeasure</text>
+</a>
+</g>
+<polygon fill="#1976d2" points="1539,-421 1539,-455 1559,-455 1559,-421 1539,-421" stroke="transparent"></polygon>
+<polyline fill="none" points="1539,-421 1559,-421 " stroke="black"></polyline>
+</g>
+<!-- IfcCartesianPoint_0&#45;&gt;IfcLengthMeasure_0 -->
+<g class="edge" id="edge9">
+<title>IfcCartesianPoint_0:Coordinates1-&gt;IfcLengthMeasure_0:IfcLengthMeasure0</title>
+<path d="M1238,-438C1238,-438 1263.27,-438 1277.88,-438" fill="none" stroke="black"></path>
+<polygon fill="black" points="1278,-441.5 1288,-438 1278,-434.5 1278,-441.5" stroke="black"></polygon>
+</g>
+<!-- IfcLengthMeasure_1 -->
+<g class="node" id="node14">
+<title>IfcLengthMeasure_1</title>
+<g id="a_node14_13"><a xlink:href="../../../../lexical/IfcLengthMeasure.html" xlink:title="IfcLengthMeasure">
+<polygon fill="#1976d2" points="1289,-4 1289,-38 1539,-38 1539,-4 1289,-4" stroke="transparent"></polygon>
+<polyline fill="none" points="1289,-4 1539,-4 " stroke="black"></polyline>
+<text fill="white" font-family="Arial" font-size="20.00" font-weight="bold" text-anchor="start" x="1295" y="-17">IfcLengthMeasure</text>
+</a>
+</g>
+<polygon fill="#1976d2" points="1539,-4 1539,-38 1559,-38 1559,-4 1539,-4" stroke="transparent"></polygon>
+<polyline fill="none" points="1539,-4 1559,-4 " stroke="black"></polyline>
+</g>
+<!-- IfcCartesianPoint_1&#45;&gt;IfcLengthMeasure_1 -->
+<g class="edge" id="edge13">
+<title>IfcCartesianPoint_1:Coordinates1-&gt;IfcLengthMeasure_1:IfcLengthMeasure0</title>
+<path d="M1238,-21C1238,-21 1263.27,-21 1277.88,-21" fill="none" stroke="black"></path>
+<polygon fill="black" points="1278,-24.5 1288,-21 1278,-17.5 1278,-24.5" stroke="black"></polygon>
+</g>
+</g>
+</svg></div><figcaption>Figure 4.2.11.1.A<a class="link" href="#Figure-4.2.11.1.A"><i data-feather="link"></i></a></figcaption></figure>
+</div>
+<div class="col-md-2 rightpanel">
+<div class="card fluid shadowed">
+<p>
+<a class="button primary edit-github" href="https://github.com/buildingSMART/IFC4.x-development/blob/preview/pr1228/docs/templates/Partial Templates/Texture/Image Texture/README.md"><span class="icon-edit inverse"></span> Edit on Github</a>
+</p>
+<p>
+<small>
+<span id="contributors">2 contributor(s):
+<img alt="bSI-Bot" class="contributor-icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj4KICA8Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxNiIgZmlsbD0iIzljYTNhZiIvPgogIDx0ZXh0IHg9IjE2IiB5PSIxNiIKICAgICAgICB0ZXh0LWFuY2hvcj0ibWlkZGxlIgogICAgICAgIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIgogICAgICAgIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIgogICAgICAgIGZvbnQtc2l6ZT0iMTEiCiAgICAgICAgZm9udC13ZWlnaHQ9IjYwMCIKICAgICAgICBmaWxsPSJ3aGl0ZSI+QkI8L3RleHQ+Cjwvc3ZnPg==" title="bSI-Bot"/><img alt="Evandro Alfieri" class="contributor-icon" src="https://github.com/evandroAlfieri.png?size=32" title="Evandro Alfieri"/> </span><br/>
+<span id="last-change">Last change: <em>NBN-160 Edit definition of Image Texture</em> by Evandro Alfieri on 2023-07-04T08:30:24+02:00</span>
+</small>
+</p>
+<p>
+<small>
+                            Is this page difficult to understand? <a href="https://github.com/buildingSMART/IFC4.x-development/issues/371">Let us know!</a>
+</small>
+</p>
+</div>
+<div class="card fluid shadowed hidden" id="section-navigation">
+<p>
+</p><center><small>Jump to section</small></center>
+<ol class="referenced-list small"></ol>
+</div>
+</div>
+</div>
+<div class="row">
+<footer>
+<p>
+<a href="http://creativecommons.org/licenses/by-nd/4.0/" rel="license"><img alt="Creative Commons License" src="../../../../assets/lib/img/cc-by-nd-4.0-88x31.png" style="border-width:0"/></a>
+<small>
+                        Copyright © 1996-2025 buildingSMART International Limited. Some rights reserved. Any technical documentation made available by buildingSMART International Limited is the copyrighted work of buildingSMART International Limited and is owned by buildingSMART International Limited. The Industry Foundation Classes are published under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Read the <a href="https://creativecommons.org/licenses/by-nd/4.0/legalcode">full license text here</a>. For more information please refer to our <a href="https://app.box.com/s/rg081ahyq1euw8uw6efql6m2fcofm558">IP Policy.</a>
+</small>
+</p>
+<a class="button" id="back-to-top"><i data-feather="arrow-up-circle"></i></a>
+</footer>
+</div>
+</div>
+<script>
+        window.appconfig = {
+            'path': 'docs/templates/Partial Templates/Texture/Image Texture/README.md',
+            'base': '',
+            'repo': 'buildingSMART/IFC4.x-development',
+            'resourceApi': null,
+        };
+    </script>
+<script>
+        window.MathJax = {
+            loader: {
+                load: ['output/svg']
+            },
+            startup: {
+                output: 'svg',
+            },
+        };
+    </script>
+<script src="../../../../assets/lib/feather-icons/feather.min.js"></script>
+<script async="" id="MathJax-script" src="../../../../assets/lib/mathjax/tex-mml-svg.js"></script>
+<script src="../../../../assets/js/app.js" type="text/javascript"></script>
+</body>
+</html>
