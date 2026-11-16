@@ -737,19 +737,19 @@
     8.10.3.11.5 Formal representation
 <a class="link" href="#8.10.3.11.5-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcMaterialProfile.html"><span class="tok-nc">IfcMaterialProfile</span></a>
-<span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcMaterialProfileWithOffsets.html"><span class="tok-nc">IfcMaterialProfileWithOffsets</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcMaterialDefinition.html"><span class="tok-nc">IfcMaterialDefinition</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">Name</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
-<span class="tok-n">Description</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcText.html"><span class="tok-nc">IfcText</span></a><span class="tok-p">;</span>
-<span class="tok-n">Material</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcMaterial.html"><span class="tok-nc">IfcMaterial</span></a><span class="tok-p">;</span>
-<span class="tok-n">Profile</span> <span class="tok-o">:</span> <a href="IfcProfileDef.html"><span class="tok-nc">IfcProfileDef</span></a><span class="tok-p">;</span>
-<span class="tok-n">Priority</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcInteger.html"><span class="tok-nc">IfcInteger</span></a><span class="tok-p">;</span>
-<span class="tok-n">Category</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
-<span class="tok-k">INVERSE</span>
-<span class="tok-n">ToMaterialProfileSet</span> <span class="tok-o">:</span> <a href="IfcMaterialProfileSet.html"><span class="tok-nc">IfcMaterialProfileSet</span></a> <span class="tok-k">FOR</span> <span class="tok-n">MaterialProfiles</span><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">NormalizedPriority</span> <span class="tok-o">:</span> <span class="tok-nb">NOT</span><span class="tok-p">(</span><span class="tok-nb">EXISTS</span><span class="tok-p">(</span><span class="tok-n">Priority</span><span class="tok-p">)</span><span class="tok-p">)</span> <span class="tok-nb">OR</span> <span class="tok-p">{</span><span class="tok-m">0</span> <span class="tok-o">&lt;=</span> <span class="tok-n">Priority</span> <span class="tok-o">&lt;=</span> <span class="tok-m">100</span><span class="tok-p">}</span><span class="tok-p">;</span>
+ <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcMaterialProfileWithOffsets.html"><span class="tok-nc">IfcMaterialProfileWithOffsets</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcMaterialDefinition.html"><span class="tok-nc">IfcMaterialDefinition</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">Name</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
+	<span class="tok-n">Description</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcText.html"><span class="tok-nc">IfcText</span></a><span class="tok-p">;</span>
+	<span class="tok-n">Material</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcMaterial.html"><span class="tok-nc">IfcMaterial</span></a><span class="tok-p">;</span>
+	<span class="tok-n">Profile</span> <span class="tok-o">:</span> <a href="IfcProfileDef.html"><span class="tok-nc">IfcProfileDef</span></a><span class="tok-p">;</span>
+	<span class="tok-n">Priority</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcInteger.html"><span class="tok-nc">IfcInteger</span></a><span class="tok-p">;</span>
+	<span class="tok-n">Category</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
+ <span class="tok-k">INVERSE</span>
+	<span class="tok-n">ToMaterialProfileSet</span> <span class="tok-o">:</span> <a href="IfcMaterialProfileSet.html"><span class="tok-nc">IfcMaterialProfileSet</span></a> <span class="tok-k">FOR</span> <span class="tok-n">MaterialProfiles</span><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">NormalizedPriority</span> <span class="tok-o">:</span> <span class="tok-nb">NOT</span><span class="tok-p">(</span><span class="tok-nb">EXISTS</span><span class="tok-p">(</span><span class="tok-n">Priority</span><span class="tok-p">)</span><span class="tok-p">)</span> <span class="tok-nb">OR</span> <span class="tok-p">{</span><span class="tok-m">0</span> <span class="tok-o">&lt;=</span> <span class="tok-n">Priority</span> <span class="tok-o">&lt;=</span> <span class="tok-m">100</span><span class="tok-p">}</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.10.3.11.6-References"></a>
     8.10.3.11.6 References

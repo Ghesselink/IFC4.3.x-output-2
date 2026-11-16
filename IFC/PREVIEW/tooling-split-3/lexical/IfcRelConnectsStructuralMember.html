@@ -773,15 +773,15 @@ Optionally a supported length can be given, which specifies the length (or width
     7.10.3.2.5 Formal representation
 <a class="link" href="#7.10.3.2.5-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcRelConnectsStructuralMember.html"><span class="tok-nc">IfcRelConnectsStructuralMember</span></a>
-<span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcRelConnectsWithEccentricity.html"><span class="tok-nc">IfcRelConnectsWithEccentricity</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcRelConnects.html"><span class="tok-nc">IfcRelConnects</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">RelatingStructuralMember</span> <span class="tok-o">:</span> <a href="IfcStructuralMember.html"><span class="tok-nc">IfcStructuralMember</span></a><span class="tok-p">;</span>
-<span class="tok-n">RelatedStructuralConnection</span> <span class="tok-o">:</span> <a href="IfcStructuralConnection.html"><span class="tok-nc">IfcStructuralConnection</span></a><span class="tok-p">;</span>
-<span class="tok-n">AppliedCondition</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcBoundaryCondition.html"><span class="tok-nc">IfcBoundaryCondition</span></a><span class="tok-p">;</span>
-<span class="tok-n">AdditionalConditions</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcStructuralConnectionCondition.html"><span class="tok-nc">IfcStructuralConnectionCondition</span></a><span class="tok-p">;</span>
-<span class="tok-n">SupportedLength</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcLengthMeasure.html"><span class="tok-nc">IfcLengthMeasure</span></a><span class="tok-p">;</span>
-<span class="tok-n">ConditionCoordinateSystem</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcAxis2Placement3D.html"><span class="tok-nc">IfcAxis2Placement3D</span></a><span class="tok-p">;</span>
+ <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcRelConnectsWithEccentricity.html"><span class="tok-nc">IfcRelConnectsWithEccentricity</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcRelConnects.html"><span class="tok-nc">IfcRelConnects</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">RelatingStructuralMember</span> <span class="tok-o">:</span> <a href="IfcStructuralMember.html"><span class="tok-nc">IfcStructuralMember</span></a><span class="tok-p">;</span>
+	<span class="tok-n">RelatedStructuralConnection</span> <span class="tok-o">:</span> <a href="IfcStructuralConnection.html"><span class="tok-nc">IfcStructuralConnection</span></a><span class="tok-p">;</span>
+	<span class="tok-n">AppliedCondition</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcBoundaryCondition.html"><span class="tok-nc">IfcBoundaryCondition</span></a><span class="tok-p">;</span>
+	<span class="tok-n">AdditionalConditions</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcStructuralConnectionCondition.html"><span class="tok-nc">IfcStructuralConnectionCondition</span></a><span class="tok-p">;</span>
+	<span class="tok-n">SupportedLength</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcLengthMeasure.html"><span class="tok-nc">IfcLengthMeasure</span></a><span class="tok-p">;</span>
+	<span class="tok-n">ConditionCoordinateSystem</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcAxis2Placement3D.html"><span class="tok-nc">IfcAxis2Placement3D</span></a><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="7.10.3.2.6-References"></a>
     7.10.3.2.6 References

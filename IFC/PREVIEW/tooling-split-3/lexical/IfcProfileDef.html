@@ -759,18 +759,18 @@
     8.15.3.17.6 Formal representation
 <a class="link" href="#8.15.3.17.6-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcProfileDef.html"><span class="tok-nc">IfcProfileDef</span></a>
-<span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcArbitraryClosedProfileDef.html"><span class="tok-nc">IfcArbitraryClosedProfileDef</span></a>
-<span class="tok-p">,</span><a href="IfcArbitraryOpenProfileDef.html"><span class="tok-nc">IfcArbitraryOpenProfileDef</span></a>
-<span class="tok-p">,</span><a href="IfcCompositeProfileDef.html"><span class="tok-nc">IfcCompositeProfileDef</span></a>
-<span class="tok-p">,</span><a href="IfcDerivedProfileDef.html"><span class="tok-nc">IfcDerivedProfileDef</span></a>
-<span class="tok-p">,</span><a href="IfcOpenCrossProfileDef.html"><span class="tok-nc">IfcOpenCrossProfileDef</span></a>
-<span class="tok-p">,</span><a href="IfcParameterizedProfileDef.html"><span class="tok-nc">IfcParameterizedProfileDef</span></a><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">ProfileType</span> <span class="tok-o">:</span> <a href="IfcProfileTypeEnum.html"><span class="tok-nc">IfcProfileTypeEnum</span></a><span class="tok-p">;</span>
-<span class="tok-n">ProfileName</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
-<span class="tok-k">INVERSE</span>
-<span class="tok-n">HasExternalReference</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcExternalReferenceRelationship.html"><span class="tok-nc">IfcExternalReferenceRelationship</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatedResourceObjects</span><span class="tok-p">;</span>
-<span class="tok-n">HasProperties</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcProfileProperties.html"><span class="tok-nc">IfcProfileProperties</span></a> <span class="tok-k">FOR</span> <span class="tok-n">ProfileDefinition</span><span class="tok-p">;</span>
+ <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcArbitraryClosedProfileDef.html"><span class="tok-nc">IfcArbitraryClosedProfileDef</span></a>
+	<span class="tok-p">,</span><a href="IfcArbitraryOpenProfileDef.html"><span class="tok-nc">IfcArbitraryOpenProfileDef</span></a>
+	<span class="tok-p">,</span><a href="IfcCompositeProfileDef.html"><span class="tok-nc">IfcCompositeProfileDef</span></a>
+	<span class="tok-p">,</span><a href="IfcDerivedProfileDef.html"><span class="tok-nc">IfcDerivedProfileDef</span></a>
+	<span class="tok-p">,</span><a href="IfcOpenCrossProfileDef.html"><span class="tok-nc">IfcOpenCrossProfileDef</span></a>
+	<span class="tok-p">,</span><a href="IfcParameterizedProfileDef.html"><span class="tok-nc">IfcParameterizedProfileDef</span></a><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">ProfileType</span> <span class="tok-o">:</span> <a href="IfcProfileTypeEnum.html"><span class="tok-nc">IfcProfileTypeEnum</span></a><span class="tok-p">;</span>
+	<span class="tok-n">ProfileName</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
+ <span class="tok-k">INVERSE</span>
+	<span class="tok-n">HasExternalReference</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcExternalReferenceRelationship.html"><span class="tok-nc">IfcExternalReferenceRelationship</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatedResourceObjects</span><span class="tok-p">;</span>
+	<span class="tok-n">HasProperties</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcProfileProperties.html"><span class="tok-nc">IfcProfileProperties</span></a> <span class="tok-k">FOR</span> <span class="tok-n">ProfileDefinition</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.15.3.17.7-References"></a>
     8.15.3.17.7 References

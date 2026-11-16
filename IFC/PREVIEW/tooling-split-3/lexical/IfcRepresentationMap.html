@@ -642,13 +642,13 @@ representation is mapped.</p>
     8.9.3.58.5 Formal representation
 <a class="link" href="#8.9.3.58.5-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcRepresentationMap.html"><span class="tok-nc">IfcRepresentationMap</span></a><span class="tok-p">;</span>
-<span class="tok-n">MappingOrigin</span> <span class="tok-o">:</span> <a href="IfcAxis2Placement.html"><span class="tok-nc">IfcAxis2Placement</span></a><span class="tok-p">;</span>
-<span class="tok-n">MappedRepresentation</span> <span class="tok-o">:</span> <a href="IfcRepresentation.html"><span class="tok-nc">IfcRepresentation</span></a><span class="tok-p">;</span>
-<span class="tok-k">INVERSE</span>
-<span class="tok-n">HasShapeAspects</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcShapeAspect.html"><span class="tok-nc">IfcShapeAspect</span></a> <span class="tok-k">FOR</span> <span class="tok-n">PartOfProductDefinitionShape</span><span class="tok-p">;</span>
-<span class="tok-n">MapUsage</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcMappedItem.html"><span class="tok-nc">IfcMappedItem</span></a> <span class="tok-k">FOR</span> <span class="tok-n">MappingSource</span><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">ApplicableMappedRepr</span> <span class="tok-o">:</span> <span class="tok-s1">'IFC4X3_ADD2_DEV_20260526.IFCSHAPEMODEL'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">MappedRepresentation</span><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">MappingOrigin</span> <span class="tok-o">:</span> <a href="IfcAxis2Placement.html"><span class="tok-nc">IfcAxis2Placement</span></a><span class="tok-p">;</span>
+	<span class="tok-n">MappedRepresentation</span> <span class="tok-o">:</span> <a href="IfcRepresentation.html"><span class="tok-nc">IfcRepresentation</span></a><span class="tok-p">;</span>
+ <span class="tok-k">INVERSE</span>
+	<span class="tok-n">HasShapeAspects</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcShapeAspect.html"><span class="tok-nc">IfcShapeAspect</span></a> <span class="tok-k">FOR</span> <span class="tok-n">PartOfProductDefinitionShape</span><span class="tok-p">;</span>
+	<span class="tok-n">MapUsage</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcMappedItem.html"><span class="tok-nc">IfcMappedItem</span></a> <span class="tok-k">FOR</span> <span class="tok-n">MappingSource</span><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">ApplicableMappedRepr</span> <span class="tok-o">:</span> <span class="tok-s1">'IFC4X3_ADD2_DEV_20260526.IFCSHAPEMODEL'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">MappedRepresentation</span><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.9.3.58.6-References"></a>
     8.9.3.58.6 References

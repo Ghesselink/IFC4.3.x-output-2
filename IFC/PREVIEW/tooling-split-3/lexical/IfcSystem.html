@@ -1249,16 +1249,16 @@
     5.4.3.72.6 Formal representation
 <a class="link" href="#5.4.3.72.6-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcSystem.html"><span class="tok-nc">IfcSystem</span></a>
-<span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcBuildingSystem.html"><span class="tok-nc">IfcBuildingSystem</span></a>
-<span class="tok-p">,</span><a href="IfcBuiltSystem.html"><span class="tok-nc">IfcBuiltSystem</span></a>
-<span class="tok-p">,</span><a href="IfcDistributionSystem.html"><span class="tok-nc">IfcDistributionSystem</span></a>
-<span class="tok-p">,</span><a href="IfcStructuralAnalysisModel.html"><span class="tok-nc">IfcStructuralAnalysisModel</span></a>
-<span class="tok-p">,</span><a href="IfcZone.html"><span class="tok-nc">IfcZone</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcGroup.html"><span class="tok-nc">IfcGroup</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-k">INVERSE</span>
-<span class="tok-n">ServicesBuildings</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-m">1</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelServicesBuildings.html"><span class="tok-nc">IfcRelServicesBuildings</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatingSystem</span><span class="tok-p">;</span>
-<span class="tok-n">ServicesFacilities</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelReferencedInSpatialStructure.html"><span class="tok-nc">IfcRelReferencedInSpatialStructure</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatedElements</span><span class="tok-p">;</span>
+ <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcBuildingSystem.html"><span class="tok-nc">IfcBuildingSystem</span></a>
+	<span class="tok-p">,</span><a href="IfcBuiltSystem.html"><span class="tok-nc">IfcBuiltSystem</span></a>
+	<span class="tok-p">,</span><a href="IfcDistributionSystem.html"><span class="tok-nc">IfcDistributionSystem</span></a>
+	<span class="tok-p">,</span><a href="IfcStructuralAnalysisModel.html"><span class="tok-nc">IfcStructuralAnalysisModel</span></a>
+	<span class="tok-p">,</span><a href="IfcZone.html"><span class="tok-nc">IfcZone</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcGroup.html"><span class="tok-nc">IfcGroup</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+ <span class="tok-k">INVERSE</span>
+	<span class="tok-n">ServicesBuildings</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-m">1</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelServicesBuildings.html"><span class="tok-nc">IfcRelServicesBuildings</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatingSystem</span><span class="tok-p">;</span>
+	<span class="tok-n">ServicesFacilities</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelReferencedInSpatialStructure.html"><span class="tok-nc">IfcRelReferencedInSpatialStructure</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatedElements</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="5.4.3.72.7-References"></a>
     5.4.3.72.7 References

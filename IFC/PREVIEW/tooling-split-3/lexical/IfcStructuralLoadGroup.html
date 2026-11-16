@@ -904,9 +904,9 @@
 <tr>
 <td colspan="2">
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-p">(</span>
-<span class="tok-p">(</span><span class="tok-n">PredefinedType</span> <span class="tok-o">&lt;&gt;</span> <a href="IfcLoadGroupTypeEnum.html"><span class="tok-nc">IfcLoadGroupTypeEnum</span></a><span class="tok-p">.</span><span class="tok-n">USERDEFINED</span><span class="tok-p">)</span> <span class="tok-nb">AND</span>
-<span class="tok-p">(</span><span class="tok-n">ActionType</span> <span class="tok-o">&lt;&gt;</span> <a href="IfcActionTypeEnum.html"><span class="tok-nc">IfcActionTypeEnum</span></a><span class="tok-p">.</span><span class="tok-n">USERDEFINED</span><span class="tok-p">)</span> <span class="tok-nb">AND</span>
-<span class="tok-p">(</span><span class="tok-n">ActionSource</span> <span class="tok-o">&lt;&gt;</span> <a href="IfcActionSourceTypeEnum.html"><span class="tok-nc">IfcActionSourceTypeEnum</span></a><span class="tok-p">.</span><span class="tok-n">USERDEFINED</span><span class="tok-p">)</span>
+  <span class="tok-p">(</span><span class="tok-n">PredefinedType</span> <span class="tok-o">&lt;&gt;</span> <a href="IfcLoadGroupTypeEnum.html"><span class="tok-nc">IfcLoadGroupTypeEnum</span></a><span class="tok-p">.</span><span class="tok-n">USERDEFINED</span><span class="tok-p">)</span> <span class="tok-nb">AND</span>
+  <span class="tok-p">(</span><span class="tok-n">ActionType</span> <span class="tok-o">&lt;&gt;</span> <a href="IfcActionTypeEnum.html"><span class="tok-nc">IfcActionTypeEnum</span></a><span class="tok-p">.</span><span class="tok-n">USERDEFINED</span><span class="tok-p">)</span> <span class="tok-nb">AND</span>
+  <span class="tok-p">(</span><span class="tok-n">ActionSource</span> <span class="tok-o">&lt;&gt;</span> <a href="IfcActionSourceTypeEnum.html"><span class="tok-nc">IfcActionSourceTypeEnum</span></a><span class="tok-p">.</span><span class="tok-n">USERDEFINED</span><span class="tok-p">)</span>
 <span class="tok-p">)</span> <span class="tok-nb">OR</span> <span class="tok-nb">EXISTS</span><span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcObject.html"><span class="tok-nc">IfcObject</span></a><span class="tok-p">.</span><span class="tok-n">ObjectType</span><span class="tok-p">)</span></code></pre>
 </td>
 </tr>
@@ -1220,22 +1220,22 @@
     7.10.3.16.7 Formal representation
 <a class="link" href="#7.10.3.16.7-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcStructuralLoadGroup.html"><span class="tok-nc">IfcStructuralLoadGroup</span></a>
-<span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcStructuralLoadCase.html"><span class="tok-nc">IfcStructuralLoadCase</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcGroup.html"><span class="tok-nc">IfcGroup</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">PredefinedType</span> <span class="tok-o">:</span> <a href="IfcLoadGroupTypeEnum.html"><span class="tok-nc">IfcLoadGroupTypeEnum</span></a><span class="tok-p">;</span>
-<span class="tok-n">ActionType</span> <span class="tok-o">:</span> <a href="IfcActionTypeEnum.html"><span class="tok-nc">IfcActionTypeEnum</span></a><span class="tok-p">;</span>
-<span class="tok-n">ActionSource</span> <span class="tok-o">:</span> <a href="IfcActionSourceTypeEnum.html"><span class="tok-nc">IfcActionSourceTypeEnum</span></a><span class="tok-p">;</span>
-<span class="tok-n">Coefficient</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcRatioMeasure.html"><span class="tok-nc">IfcRatioMeasure</span></a><span class="tok-p">;</span>
-<span class="tok-n">Purpose</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
-<span class="tok-k">INVERSE</span>
-<span class="tok-n">LoadGroupFor</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcStructuralAnalysisModel.html"><span class="tok-nc">IfcStructuralAnalysisModel</span></a> <span class="tok-k">FOR</span> <span class="tok-n">LoadedBy</span><span class="tok-p">;</span>
-<span class="tok-n">SourceOfResultGroup</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-m">1</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcStructuralResultGroup.html"><span class="tok-nc">IfcStructuralResultGroup</span></a> <span class="tok-k">FOR</span> <span class="tok-n">ResultForLoadGroup</span><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">HasObjectType</span> <span class="tok-o">:</span> <span class="tok-p">(</span>
-<span class="tok-p">(</span><span class="tok-n">PredefinedType</span> <span class="tok-o">&lt;&gt;</span> <a href="IfcLoadGroupTypeEnum.html"><span class="tok-nc">IfcLoadGroupTypeEnum</span></a><span class="tok-p">.</span><span class="tok-n">USERDEFINED</span><span class="tok-p">)</span> <span class="tok-nb">AND</span>
-<span class="tok-p">(</span><span class="tok-n">ActionType</span> <span class="tok-o">&lt;&gt;</span> <a href="IfcActionTypeEnum.html"><span class="tok-nc">IfcActionTypeEnum</span></a><span class="tok-p">.</span><span class="tok-n">USERDEFINED</span><span class="tok-p">)</span> <span class="tok-nb">AND</span>
-<span class="tok-p">(</span><span class="tok-n">ActionSource</span> <span class="tok-o">&lt;&gt;</span> <a href="IfcActionSourceTypeEnum.html"><span class="tok-nc">IfcActionSourceTypeEnum</span></a><span class="tok-p">.</span><span class="tok-n">USERDEFINED</span><span class="tok-p">)</span>
+ <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcStructuralLoadCase.html"><span class="tok-nc">IfcStructuralLoadCase</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcGroup.html"><span class="tok-nc">IfcGroup</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">PredefinedType</span> <span class="tok-o">:</span> <a href="IfcLoadGroupTypeEnum.html"><span class="tok-nc">IfcLoadGroupTypeEnum</span></a><span class="tok-p">;</span>
+	<span class="tok-n">ActionType</span> <span class="tok-o">:</span> <a href="IfcActionTypeEnum.html"><span class="tok-nc">IfcActionTypeEnum</span></a><span class="tok-p">;</span>
+	<span class="tok-n">ActionSource</span> <span class="tok-o">:</span> <a href="IfcActionSourceTypeEnum.html"><span class="tok-nc">IfcActionSourceTypeEnum</span></a><span class="tok-p">;</span>
+	<span class="tok-n">Coefficient</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcRatioMeasure.html"><span class="tok-nc">IfcRatioMeasure</span></a><span class="tok-p">;</span>
+	<span class="tok-n">Purpose</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
+ <span class="tok-k">INVERSE</span>
+	<span class="tok-n">LoadGroupFor</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcStructuralAnalysisModel.html"><span class="tok-nc">IfcStructuralAnalysisModel</span></a> <span class="tok-k">FOR</span> <span class="tok-n">LoadedBy</span><span class="tok-p">;</span>
+	<span class="tok-n">SourceOfResultGroup</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-m">1</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcStructuralResultGroup.html"><span class="tok-nc">IfcStructuralResultGroup</span></a> <span class="tok-k">FOR</span> <span class="tok-n">ResultForLoadGroup</span><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">HasObjectType</span> <span class="tok-o">:</span> <span class="tok-p">(</span>
+  <span class="tok-p">(</span><span class="tok-n">PredefinedType</span> <span class="tok-o">&lt;&gt;</span> <a href="IfcLoadGroupTypeEnum.html"><span class="tok-nc">IfcLoadGroupTypeEnum</span></a><span class="tok-p">.</span><span class="tok-n">USERDEFINED</span><span class="tok-p">)</span> <span class="tok-nb">AND</span>
+  <span class="tok-p">(</span><span class="tok-n">ActionType</span> <span class="tok-o">&lt;&gt;</span> <a href="IfcActionTypeEnum.html"><span class="tok-nc">IfcActionTypeEnum</span></a><span class="tok-p">.</span><span class="tok-n">USERDEFINED</span><span class="tok-p">)</span> <span class="tok-nb">AND</span>
+  <span class="tok-p">(</span><span class="tok-n">ActionSource</span> <span class="tok-o">&lt;&gt;</span> <a href="IfcActionSourceTypeEnum.html"><span class="tok-nc">IfcActionSourceTypeEnum</span></a><span class="tok-p">.</span><span class="tok-n">USERDEFINED</span><span class="tok-p">)</span>
 <span class="tok-p">)</span> <span class="tok-nb">OR</span> <span class="tok-nb">EXISTS</span><span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcObject.html"><span class="tok-nc">IfcObject</span></a><span class="tok-p">.</span><span class="tok-n">ObjectType</span><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="7.10.3.16.8-References"></a>

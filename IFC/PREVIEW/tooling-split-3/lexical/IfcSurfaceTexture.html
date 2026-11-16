@@ -780,19 +780,19 @@
     8.12.3.35.4 Formal representation
 <a class="link" href="#8.12.3.35.4-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcSurfaceTexture.html"><span class="tok-nc">IfcSurfaceTexture</span></a>
-<span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcBlobTexture.html"><span class="tok-nc">IfcBlobTexture</span></a>
-<span class="tok-p">,</span><a href="IfcImageTexture.html"><span class="tok-nc">IfcImageTexture</span></a>
-<span class="tok-p">,</span><a href="IfcPixelTexture.html"><span class="tok-nc">IfcPixelTexture</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcPresentationItem.html"><span class="tok-nc">IfcPresentationItem</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">RepeatS</span> <span class="tok-o">:</span> <a href="IfcBoolean.html"><span class="tok-nc">IfcBoolean</span></a><span class="tok-p">;</span>
-<span class="tok-n">RepeatT</span> <span class="tok-o">:</span> <a href="IfcBoolean.html"><span class="tok-nc">IfcBoolean</span></a><span class="tok-p">;</span>
-<span class="tok-n">Mode</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcIdentifier.html"><span class="tok-nc">IfcIdentifier</span></a><span class="tok-p">;</span>
-<span class="tok-n">TextureTransform</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcCartesianTransformationOperator2D.html"><span class="tok-nc">IfcCartesianTransformationOperator2D</span></a><span class="tok-p">;</span>
-<span class="tok-n">Parameter</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <span class="tok-nb">LIST</span> <span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcIdentifier.html"><span class="tok-nc">IfcIdentifier</span></a><span class="tok-p">;</span>
-<span class="tok-k">INVERSE</span>
-<span class="tok-n">IsMappedBy</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcTextureCoordinate.html"><span class="tok-nc">IfcTextureCoordinate</span></a> <span class="tok-k">FOR</span> <span class="tok-n">Maps</span><span class="tok-p">;</span>
-<span class="tok-n">UsedInStyles</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcSurfaceStyleWithTextures.html"><span class="tok-nc">IfcSurfaceStyleWithTextures</span></a> <span class="tok-k">FOR</span> <span class="tok-n">Textures</span><span class="tok-p">;</span>
+ <span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcBlobTexture.html"><span class="tok-nc">IfcBlobTexture</span></a>
+	<span class="tok-p">,</span><a href="IfcImageTexture.html"><span class="tok-nc">IfcImageTexture</span></a>
+	<span class="tok-p">,</span><a href="IfcPixelTexture.html"><span class="tok-nc">IfcPixelTexture</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcPresentationItem.html"><span class="tok-nc">IfcPresentationItem</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">RepeatS</span> <span class="tok-o">:</span> <a href="IfcBoolean.html"><span class="tok-nc">IfcBoolean</span></a><span class="tok-p">;</span>
+	<span class="tok-n">RepeatT</span> <span class="tok-o">:</span> <a href="IfcBoolean.html"><span class="tok-nc">IfcBoolean</span></a><span class="tok-p">;</span>
+	<span class="tok-n">Mode</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcIdentifier.html"><span class="tok-nc">IfcIdentifier</span></a><span class="tok-p">;</span>
+	<span class="tok-n">TextureTransform</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcCartesianTransformationOperator2D.html"><span class="tok-nc">IfcCartesianTransformationOperator2D</span></a><span class="tok-p">;</span>
+	<span class="tok-n">Parameter</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <span class="tok-nb">LIST</span> <span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcIdentifier.html"><span class="tok-nc">IfcIdentifier</span></a><span class="tok-p">;</span>
+ <span class="tok-k">INVERSE</span>
+	<span class="tok-n">IsMappedBy</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcTextureCoordinate.html"><span class="tok-nc">IfcTextureCoordinate</span></a> <span class="tok-k">FOR</span> <span class="tok-n">Maps</span><span class="tok-p">;</span>
+	<span class="tok-n">UsedInStyles</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcSurfaceStyleWithTextures.html"><span class="tok-nc">IfcSurfaceStyleWithTextures</span></a> <span class="tok-k">FOR</span> <span class="tok-n">Textures</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.12.3.35.5-References"></a>
     8.12.3.35.5 References

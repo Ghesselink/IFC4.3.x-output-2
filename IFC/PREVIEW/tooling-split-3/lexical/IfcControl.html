@@ -1055,19 +1055,19 @@
     5.1.3.4.5 Formal representation
 <a class="link" href="#5.1.3.4.5-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcControl.html"><span class="tok-nc">IfcControl</span></a>
-<span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcActionRequest.html"><span class="tok-nc">IfcActionRequest</span></a>
-<span class="tok-p">,</span><a href="IfcCostItem.html"><span class="tok-nc">IfcCostItem</span></a>
-<span class="tok-p">,</span><a href="IfcCostSchedule.html"><span class="tok-nc">IfcCostSchedule</span></a>
-<span class="tok-p">,</span><a href="IfcPerformanceHistory.html"><span class="tok-nc">IfcPerformanceHistory</span></a>
-<span class="tok-p">,</span><a href="IfcPermit.html"><span class="tok-nc">IfcPermit</span></a>
-<span class="tok-p">,</span><a href="IfcProjectOrder.html"><span class="tok-nc">IfcProjectOrder</span></a>
-<span class="tok-p">,</span><a href="IfcWorkCalendar.html"><span class="tok-nc">IfcWorkCalendar</span></a>
-<span class="tok-p">,</span><a href="IfcWorkControl.html"><span class="tok-nc">IfcWorkControl</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcObject.html"><span class="tok-nc">IfcObject</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">Identification</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcIdentifier.html"><span class="tok-nc">IfcIdentifier</span></a><span class="tok-p">;</span>
-<span class="tok-k">INVERSE</span>
-<span class="tok-n">Controls</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelAssignsToControl.html"><span class="tok-nc">IfcRelAssignsToControl</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatingControl</span><span class="tok-p">;</span>
+ <span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcActionRequest.html"><span class="tok-nc">IfcActionRequest</span></a>
+	<span class="tok-p">,</span><a href="IfcCostItem.html"><span class="tok-nc">IfcCostItem</span></a>
+	<span class="tok-p">,</span><a href="IfcCostSchedule.html"><span class="tok-nc">IfcCostSchedule</span></a>
+	<span class="tok-p">,</span><a href="IfcPerformanceHistory.html"><span class="tok-nc">IfcPerformanceHistory</span></a>
+	<span class="tok-p">,</span><a href="IfcPermit.html"><span class="tok-nc">IfcPermit</span></a>
+	<span class="tok-p">,</span><a href="IfcProjectOrder.html"><span class="tok-nc">IfcProjectOrder</span></a>
+	<span class="tok-p">,</span><a href="IfcWorkCalendar.html"><span class="tok-nc">IfcWorkCalendar</span></a>
+	<span class="tok-p">,</span><a href="IfcWorkControl.html"><span class="tok-nc">IfcWorkControl</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcObject.html"><span class="tok-nc">IfcObject</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">Identification</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcIdentifier.html"><span class="tok-nc">IfcIdentifier</span></a><span class="tok-p">;</span>
+ <span class="tok-k">INVERSE</span>
+	<span class="tok-n">Controls</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelAssignsToControl.html"><span class="tok-nc">IfcRelAssignsToControl</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatingControl</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="5.1.3.4.6-References"></a>
     5.1.3.4.6 References

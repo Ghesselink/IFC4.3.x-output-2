@@ -820,10 +820,10 @@
     8.8.3.16.5 Formal representation
 <a class="link" href="#8.8.3.16.5-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcExtrudedAreaSolidTapered.html"><span class="tok-nc">IfcExtrudedAreaSolidTapered</span></a>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcExtrudedAreaSolid.html"><span class="tok-nc">IfcExtrudedAreaSolid</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">EndSweptArea</span> <span class="tok-o">:</span> <a href="IfcProfileDef.html"><span class="tok-nc">IfcProfileDef</span></a><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">CorrectProfileAssignment</span> <span class="tok-o">:</span> <a href="IfcTaperedSweptAreaProfiles.html"><span class="tok-nc">IfcTaperedSweptAreaProfiles</span></a><span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcSweptAreaSolid.html"><span class="tok-nc">IfcSweptAreaSolid</span></a><span class="tok-p">.</span><span class="tok-n">SweptArea</span><span class="tok-p">,</span> <span class="tok-nb">SELF</span><span class="tok-p">.</span><span class="tok-n">EndSweptArea</span><span class="tok-p">)</span><span class="tok-p">;</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcExtrudedAreaSolid.html"><span class="tok-nc">IfcExtrudedAreaSolid</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">EndSweptArea</span> <span class="tok-o">:</span> <a href="IfcProfileDef.html"><span class="tok-nc">IfcProfileDef</span></a><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">CorrectProfileAssignment</span> <span class="tok-o">:</span> <a href="IfcTaperedSweptAreaProfiles.html"><span class="tok-nc">IfcTaperedSweptAreaProfiles</span></a><span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcSweptAreaSolid.html"><span class="tok-nc">IfcSweptAreaSolid</span></a><span class="tok-p">.</span><span class="tok-n">SweptArea</span><span class="tok-p">,</span> <span class="tok-nb">SELF</span><span class="tok-p">.</span><span class="tok-n">EndSweptArea</span><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.8.3.16.6-References"></a>
     8.8.3.16.6 References

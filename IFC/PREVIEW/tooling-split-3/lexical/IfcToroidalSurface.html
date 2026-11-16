@@ -777,11 +777,11 @@ z = Position.P[3] (axis of toroidal_surface)
     8.9.3.73.5 Formal representation
 <a class="link" href="#8.9.3.73.5-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcToroidalSurface.html"><span class="tok-nc">IfcToroidalSurface</span></a>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcElementarySurface.html"><span class="tok-nc">IfcElementarySurface</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">MajorRadius</span> <span class="tok-o">:</span> <a href="IfcPositiveLengthMeasure.html"><span class="tok-nc">IfcPositiveLengthMeasure</span></a><span class="tok-p">;</span>
-<span class="tok-n">MinorRadius</span> <span class="tok-o">:</span> <a href="IfcPositiveLengthMeasure.html"><span class="tok-nc">IfcPositiveLengthMeasure</span></a><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">MajorLargerMinor</span> <span class="tok-o">:</span> <span class="tok-n">MinorRadius</span> <span class="tok-o">&lt;</span> <span class="tok-n">MajorRadius</span><span class="tok-p">;</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcElementarySurface.html"><span class="tok-nc">IfcElementarySurface</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">MajorRadius</span> <span class="tok-o">:</span> <a href="IfcPositiveLengthMeasure.html"><span class="tok-nc">IfcPositiveLengthMeasure</span></a><span class="tok-p">;</span>
+	<span class="tok-n">MinorRadius</span> <span class="tok-o">:</span> <a href="IfcPositiveLengthMeasure.html"><span class="tok-nc">IfcPositiveLengthMeasure</span></a><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">MajorLargerMinor</span> <span class="tok-o">:</span> <span class="tok-n">MinorRadius</span> <span class="tok-o">&lt;</span> <span class="tok-n">MajorRadius</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.9.3.73.6-References"></a>
     8.9.3.73.6 References

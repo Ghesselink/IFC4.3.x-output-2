@@ -738,15 +738,15 @@
     5.4.3.48.6 Formal representation
 <a class="link" href="#5.4.3.48.6-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcRelConnectsElements.html"><span class="tok-nc">IfcRelConnectsElements</span></a>
-<span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcRelConnectsPathElements.html"><span class="tok-nc">IfcRelConnectsPathElements</span></a>
-<span class="tok-p">,</span><a href="IfcRelConnectsWithRealizingElements.html"><span class="tok-nc">IfcRelConnectsWithRealizingElements</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcRelConnects.html"><span class="tok-nc">IfcRelConnects</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">ConnectionGeometry</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcConnectionGeometry.html"><span class="tok-nc">IfcConnectionGeometry</span></a><span class="tok-p">;</span>
-<span class="tok-n">RelatingElement</span> <span class="tok-o">:</span> <a href="IfcElement.html"><span class="tok-nc">IfcElement</span></a><span class="tok-p">;</span>
-<span class="tok-n">RelatedElement</span> <span class="tok-o">:</span> <a href="IfcElement.html"><span class="tok-nc">IfcElement</span></a><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">NoSelfReference</span> <span class="tok-o">:</span> <span class="tok-n">RelatingElement</span> <span class="tok-o">:&lt;&gt;:</span> <span class="tok-n">RelatedElement</span><span class="tok-p">;</span>
+ <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcRelConnectsPathElements.html"><span class="tok-nc">IfcRelConnectsPathElements</span></a>
+	<span class="tok-p">,</span><a href="IfcRelConnectsWithRealizingElements.html"><span class="tok-nc">IfcRelConnectsWithRealizingElements</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcRelConnects.html"><span class="tok-nc">IfcRelConnects</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">ConnectionGeometry</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcConnectionGeometry.html"><span class="tok-nc">IfcConnectionGeometry</span></a><span class="tok-p">;</span>
+	<span class="tok-n">RelatingElement</span> <span class="tok-o">:</span> <a href="IfcElement.html"><span class="tok-nc">IfcElement</span></a><span class="tok-p">;</span>
+	<span class="tok-n">RelatedElement</span> <span class="tok-o">:</span> <a href="IfcElement.html"><span class="tok-nc">IfcElement</span></a><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">NoSelfReference</span> <span class="tok-o">:</span> <span class="tok-n">RelatingElement</span> <span class="tok-o">:&lt;&gt;:</span> <span class="tok-n">RelatedElement</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="5.4.3.48.7-References"></a>
     5.4.3.48.7 References

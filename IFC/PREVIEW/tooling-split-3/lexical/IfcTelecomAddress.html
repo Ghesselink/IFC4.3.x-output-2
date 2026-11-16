@@ -735,9 +735,9 @@ attribute Purpose shall have enumeration value USERDEFINED.</p>
 <tr>
 <td colspan="2">
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-nb">EXISTS</span> <span class="tok-p">(</span><span class="tok-n">TelephoneNumbers</span><span class="tok-p">)</span> <span class="tok-nb">OR</span>
-<span class="tok-nb">EXISTS</span> <span class="tok-p">(</span><span class="tok-n">FacsimileNumbers</span><span class="tok-p">)</span> <span class="tok-nb">OR</span>
+<span class="tok-nb">EXISTS</span> <span class="tok-p">(</span><span class="tok-n">FacsimileNumbers</span><span class="tok-p">)</span> <span class="tok-nb">OR</span> 
 <span class="tok-nb">EXISTS</span> <span class="tok-p">(</span><span class="tok-n">PagerNumber</span><span class="tok-p">)</span> <span class="tok-nb">OR</span>
-<span class="tok-nb">EXISTS</span> <span class="tok-p">(</span><span class="tok-n">ElectronicMailAddresses</span><span class="tok-p">)</span> <span class="tok-nb">OR</span>
+<span class="tok-nb">EXISTS</span> <span class="tok-p">(</span><span class="tok-n">ElectronicMailAddresses</span><span class="tok-p">)</span> <span class="tok-nb">OR</span> 
 <span class="tok-nb">EXISTS</span> <span class="tok-p">(</span><span class="tok-n">WWWHomePageURL</span><span class="tok-p">)</span> <span class="tok-nb">OR</span>
 <span class="tok-nb">EXISTS</span> <span class="tok-p">(</span><span class="tok-n">MessagingIDs</span><span class="tok-p">)</span></code></pre>
 </td>
@@ -748,18 +748,18 @@ attribute Purpose shall have enumeration value USERDEFINED.</p>
     8.1.3.8.5 Formal representation
 <a class="link" href="#8.1.3.8.5-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcTelecomAddress.html"><span class="tok-nc">IfcTelecomAddress</span></a>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcAddress.html"><span class="tok-nc">IfcAddress</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">TelephoneNumbers</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <span class="tok-nb">LIST</span> <span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
-<span class="tok-n">FacsimileNumbers</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <span class="tok-nb">LIST</span> <span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
-<span class="tok-n">PagerNumber</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
-<span class="tok-n">ElectronicMailAddresses</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <span class="tok-nb">LIST</span> <span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
-<span class="tok-n">WWWHomePageURL</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcURIReference.html"><span class="tok-nc">IfcURIReference</span></a><span class="tok-p">;</span>
-<span class="tok-n">MessagingIDs</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <span class="tok-nb">LIST</span> <span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcURIReference.html"><span class="tok-nc">IfcURIReference</span></a><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">MinimumDataProvided</span> <span class="tok-o">:</span> <span class="tok-nb">EXISTS</span> <span class="tok-p">(</span><span class="tok-n">TelephoneNumbers</span><span class="tok-p">)</span> <span class="tok-nb">OR</span>
-<span class="tok-nb">EXISTS</span> <span class="tok-p">(</span><span class="tok-n">FacsimileNumbers</span><span class="tok-p">)</span> <span class="tok-nb">OR</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcAddress.html"><span class="tok-nc">IfcAddress</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">TelephoneNumbers</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <span class="tok-nb">LIST</span> <span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
+	<span class="tok-n">FacsimileNumbers</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <span class="tok-nb">LIST</span> <span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
+	<span class="tok-n">PagerNumber</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
+	<span class="tok-n">ElectronicMailAddresses</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <span class="tok-nb">LIST</span> <span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
+	<span class="tok-n">WWWHomePageURL</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcURIReference.html"><span class="tok-nc">IfcURIReference</span></a><span class="tok-p">;</span>
+	<span class="tok-n">MessagingIDs</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <span class="tok-nb">LIST</span> <span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcURIReference.html"><span class="tok-nc">IfcURIReference</span></a><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">MinimumDataProvided</span> <span class="tok-o">:</span> <span class="tok-nb">EXISTS</span> <span class="tok-p">(</span><span class="tok-n">TelephoneNumbers</span><span class="tok-p">)</span> <span class="tok-nb">OR</span>
+<span class="tok-nb">EXISTS</span> <span class="tok-p">(</span><span class="tok-n">FacsimileNumbers</span><span class="tok-p">)</span> <span class="tok-nb">OR</span> 
 <span class="tok-nb">EXISTS</span> <span class="tok-p">(</span><span class="tok-n">PagerNumber</span><span class="tok-p">)</span> <span class="tok-nb">OR</span>
-<span class="tok-nb">EXISTS</span> <span class="tok-p">(</span><span class="tok-n">ElectronicMailAddresses</span><span class="tok-p">)</span> <span class="tok-nb">OR</span>
+<span class="tok-nb">EXISTS</span> <span class="tok-p">(</span><span class="tok-n">ElectronicMailAddresses</span><span class="tok-p">)</span> <span class="tok-nb">OR</span> 
 <span class="tok-nb">EXISTS</span> <span class="tok-p">(</span><span class="tok-n">WWWHomePageURL</span><span class="tok-p">)</span> <span class="tok-nb">OR</span>
 <span class="tok-nb">EXISTS</span> <span class="tok-p">(</span><span class="tok-n">MessagingIDs</span><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>

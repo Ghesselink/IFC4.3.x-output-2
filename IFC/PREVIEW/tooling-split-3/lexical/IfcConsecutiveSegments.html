@@ -287,20 +287,24 @@
     8.9.6.5.2 Formal representation
 <a class="link" href="#8.9.6.5.2-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">FUNCTION</span> <a href="IfcConsecutiveSegments.html"><span class="tok-nc">IfcConsecutiveSegments</span></a>
-<span class="tok-p">(</span><span class="tok-n">Segments</span> <span class="tok-o">:</span> <span class="tok-nb">LIST</span> <span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcSegmentIndexSelect.html"><span class="tok-nc">IfcSegmentIndexSelect</span></a><span class="tok-p">)</span>
-<span class="tok-o">:</span> <span class="tok-n">BOOLEAN</span><span class="tok-p">;</span>
-<span class="tok-kd">LOCAL</span>
-<span class="tok-n">Result</span> <span class="tok-o">:</span> <span class="tok-n">BOOLEAN</span> <span class="tok-o">:=</span> <span class="tok-n">TRUE</span><span class="tok-p">;</span>
-<span class="tok-kd">END_LOCAL</span><span class="tok-p">;</span>
-<span class="tok-kd">REPEAT</span> <span class="tok-n">i</span> <span class="tok-o">:=</span> <span class="tok-m">1</span> <span class="tok-k">TO</span> <span class="tok-p">(</span><span class="tok-nb">HIINDEX</span><span class="tok-p">(</span><span class="tok-n">Segments</span><span class="tok-p">)</span><span class="tok-m">-1</span><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-kd">IF</span> <span class="tok-n">Segments</span><span class="tok-p">[</span><span class="tok-n">i</span><span class="tok-p">]</span><span class="tok-p">[</span><span class="tok-nb">HIINDEX</span><span class="tok-p">(</span><span class="tok-n">Segments</span><span class="tok-p">[</span><span class="tok-n">i</span><span class="tok-p">]</span><span class="tok-p">)</span><span class="tok-p">]</span> <span class="tok-o">&lt;&gt;</span> <span class="tok-n">Segments</span><span class="tok-p">[</span><span class="tok-n">i</span><span class="tok-m">+1</span><span class="tok-p">]</span><span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-p">]</span> <span class="tok-kd">THEN</span>
-<span class="tok-kd">BEGIN</span>
-<span class="tok-n">Result</span> <span class="tok-o">:=</span> <span class="tok-n">FALSE</span><span class="tok-p">;</span>
-<span class="tok-n">ESCAPE</span><span class="tok-p">;</span>
-<span class="tok-kd">END</span><span class="tok-p">;</span>
-<span class="tok-kd">END_IF</span><span class="tok-p">;</span>
-<span class="tok-kd">END_REPEAT</span><span class="tok-p">;</span>
-<span class="tok-k">RETURN</span> <span class="tok-p">(</span><span class="tok-n">Result</span><span class="tok-p">)</span><span class="tok-p">;</span>
+  <span class="tok-p">(</span><span class="tok-n">Segments</span> <span class="tok-o">:</span> <span class="tok-nb">LIST</span> <span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcSegmentIndexSelect.html"><span class="tok-nc">IfcSegmentIndexSelect</span></a><span class="tok-p">)</span>
+  <span class="tok-o">:</span> <span class="tok-n">BOOLEAN</span><span class="tok-p">;</span>
+
+ <span class="tok-kd">LOCAL</span>
+  <span class="tok-n">Result</span> <span class="tok-o">:</span> <span class="tok-n">BOOLEAN</span> <span class="tok-o">:=</span> <span class="tok-n">TRUE</span><span class="tok-p">;</span>
+ <span class="tok-kd">END_LOCAL</span><span class="tok-p">;</span>
+
+  <span class="tok-kd">REPEAT</span> <span class="tok-n">i</span> <span class="tok-o">:=</span> <span class="tok-m">1</span> <span class="tok-k">TO</span> <span class="tok-p">(</span><span class="tok-nb">HIINDEX</span><span class="tok-p">(</span><span class="tok-n">Segments</span><span class="tok-p">)</span><span class="tok-m">-1</span><span class="tok-p">)</span><span class="tok-p">;</span>
+    <span class="tok-kd">IF</span> <span class="tok-n">Segments</span><span class="tok-p">[</span><span class="tok-n">i</span><span class="tok-p">]</span><span class="tok-p">[</span><span class="tok-nb">HIINDEX</span><span class="tok-p">(</span><span class="tok-n">Segments</span><span class="tok-p">[</span><span class="tok-n">i</span><span class="tok-p">]</span><span class="tok-p">)</span><span class="tok-p">]</span> <span class="tok-o">&lt;&gt;</span> <span class="tok-n">Segments</span><span class="tok-p">[</span><span class="tok-n">i</span><span class="tok-m">+1</span><span class="tok-p">]</span><span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-p">]</span> <span class="tok-kd">THEN</span>
+      <span class="tok-kd">BEGIN</span>
+        <span class="tok-n">Result</span> <span class="tok-o">:=</span> <span class="tok-n">FALSE</span><span class="tok-p">;</span>
+        <span class="tok-n">ESCAPE</span><span class="tok-p">;</span>
+      <span class="tok-kd">END</span><span class="tok-p">;</span>
+ <span class="tok-kd">END_IF</span><span class="tok-p">;</span>
+  <span class="tok-kd">END_REPEAT</span><span class="tok-p">;</span>
+
+  <span class="tok-k">RETURN</span> <span class="tok-p">(</span><span class="tok-n">Result</span><span class="tok-p">)</span><span class="tok-p">;</span>
+
 <span class="tok-kd">END_FUNCTION</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.9.6.5.3-References"></a>
     8.9.6.5.3 References

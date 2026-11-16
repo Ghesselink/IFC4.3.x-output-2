@@ -763,10 +763,10 @@
 <tr>
 <td colspan="2">
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">PolygonalBoundary</span><span class="tok-p">)</span> <span class="tok-o">*</span> <span class="tok-p">[</span>
-<span class="tok-s1">'IFC4X3_ADD2_DEV_20260526.IFCPOLYLINE'</span><span class="tok-p">,</span>
-<span class="tok-s1">'IFC4X3_ADD2_DEV_20260526.IFCCOMPOSITECURVE'</span><span class="tok-p">,</span>
-<span class="tok-s1">'IFC4X3_ADD2_DEV_20260526.IFCINDEXEDPOLYCURVE'</span>
-<span class="tok-p">]</span><span class="tok-p">)</span> <span class="tok-o">=</span> <span class="tok-m">1</span></code></pre>
+    <span class="tok-s1">'IFC4X3_ADD2_DEV_20260526.IFCPOLYLINE'</span><span class="tok-p">,</span>
+    <span class="tok-s1">'IFC4X3_ADD2_DEV_20260526.IFCCOMPOSITECURVE'</span><span class="tok-p">,</span>
+    <span class="tok-s1">'IFC4X3_ADD2_DEV_20260526.IFCINDEXEDPOLYCURVE'</span>
+  <span class="tok-p">]</span><span class="tok-p">)</span> <span class="tok-o">=</span> <span class="tok-m">1</span></code></pre>
 </td>
 </tr>
 </tbody>
@@ -775,16 +775,16 @@
     8.8.3.27.5 Formal representation
 <a class="link" href="#8.8.3.27.5-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcPolygonalBoundedHalfSpace.html"><span class="tok-nc">IfcPolygonalBoundedHalfSpace</span></a>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcHalfSpaceSolid.html"><span class="tok-nc">IfcHalfSpaceSolid</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">Position</span> <span class="tok-o">:</span> <a href="IfcAxis2Placement3D.html"><span class="tok-nc">IfcAxis2Placement3D</span></a><span class="tok-p">;</span>
-<span class="tok-n">PolygonalBoundary</span> <span class="tok-o">:</span> <a href="IfcBoundedCurve.html"><span class="tok-nc">IfcBoundedCurve</span></a><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">BoundaryDim</span> <span class="tok-o">:</span> <span class="tok-n">PolygonalBoundary</span><span class="tok-p">.</span><span class="tok-n">Dim</span> <span class="tok-o">=</span> <span class="tok-m">2</span><span class="tok-p">;</span>
-<span class="tok-n">BoundaryType</span> <span class="tok-o">:</span> <span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">PolygonalBoundary</span><span class="tok-p">)</span> <span class="tok-o">*</span> <span class="tok-p">[</span>
-<span class="tok-s1">'IFC4X3_ADD2_DEV_20260526.IFCPOLYLINE'</span><span class="tok-p">,</span>
-<span class="tok-s1">'IFC4X3_ADD2_DEV_20260526.IFCCOMPOSITECURVE'</span><span class="tok-p">,</span>
-<span class="tok-s1">'IFC4X3_ADD2_DEV_20260526.IFCINDEXEDPOLYCURVE'</span>
-<span class="tok-p">]</span><span class="tok-p">)</span> <span class="tok-o">=</span> <span class="tok-m">1</span><span class="tok-p">;</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcHalfSpaceSolid.html"><span class="tok-nc">IfcHalfSpaceSolid</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">Position</span> <span class="tok-o">:</span> <a href="IfcAxis2Placement3D.html"><span class="tok-nc">IfcAxis2Placement3D</span></a><span class="tok-p">;</span>
+	<span class="tok-n">PolygonalBoundary</span> <span class="tok-o">:</span> <a href="IfcBoundedCurve.html"><span class="tok-nc">IfcBoundedCurve</span></a><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">BoundaryDim</span> <span class="tok-o">:</span> <span class="tok-n">PolygonalBoundary</span><span class="tok-p">.</span><span class="tok-n">Dim</span> <span class="tok-o">=</span> <span class="tok-m">2</span><span class="tok-p">;</span>
+	<span class="tok-n">BoundaryType</span> <span class="tok-o">:</span> <span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">PolygonalBoundary</span><span class="tok-p">)</span> <span class="tok-o">*</span> <span class="tok-p">[</span>
+    <span class="tok-s1">'IFC4X3_ADD2_DEV_20260526.IFCPOLYLINE'</span><span class="tok-p">,</span>
+    <span class="tok-s1">'IFC4X3_ADD2_DEV_20260526.IFCCOMPOSITECURVE'</span><span class="tok-p">,</span>
+    <span class="tok-s1">'IFC4X3_ADD2_DEV_20260526.IFCINDEXEDPOLYCURVE'</span>
+  <span class="tok-p">]</span><span class="tok-p">)</span> <span class="tok-o">=</span> <span class="tok-m">1</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.8.3.27.6-References"></a>
     8.8.3.27.6 References

@@ -1467,16 +1467,16 @@
     5.4.3.42.7 Formal representation
 <a class="link" href="#5.4.3.42.7-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcPositioningElement.html"><span class="tok-nc">IfcPositioningElement</span></a>
-<span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcGrid.html"><span class="tok-nc">IfcGrid</span></a>
-<span class="tok-p">,</span><a href="IfcLinearPositioningElement.html"><span class="tok-nc">IfcLinearPositioningElement</span></a>
-<span class="tok-p">,</span><a href="IfcReferent.html"><span class="tok-nc">IfcReferent</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcProduct.html"><span class="tok-nc">IfcProduct</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-k">INVERSE</span>
-<span class="tok-n">ContainedInStructure</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-m">1</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelContainedInSpatialStructure.html"><span class="tok-nc">IfcRelContainedInSpatialStructure</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatedElements</span><span class="tok-p">;</span>
-<span class="tok-n">Positions</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelPositions.html"><span class="tok-nc">IfcRelPositions</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatingPositioningElement</span><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">HasPlacement</span> <span class="tok-o">:</span> <span class="tok-nb">EXISTS</span><span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcProduct.html"><span class="tok-nc">IfcProduct</span></a><span class="tok-p">.</span><span class="tok-n">ObjectPlacement</span><span class="tok-p">)</span><span class="tok-p">;</span>
+ <span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcGrid.html"><span class="tok-nc">IfcGrid</span></a>
+	<span class="tok-p">,</span><a href="IfcLinearPositioningElement.html"><span class="tok-nc">IfcLinearPositioningElement</span></a>
+	<span class="tok-p">,</span><a href="IfcReferent.html"><span class="tok-nc">IfcReferent</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcProduct.html"><span class="tok-nc">IfcProduct</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+ <span class="tok-k">INVERSE</span>
+	<span class="tok-n">ContainedInStructure</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-m">1</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelContainedInSpatialStructure.html"><span class="tok-nc">IfcRelContainedInSpatialStructure</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatedElements</span><span class="tok-p">;</span>
+	<span class="tok-n">Positions</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelPositions.html"><span class="tok-nc">IfcRelPositions</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatingPositioningElement</span><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">HasPlacement</span> <span class="tok-o">:</span> <span class="tok-nb">EXISTS</span><span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcProduct.html"><span class="tok-nc">IfcProduct</span></a><span class="tok-p">.</span><span class="tok-n">ObjectPlacement</span><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="5.4.3.42.8-References"></a>
     5.4.3.42.8 References

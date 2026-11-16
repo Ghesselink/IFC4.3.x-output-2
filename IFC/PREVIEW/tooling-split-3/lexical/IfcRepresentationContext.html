@@ -615,12 +615,12 @@ A representation context is a context in which a set of representation items are
     8.18.3.13.4 Formal representation
 <a class="link" href="#8.18.3.13.4-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcRepresentationContext.html"><span class="tok-nc">IfcRepresentationContext</span></a>
-<span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcGeometricRepresentationContext.html"><span class="tok-nc">IfcGeometricRepresentationContext</span></a><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">ContextIdentifier</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
-<span class="tok-n">ContextType</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
-<span class="tok-k">INVERSE</span>
-<span class="tok-n">RepresentationsInContext</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRepresentation.html"><span class="tok-nc">IfcRepresentation</span></a> <span class="tok-k">FOR</span> <span class="tok-n">ContextOfItems</span><span class="tok-p">;</span>
+ <span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcGeometricRepresentationContext.html"><span class="tok-nc">IfcGeometricRepresentationContext</span></a><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">ContextIdentifier</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
+	<span class="tok-n">ContextType</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
+ <span class="tok-k">INVERSE</span>
+	<span class="tok-n">RepresentationsInContext</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRepresentation.html"><span class="tok-nc">IfcRepresentation</span></a> <span class="tok-k">FOR</span> <span class="tok-n">ContextOfItems</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.18.3.13.5-References"></a>
     8.18.3.13.5 References

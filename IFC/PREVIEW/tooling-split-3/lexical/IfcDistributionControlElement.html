@@ -2770,17 +2770,17 @@
     6.2.3.4.6 Formal representation
 <a class="link" href="#6.2.3.4.6-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcDistributionControlElement.html"><span class="tok-nc">IfcDistributionControlElement</span></a>
-<span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcActuator.html"><span class="tok-nc">IfcActuator</span></a>
-<span class="tok-p">,</span><a href="IfcAlarm.html"><span class="tok-nc">IfcAlarm</span></a>
-<span class="tok-p">,</span><a href="IfcController.html"><span class="tok-nc">IfcController</span></a>
-<span class="tok-p">,</span><a href="IfcFlowInstrument.html"><span class="tok-nc">IfcFlowInstrument</span></a>
-<span class="tok-p">,</span><a href="IfcProtectiveDeviceTrippingUnit.html"><span class="tok-nc">IfcProtectiveDeviceTrippingUnit</span></a>
-<span class="tok-p">,</span><a href="IfcSensor.html"><span class="tok-nc">IfcSensor</span></a>
-<span class="tok-p">,</span><a href="IfcUnitaryControlElement.html"><span class="tok-nc">IfcUnitaryControlElement</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcDistributionElement.html"><span class="tok-nc">IfcDistributionElement</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-k">INVERSE</span>
-<span class="tok-n">AssignedToFlowElement</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-m">1</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelFlowControlElements.html"><span class="tok-nc">IfcRelFlowControlElements</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatedControlElements</span><span class="tok-p">;</span>
+ <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcActuator.html"><span class="tok-nc">IfcActuator</span></a>
+	<span class="tok-p">,</span><a href="IfcAlarm.html"><span class="tok-nc">IfcAlarm</span></a>
+	<span class="tok-p">,</span><a href="IfcController.html"><span class="tok-nc">IfcController</span></a>
+	<span class="tok-p">,</span><a href="IfcFlowInstrument.html"><span class="tok-nc">IfcFlowInstrument</span></a>
+	<span class="tok-p">,</span><a href="IfcProtectiveDeviceTrippingUnit.html"><span class="tok-nc">IfcProtectiveDeviceTrippingUnit</span></a>
+	<span class="tok-p">,</span><a href="IfcSensor.html"><span class="tok-nc">IfcSensor</span></a>
+	<span class="tok-p">,</span><a href="IfcUnitaryControlElement.html"><span class="tok-nc">IfcUnitaryControlElement</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcDistributionElement.html"><span class="tok-nc">IfcDistributionElement</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+ <span class="tok-k">INVERSE</span>
+	<span class="tok-n">AssignedToFlowElement</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-m">1</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelFlowControlElements.html"><span class="tok-nc">IfcRelFlowControlElements</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatedControlElements</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="6.2.3.4.7-References"></a>
     6.2.3.4.7 References

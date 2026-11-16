@@ -287,14 +287,18 @@
     8.18.6.1.2 Formal representation
 <a class="link" href="#8.18.6.1.2-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">FUNCTION</span> <a href="IfcConvertDirectionInto2D.html"><span class="tok-nc">IfcConvertDirectionInto2D</span></a>
-<span class="tok-p">(</span><span class="tok-n">Direction</span> <span class="tok-o">:</span> <a href="IfcDirection.html"><span class="tok-nc">IfcDirection</span></a><span class="tok-p">)</span>
-<span class="tok-o">:</span> <a href="IfcDirection.html"><span class="tok-nc">IfcDirection</span></a><span class="tok-p">;</span>
-<span class="tok-kd">LOCAL</span>
-<span class="tok-n">Direction2D</span> <span class="tok-o">:</span> <a href="IfcDirection.html"><span class="tok-nc">IfcDirection</span></a> <span class="tok-o">:=</span> <a href="IfcRepresentationItem.html"><span class="tok-nc">IfcRepresentationItem</span></a><span class="tok-p">(</span><span class="tok-p">)</span> <span class="tok-p">|</span><span class="tok-p">|</span> <a href="IfcGeometricRepresentationItem.html"><span class="tok-nc">IfcGeometricRepresentationItem</span></a> <span class="tok-p">(</span><span class="tok-p">)</span> <span class="tok-p">|</span><span class="tok-p">|</span> <a href="IfcDirection.html"><span class="tok-nc">IfcDirection</span></a><span class="tok-p">(</span><span class="tok-p">[</span><span class="tok-m">0.</span><span class="tok-p">,</span><span class="tok-m">1.</span><span class="tok-p">]</span><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-kd">END_LOCAL</span><span class="tok-p">;</span>
-<span class="tok-n">Direction2D</span><span class="tok-p">.</span><span class="tok-n">DirectionRatios</span><span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-p">]</span> <span class="tok-o">:=</span> <span class="tok-n">Direction</span><span class="tok-p">.</span><span class="tok-n">DirectionRatios</span><span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-p">]</span><span class="tok-p">;</span>
-<span class="tok-n">Direction2D</span><span class="tok-p">.</span><span class="tok-n">DirectionRatios</span><span class="tok-p">[</span><span class="tok-m">2</span><span class="tok-p">]</span> <span class="tok-o">:=</span> <span class="tok-n">Direction</span><span class="tok-p">.</span><span class="tok-n">DirectionRatios</span><span class="tok-p">[</span><span class="tok-m">2</span><span class="tok-p">]</span><span class="tok-p">;</span>
-<span class="tok-k">RETURN</span> <span class="tok-p">(</span><span class="tok-n">Direction2D</span><span class="tok-p">)</span><span class="tok-p">;</span>
+    <span class="tok-p">(</span><span class="tok-n">Direction</span> <span class="tok-o">:</span> <a href="IfcDirection.html"><span class="tok-nc">IfcDirection</span></a><span class="tok-p">)</span>
+    <span class="tok-o">:</span> <a href="IfcDirection.html"><span class="tok-nc">IfcDirection</span></a><span class="tok-p">;</span>
+ 
+  <span class="tok-kd">LOCAL</span>
+    <span class="tok-n">Direction2D</span> <span class="tok-o">:</span> <a href="IfcDirection.html"><span class="tok-nc">IfcDirection</span></a> <span class="tok-o">:=</span> <a href="IfcRepresentationItem.html"><span class="tok-nc">IfcRepresentationItem</span></a><span class="tok-p">(</span><span class="tok-p">)</span> <span class="tok-p">|</span><span class="tok-p">|</span> <a href="IfcGeometricRepresentationItem.html"><span class="tok-nc">IfcGeometricRepresentationItem</span></a> <span class="tok-p">(</span><span class="tok-p">)</span> <span class="tok-p">|</span><span class="tok-p">|</span> <a href="IfcDirection.html"><span class="tok-nc">IfcDirection</span></a><span class="tok-p">(</span><span class="tok-p">[</span><span class="tok-m">0.</span><span class="tok-p">,</span><span class="tok-m">1.</span><span class="tok-p">]</span><span class="tok-p">)</span><span class="tok-p">;</span>
+  <span class="tok-kd">END_LOCAL</span><span class="tok-p">;</span>
+  
+  <span class="tok-n">Direction2D</span><span class="tok-p">.</span><span class="tok-n">DirectionRatios</span><span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-p">]</span> <span class="tok-o">:=</span> <span class="tok-n">Direction</span><span class="tok-p">.</span><span class="tok-n">DirectionRatios</span><span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-p">]</span><span class="tok-p">;</span>
+  <span class="tok-n">Direction2D</span><span class="tok-p">.</span><span class="tok-n">DirectionRatios</span><span class="tok-p">[</span><span class="tok-m">2</span><span class="tok-p">]</span> <span class="tok-o">:=</span> <span class="tok-n">Direction</span><span class="tok-p">.</span><span class="tok-n">DirectionRatios</span><span class="tok-p">[</span><span class="tok-m">2</span><span class="tok-p">]</span><span class="tok-p">;</span>
+  
+  <span class="tok-k">RETURN</span> <span class="tok-p">(</span><span class="tok-n">Direction2D</span><span class="tok-p">)</span><span class="tok-p">;</span>
+
 <span class="tok-kd">END_FUNCTION</span><span class="tok-p">;</span></code></pre>
 </div>
 <div class="col-md-2 rightpanel">

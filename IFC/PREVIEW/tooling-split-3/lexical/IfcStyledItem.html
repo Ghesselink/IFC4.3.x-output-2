@@ -688,12 +688,12 @@ The styled item is an assignment of style for presentation to a geometric repres
     8.12.3.28.5 Formal representation
 <a class="link" href="#8.12.3.28.5-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcStyledItem.html"><span class="tok-nc">IfcStyledItem</span></a>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcRepresentationItem.html"><span class="tok-nc">IfcRepresentationItem</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">Item</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcRepresentationItem.html"><span class="tok-nc">IfcRepresentationItem</span></a><span class="tok-p">;</span>
-<span class="tok-n">Styles</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcPresentationStyle.html"><span class="tok-nc">IfcPresentationStyle</span></a><span class="tok-p">;</span>
-<span class="tok-n">Name</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">ApplicableItem</span> <span class="tok-o">:</span> <span class="tok-nb">NOT</span><span class="tok-p">(</span><span class="tok-s1">'IFC4X3_ADD2_DEV_20260526.IFCSTYLEDITEM'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">Item</span><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcRepresentationItem.html"><span class="tok-nc">IfcRepresentationItem</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">Item</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcRepresentationItem.html"><span class="tok-nc">IfcRepresentationItem</span></a><span class="tok-p">;</span>
+	<span class="tok-n">Styles</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcPresentationStyle.html"><span class="tok-nc">IfcPresentationStyle</span></a><span class="tok-p">;</span>
+	<span class="tok-n">Name</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">ApplicableItem</span> <span class="tok-o">:</span> <span class="tok-nb">NOT</span><span class="tok-p">(</span><span class="tok-s1">'IFC4X3_ADD2_DEV_20260526.IFCSTYLEDITEM'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">Item</span><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.12.3.28.6-References"></a>
     8.12.3.28.6 References

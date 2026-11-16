@@ -730,16 +730,16 @@
     8.8.3.45.4 Formal representation
 <a class="link" href="#8.8.3.45.4-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcTessellatedFaceSet.html"><span class="tok-nc">IfcTessellatedFaceSet</span></a>
-<span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcPolygonalFaceSet.html"><span class="tok-nc">IfcPolygonalFaceSet</span></a>
-<span class="tok-p">,</span><a href="IfcTriangulatedFaceSet.html"><span class="tok-nc">IfcTriangulatedFaceSet</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcTessellatedItem.html"><span class="tok-nc">IfcTessellatedItem</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">Coordinates</span> <span class="tok-o">:</span> <a href="IfcCartesianPointList3D.html"><span class="tok-nc">IfcCartesianPointList3D</span></a><span class="tok-p">;</span>
-<span class="tok-k">DERIVE</span>
-<span class="tok-n">Dim</span> <span class="tok-o">:</span> <a href="IfcDimensionCount.html"><span class="tok-nc">IfcDimensionCount</span></a> <span class="tok-o">:=</span> <span class="tok-m">3</span><span class="tok-p">;</span>
-<span class="tok-k">INVERSE</span>
-<span class="tok-n">HasColours</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-m">1</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcIndexedColourMap.html"><span class="tok-nc">IfcIndexedColourMap</span></a> <span class="tok-k">FOR</span> <span class="tok-n">MappedTo</span><span class="tok-p">;</span>
-<span class="tok-n">HasTextures</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcIndexedTextureMap.html"><span class="tok-nc">IfcIndexedTextureMap</span></a> <span class="tok-k">FOR</span> <span class="tok-n">MappedTo</span><span class="tok-p">;</span>
+ <span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcPolygonalFaceSet.html"><span class="tok-nc">IfcPolygonalFaceSet</span></a>
+	<span class="tok-p">,</span><a href="IfcTriangulatedFaceSet.html"><span class="tok-nc">IfcTriangulatedFaceSet</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcTessellatedItem.html"><span class="tok-nc">IfcTessellatedItem</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">Coordinates</span> <span class="tok-o">:</span> <a href="IfcCartesianPointList3D.html"><span class="tok-nc">IfcCartesianPointList3D</span></a><span class="tok-p">;</span>
+ <span class="tok-k">DERIVE</span>
+	<span class="tok-n">Dim</span> <span class="tok-o">:</span> <a href="IfcDimensionCount.html"><span class="tok-nc">IfcDimensionCount</span></a> <span class="tok-o">:=</span> <span class="tok-m">3</span><span class="tok-p">;</span>
+ <span class="tok-k">INVERSE</span>
+	<span class="tok-n">HasColours</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-m">1</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcIndexedColourMap.html"><span class="tok-nc">IfcIndexedColourMap</span></a> <span class="tok-k">FOR</span> <span class="tok-n">MappedTo</span><span class="tok-p">;</span>
+	<span class="tok-n">HasTextures</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcIndexedTextureMap.html"><span class="tok-nc">IfcIndexedTextureMap</span></a> <span class="tok-k">FOR</span> <span class="tok-n">MappedTo</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.8.3.45.5-References"></a>
     8.8.3.45.5 References

@@ -1070,13 +1070,13 @@
     5.1.3.43.5 Formal representation
 <a class="link" href="#5.1.3.43.5-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcResource.html"><span class="tok-nc">IfcResource</span></a>
-<span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcConstructionResource.html"><span class="tok-nc">IfcConstructionResource</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcObject.html"><span class="tok-nc">IfcObject</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">Identification</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcIdentifier.html"><span class="tok-nc">IfcIdentifier</span></a><span class="tok-p">;</span>
-<span class="tok-n">LongDescription</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcText.html"><span class="tok-nc">IfcText</span></a><span class="tok-p">;</span>
-<span class="tok-k">INVERSE</span>
-<span class="tok-n">ResourceOf</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelAssignsToResource.html"><span class="tok-nc">IfcRelAssignsToResource</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatingResource</span><span class="tok-p">;</span>
+ <span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcConstructionResource.html"><span class="tok-nc">IfcConstructionResource</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcObject.html"><span class="tok-nc">IfcObject</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">Identification</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcIdentifier.html"><span class="tok-nc">IfcIdentifier</span></a><span class="tok-p">;</span>
+	<span class="tok-n">LongDescription</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcText.html"><span class="tok-nc">IfcText</span></a><span class="tok-p">;</span>
+ <span class="tok-k">INVERSE</span>
+	<span class="tok-n">ResourceOf</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelAssignsToResource.html"><span class="tok-nc">IfcRelAssignsToResource</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatingResource</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="5.1.3.43.6-References"></a>
     5.1.3.43.6 References

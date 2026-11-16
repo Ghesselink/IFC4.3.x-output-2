@@ -368,29 +368,29 @@ A measure value is a value as defined in ISO 31-0 (clause 2).</aside><aside clas
     8.11.2.54.3 Formal representation
 <a class="link" href="#8.11.2.54.3-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">TYPE</span> <a href="IfcMeasureValue.html"><span class="tok-nc">IfcMeasureValue</span></a> <span class="tok-o">=</span> <span class="tok-k">SELECT</span>
-<span class="tok-p">(</span><a href="IfcAmountOfSubstanceMeasure.html"><span class="tok-nc">IfcAmountOfSubstanceMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcAreaMeasure.html"><span class="tok-nc">IfcAreaMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcComplexNumber.html"><span class="tok-nc">IfcComplexNumber</span></a>
-<span class="tok-p">,</span><a href="IfcContextDependentMeasure.html"><span class="tok-nc">IfcContextDependentMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcCountMeasure.html"><span class="tok-nc">IfcCountMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcDescriptiveMeasure.html"><span class="tok-nc">IfcDescriptiveMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcElectricCurrentMeasure.html"><span class="tok-nc">IfcElectricCurrentMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcLengthMeasure.html"><span class="tok-nc">IfcLengthMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcLuminousIntensityMeasure.html"><span class="tok-nc">IfcLuminousIntensityMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcMassMeasure.html"><span class="tok-nc">IfcMassMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcNonNegativeLengthMeasure.html"><span class="tok-nc">IfcNonNegativeLengthMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcNormalisedRatioMeasure.html"><span class="tok-nc">IfcNormalisedRatioMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcNumericMeasure.html"><span class="tok-nc">IfcNumericMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcParameterValue.html"><span class="tok-nc">IfcParameterValue</span></a>
-<span class="tok-p">,</span><a href="IfcPlaneAngleMeasure.html"><span class="tok-nc">IfcPlaneAngleMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcPositiveLengthMeasure.html"><span class="tok-nc">IfcPositiveLengthMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcPositivePlaneAngleMeasure.html"><span class="tok-nc">IfcPositivePlaneAngleMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcPositiveRatioMeasure.html"><span class="tok-nc">IfcPositiveRatioMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcRatioMeasure.html"><span class="tok-nc">IfcRatioMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcSolidAngleMeasure.html"><span class="tok-nc">IfcSolidAngleMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcThermodynamicTemperatureMeasure.html"><span class="tok-nc">IfcThermodynamicTemperatureMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcTimeMeasure.html"><span class="tok-nc">IfcTimeMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcVolumeMeasure.html"><span class="tok-nc">IfcVolumeMeasure</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-p">(</span><a href="IfcAmountOfSubstanceMeasure.html"><span class="tok-nc">IfcAmountOfSubstanceMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcAreaMeasure.html"><span class="tok-nc">IfcAreaMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcComplexNumber.html"><span class="tok-nc">IfcComplexNumber</span></a>
+	<span class="tok-p">,</span><a href="IfcContextDependentMeasure.html"><span class="tok-nc">IfcContextDependentMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcCountMeasure.html"><span class="tok-nc">IfcCountMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcDescriptiveMeasure.html"><span class="tok-nc">IfcDescriptiveMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcElectricCurrentMeasure.html"><span class="tok-nc">IfcElectricCurrentMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcLengthMeasure.html"><span class="tok-nc">IfcLengthMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcLuminousIntensityMeasure.html"><span class="tok-nc">IfcLuminousIntensityMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcMassMeasure.html"><span class="tok-nc">IfcMassMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcNonNegativeLengthMeasure.html"><span class="tok-nc">IfcNonNegativeLengthMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcNormalisedRatioMeasure.html"><span class="tok-nc">IfcNormalisedRatioMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcNumericMeasure.html"><span class="tok-nc">IfcNumericMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcParameterValue.html"><span class="tok-nc">IfcParameterValue</span></a>
+	<span class="tok-p">,</span><a href="IfcPlaneAngleMeasure.html"><span class="tok-nc">IfcPlaneAngleMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcPositiveLengthMeasure.html"><span class="tok-nc">IfcPositiveLengthMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcPositivePlaneAngleMeasure.html"><span class="tok-nc">IfcPositivePlaneAngleMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcPositiveRatioMeasure.html"><span class="tok-nc">IfcPositiveRatioMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcRatioMeasure.html"><span class="tok-nc">IfcRatioMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcSolidAngleMeasure.html"><span class="tok-nc">IfcSolidAngleMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcThermodynamicTemperatureMeasure.html"><span class="tok-nc">IfcThermodynamicTemperatureMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcTimeMeasure.html"><span class="tok-nc">IfcTimeMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcVolumeMeasure.html"><span class="tok-nc">IfcVolumeMeasure</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-kd">END_TYPE</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.11.2.54.4-References"></a>
     8.11.2.54.4 References

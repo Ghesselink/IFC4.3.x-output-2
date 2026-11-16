@@ -770,14 +770,14 @@ Definition from VRML97 - ISO/IEC 14772-1:1997: A Point light node illuminates ge
     8.14.3.7.4 Formal representation
 <a class="link" href="#8.14.3.7.4-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcLightSourcePositional.html"><span class="tok-nc">IfcLightSourcePositional</span></a>
-<span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcLightSourceSpot.html"><span class="tok-nc">IfcLightSourceSpot</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcLightSource.html"><span class="tok-nc">IfcLightSource</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">Position</span> <span class="tok-o">:</span> <a href="IfcCartesianPoint.html"><span class="tok-nc">IfcCartesianPoint</span></a><span class="tok-p">;</span>
-<span class="tok-n">Radius</span> <span class="tok-o">:</span> <a href="IfcPositiveLengthMeasure.html"><span class="tok-nc">IfcPositiveLengthMeasure</span></a><span class="tok-p">;</span>
-<span class="tok-n">ConstantAttenuation</span> <span class="tok-o">:</span> <a href="IfcReal.html"><span class="tok-nc">IfcReal</span></a><span class="tok-p">;</span>
-<span class="tok-n">DistanceAttenuation</span> <span class="tok-o">:</span> <a href="IfcReal.html"><span class="tok-nc">IfcReal</span></a><span class="tok-p">;</span>
-<span class="tok-n">QuadricAttenuation</span> <span class="tok-o">:</span> <a href="IfcReal.html"><span class="tok-nc">IfcReal</span></a><span class="tok-p">;</span>
+ <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcLightSourceSpot.html"><span class="tok-nc">IfcLightSourceSpot</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcLightSource.html"><span class="tok-nc">IfcLightSource</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">Position</span> <span class="tok-o">:</span> <a href="IfcCartesianPoint.html"><span class="tok-nc">IfcCartesianPoint</span></a><span class="tok-p">;</span>
+	<span class="tok-n">Radius</span> <span class="tok-o">:</span> <a href="IfcPositiveLengthMeasure.html"><span class="tok-nc">IfcPositiveLengthMeasure</span></a><span class="tok-p">;</span>
+	<span class="tok-n">ConstantAttenuation</span> <span class="tok-o">:</span> <a href="IfcReal.html"><span class="tok-nc">IfcReal</span></a><span class="tok-p">;</span>
+	<span class="tok-n">DistanceAttenuation</span> <span class="tok-o">:</span> <a href="IfcReal.html"><span class="tok-nc">IfcReal</span></a><span class="tok-p">;</span>
+	<span class="tok-n">QuadricAttenuation</span> <span class="tok-o">:</span> <a href="IfcReal.html"><span class="tok-nc">IfcReal</span></a><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.14.3.7.5-References"></a>
     8.14.3.7.5 References

@@ -706,13 +706,13 @@
     8.6.3.5.5 Formal representation
 <a class="link" href="#8.6.3.5.5-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcDocumentReference.html"><span class="tok-nc">IfcDocumentReference</span></a>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcExternalReference.html"><span class="tok-nc">IfcExternalReference</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">Description</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcText.html"><span class="tok-nc">IfcText</span></a><span class="tok-p">;</span>
-<span class="tok-n">ReferencedDocument</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDocumentInformation.html"><span class="tok-nc">IfcDocumentInformation</span></a><span class="tok-p">;</span>
-<span class="tok-k">INVERSE</span>
-<span class="tok-n">DocumentRefForObjects</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelAssociatesDocument.html"><span class="tok-nc">IfcRelAssociatesDocument</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatingDocument</span><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">WR1</span> <span class="tok-o">:</span> <span class="tok-nb">EXISTS</span><span class="tok-p">(</span><span class="tok-n">Name</span><span class="tok-p">)</span> <span class="tok-n">XOR</span> <span class="tok-nb">EXISTS</span><span class="tok-p">(</span><span class="tok-n">ReferencedDocument</span><span class="tok-p">)</span><span class="tok-p">;</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcExternalReference.html"><span class="tok-nc">IfcExternalReference</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">Description</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcText.html"><span class="tok-nc">IfcText</span></a><span class="tok-p">;</span>
+	<span class="tok-n">ReferencedDocument</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDocumentInformation.html"><span class="tok-nc">IfcDocumentInformation</span></a><span class="tok-p">;</span>
+ <span class="tok-k">INVERSE</span>
+	<span class="tok-n">DocumentRefForObjects</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelAssociatesDocument.html"><span class="tok-nc">IfcRelAssociatesDocument</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatingDocument</span><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">WR1</span> <span class="tok-o">:</span> <span class="tok-nb">EXISTS</span><span class="tok-p">(</span><span class="tok-n">Name</span><span class="tok-p">)</span> <span class="tok-n">XOR</span> <span class="tok-nb">EXISTS</span><span class="tok-p">(</span><span class="tok-n">ReferencedDocument</span><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.6.3.5.6-References"></a>
     8.6.3.5.6 References

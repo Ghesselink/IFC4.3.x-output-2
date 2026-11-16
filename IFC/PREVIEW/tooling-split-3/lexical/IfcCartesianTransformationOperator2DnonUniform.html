@@ -811,12 +811,12 @@
     8.9.3.15.5 Formal representation
 <a class="link" href="#8.9.3.15.5-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcCartesianTransformationOperator2DnonUniform.html"><span class="tok-nc">IfcCartesianTransformationOperator2DnonUniform</span></a>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcCartesianTransformationOperator2D.html"><span class="tok-nc">IfcCartesianTransformationOperator2D</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">Scale2</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcReal.html"><span class="tok-nc">IfcReal</span></a><span class="tok-p">;</span>
-<span class="tok-k">DERIVE</span>
-<span class="tok-n">Scl2</span> <span class="tok-o">:</span> <a href="IfcReal.html"><span class="tok-nc">IfcReal</span></a> <span class="tok-o">:=</span> <span class="tok-nb">NVL</span><span class="tok-p">(</span><span class="tok-n">Scale2</span><span class="tok-p">,</span> <span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcCartesianTransformationOperator.html"><span class="tok-nc">IfcCartesianTransformationOperator</span></a><span class="tok-p">.</span><span class="tok-n">Scl</span><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">Scale2GreaterZero</span> <span class="tok-o">:</span> <span class="tok-n">Scl2</span> <span class="tok-o">&gt;</span> <span class="tok-m">0.0</span><span class="tok-p">;</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcCartesianTransformationOperator2D.html"><span class="tok-nc">IfcCartesianTransformationOperator2D</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">Scale2</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcReal.html"><span class="tok-nc">IfcReal</span></a><span class="tok-p">;</span>
+ <span class="tok-k">DERIVE</span>
+	<span class="tok-n">Scl2</span> <span class="tok-o">:</span> <a href="IfcReal.html"><span class="tok-nc">IfcReal</span></a> <span class="tok-o">:=</span> <span class="tok-nb">NVL</span><span class="tok-p">(</span><span class="tok-n">Scale2</span><span class="tok-p">,</span> <span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcCartesianTransformationOperator.html"><span class="tok-nc">IfcCartesianTransformationOperator</span></a><span class="tok-p">.</span><span class="tok-n">Scl</span><span class="tok-p">)</span><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">Scale2GreaterZero</span> <span class="tok-o">:</span> <span class="tok-n">Scl2</span> <span class="tok-o">&gt;</span> <span class="tok-m">0.0</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 </div>
 <div class="col-md-2 rightpanel">

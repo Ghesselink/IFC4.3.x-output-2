@@ -678,12 +678,12 @@
     8.16.3.7.5 Formal representation
 <a class="link" href="#8.16.3.7.5-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcPropertyDependencyRelationship.html"><span class="tok-nc">IfcPropertyDependencyRelationship</span></a>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcResourceLevelRelationship.html"><span class="tok-nc">IfcResourceLevelRelationship</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">DependingProperty</span> <span class="tok-o">:</span> <a href="IfcProperty.html"><span class="tok-nc">IfcProperty</span></a><span class="tok-p">;</span>
-<span class="tok-n">DependantProperty</span> <span class="tok-o">:</span> <a href="IfcProperty.html"><span class="tok-nc">IfcProperty</span></a><span class="tok-p">;</span>
-<span class="tok-n">Expression</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcText.html"><span class="tok-nc">IfcText</span></a><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">NoSelfReference</span> <span class="tok-o">:</span> <span class="tok-n">DependingProperty</span> <span class="tok-o">:&lt;&gt;:</span> <span class="tok-n">DependantProperty</span><span class="tok-p">;</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcResourceLevelRelationship.html"><span class="tok-nc">IfcResourceLevelRelationship</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">DependingProperty</span> <span class="tok-o">:</span> <a href="IfcProperty.html"><span class="tok-nc">IfcProperty</span></a><span class="tok-p">;</span>
+	<span class="tok-n">DependantProperty</span> <span class="tok-o">:</span> <a href="IfcProperty.html"><span class="tok-nc">IfcProperty</span></a><span class="tok-p">;</span>
+	<span class="tok-n">Expression</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcText.html"><span class="tok-nc">IfcText</span></a><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">NoSelfReference</span> <span class="tok-o">:</span> <span class="tok-n">DependingProperty</span> <span class="tok-o">:&lt;&gt;:</span> <span class="tok-n">DependantProperty</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.16.3.7.6-References"></a>
     8.16.3.7.6 References

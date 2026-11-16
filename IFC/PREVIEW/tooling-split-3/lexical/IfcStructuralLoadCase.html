@@ -1224,10 +1224,10 @@
     7.10.3.15.7 Formal representation
 <a class="link" href="#7.10.3.15.7-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcStructuralLoadCase.html"><span class="tok-nc">IfcStructuralLoadCase</span></a>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcStructuralLoadGroup.html"><span class="tok-nc">IfcStructuralLoadGroup</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">SelfWeightCoefficients</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <span class="tok-nb">LIST</span> <span class="tok-p">[</span><span class="tok-m">3</span><span class="tok-o">:</span><span class="tok-m">3</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRatioMeasure.html"><span class="tok-nc">IfcRatioMeasure</span></a><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">IsLoadCasePredefinedType</span> <span class="tok-o">:</span> <span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcStructuralLoadGroup.html"><span class="tok-nc">IfcStructuralLoadGroup</span></a><span class="tok-p">.</span><span class="tok-n">PredefinedType</span> <span class="tok-o">=</span> <a href="IfcLoadGroupTypeEnum.html"><span class="tok-nc">IfcLoadGroupTypeEnum</span></a><span class="tok-p">.</span><span class="tok-n">LOAD_CASE</span><span class="tok-p">;</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcStructuralLoadGroup.html"><span class="tok-nc">IfcStructuralLoadGroup</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">SelfWeightCoefficients</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <span class="tok-nb">LIST</span> <span class="tok-p">[</span><span class="tok-m">3</span><span class="tok-o">:</span><span class="tok-m">3</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRatioMeasure.html"><span class="tok-nc">IfcRatioMeasure</span></a><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">IsLoadCasePredefinedType</span> <span class="tok-o">:</span> <span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcStructuralLoadGroup.html"><span class="tok-nc">IfcStructuralLoadGroup</span></a><span class="tok-p">.</span><span class="tok-n">PredefinedType</span> <span class="tok-o">=</span> <a href="IfcLoadGroupTypeEnum.html"><span class="tok-nc">IfcLoadGroupTypeEnum</span></a><span class="tok-p">.</span><span class="tok-n">LOAD_CASE</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="7.10.3.15.8-References"></a>
     7.10.3.15.8 References

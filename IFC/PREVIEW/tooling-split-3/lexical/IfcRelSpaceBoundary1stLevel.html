@@ -775,12 +775,12 @@
     5.4.3.60.5 Formal representation
 <a class="link" href="#5.4.3.60.5-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcRelSpaceBoundary1stLevel.html"><span class="tok-nc">IfcRelSpaceBoundary1stLevel</span></a>
-<span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcRelSpaceBoundary2ndLevel.html"><span class="tok-nc">IfcRelSpaceBoundary2ndLevel</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcRelSpaceBoundary.html"><span class="tok-nc">IfcRelSpaceBoundary</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">ParentBoundary</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcRelSpaceBoundary1stLevel.html"><span class="tok-nc">IfcRelSpaceBoundary1stLevel</span></a><span class="tok-p">;</span>
-<span class="tok-k">INVERSE</span>
-<span class="tok-n">InnerBoundaries</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelSpaceBoundary1stLevel.html"><span class="tok-nc">IfcRelSpaceBoundary1stLevel</span></a> <span class="tok-k">FOR</span> <span class="tok-n">ParentBoundary</span><span class="tok-p">;</span>
+ <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcRelSpaceBoundary2ndLevel.html"><span class="tok-nc">IfcRelSpaceBoundary2ndLevel</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcRelSpaceBoundary.html"><span class="tok-nc">IfcRelSpaceBoundary</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">ParentBoundary</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcRelSpaceBoundary1stLevel.html"><span class="tok-nc">IfcRelSpaceBoundary1stLevel</span></a><span class="tok-p">;</span>
+ <span class="tok-k">INVERSE</span>
+	<span class="tok-n">InnerBoundaries</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelSpaceBoundary1stLevel.html"><span class="tok-nc">IfcRelSpaceBoundary1stLevel</span></a> <span class="tok-k">FOR</span> <span class="tok-n">ParentBoundary</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 </div>
 <div class="col-md-2 rightpanel">

@@ -2657,19 +2657,19 @@
     6.2.3.6.6 Formal representation
 <a class="link" href="#6.2.3.6.6-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcDistributionFlowElement.html"><span class="tok-nc">IfcDistributionFlowElement</span></a>
-<span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcDistributionChamberElement.html"><span class="tok-nc">IfcDistributionChamberElement</span></a>
-<span class="tok-p">,</span><a href="IfcEnergyConversionDevice.html"><span class="tok-nc">IfcEnergyConversionDevice</span></a>
-<span class="tok-p">,</span><a href="IfcFlowController.html"><span class="tok-nc">IfcFlowController</span></a>
-<span class="tok-p">,</span><a href="IfcFlowFitting.html"><span class="tok-nc">IfcFlowFitting</span></a>
-<span class="tok-p">,</span><a href="IfcFlowMovingDevice.html"><span class="tok-nc">IfcFlowMovingDevice</span></a>
-<span class="tok-p">,</span><a href="IfcFlowSegment.html"><span class="tok-nc">IfcFlowSegment</span></a>
-<span class="tok-p">,</span><a href="IfcFlowStorageDevice.html"><span class="tok-nc">IfcFlowStorageDevice</span></a>
-<span class="tok-p">,</span><a href="IfcFlowTerminal.html"><span class="tok-nc">IfcFlowTerminal</span></a>
-<span class="tok-p">,</span><a href="IfcFlowTreatmentDevice.html"><span class="tok-nc">IfcFlowTreatmentDevice</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcDistributionElement.html"><span class="tok-nc">IfcDistributionElement</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-k">INVERSE</span>
-<span class="tok-n">HasControlElements</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-m">1</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelFlowControlElements.html"><span class="tok-nc">IfcRelFlowControlElements</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatingFlowElement</span><span class="tok-p">;</span>
+ <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcDistributionChamberElement.html"><span class="tok-nc">IfcDistributionChamberElement</span></a>
+	<span class="tok-p">,</span><a href="IfcEnergyConversionDevice.html"><span class="tok-nc">IfcEnergyConversionDevice</span></a>
+	<span class="tok-p">,</span><a href="IfcFlowController.html"><span class="tok-nc">IfcFlowController</span></a>
+	<span class="tok-p">,</span><a href="IfcFlowFitting.html"><span class="tok-nc">IfcFlowFitting</span></a>
+	<span class="tok-p">,</span><a href="IfcFlowMovingDevice.html"><span class="tok-nc">IfcFlowMovingDevice</span></a>
+	<span class="tok-p">,</span><a href="IfcFlowSegment.html"><span class="tok-nc">IfcFlowSegment</span></a>
+	<span class="tok-p">,</span><a href="IfcFlowStorageDevice.html"><span class="tok-nc">IfcFlowStorageDevice</span></a>
+	<span class="tok-p">,</span><a href="IfcFlowTerminal.html"><span class="tok-nc">IfcFlowTerminal</span></a>
+	<span class="tok-p">,</span><a href="IfcFlowTreatmentDevice.html"><span class="tok-nc">IfcFlowTreatmentDevice</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcDistributionElement.html"><span class="tok-nc">IfcDistributionElement</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+ <span class="tok-k">INVERSE</span>
+	<span class="tok-n">HasControlElements</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-m">1</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelFlowControlElements.html"><span class="tok-nc">IfcRelFlowControlElements</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatingFlowElement</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="6.2.3.6.7-References"></a>
     6.2.3.6.7 References

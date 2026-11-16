@@ -238,32 +238,37 @@
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">FUNCTION</span> <a href="IfcUniqueDefinitionNames.html"><span class="tok-nc">IfcUniqueDefinitionNames</span></a>
 <span class="tok-p">(</span><span class="tok-n">Relations</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelDefinesByProperties.html"><span class="tok-nc">IfcRelDefinesByProperties</span></a><span class="tok-p">)</span>
 <span class="tok-o">:</span><span class="tok-nb">LOGICAL</span><span class="tok-p">;</span>
+
 <span class="tok-kd">LOCAL</span>
-<span class="tok-n">Definition</span> <span class="tok-o">:</span> <a href="IfcPropertySetDefinitionSelect.html"><span class="tok-nc">IfcPropertySetDefinitionSelect</span></a><span class="tok-p">;</span>
-<span class="tok-n">DefinitionSet</span> <span class="tok-o">:</span> <a href="IfcPropertySetDefinitionSet.html"><span class="tok-nc">IfcPropertySetDefinitionSet</span></a><span class="tok-p">;</span>
-<span class="tok-n">Properties</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-k">OF</span> <a href="IfcPropertySetDefinition.html"><span class="tok-nc">IfcPropertySetDefinition</span></a> <span class="tok-o">:=</span> <span class="tok-p">[</span><span class="tok-p">]</span><span class="tok-p">;</span>
-<span class="tok-n">Result</span> <span class="tok-o">:</span> <span class="tok-nb">LOGICAL</span><span class="tok-p">;</span>
+  <span class="tok-n">Definition</span> <span class="tok-o">:</span> <a href="IfcPropertySetDefinitionSelect.html"><span class="tok-nc">IfcPropertySetDefinitionSelect</span></a><span class="tok-p">;</span>
+  <span class="tok-n">DefinitionSet</span> <span class="tok-o">:</span> <a href="IfcPropertySetDefinitionSet.html"><span class="tok-nc">IfcPropertySetDefinitionSet</span></a><span class="tok-p">;</span>
+  <span class="tok-n">Properties</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-k">OF</span> <a href="IfcPropertySetDefinition.html"><span class="tok-nc">IfcPropertySetDefinition</span></a> <span class="tok-o">:=</span> <span class="tok-p">[</span><span class="tok-p">]</span><span class="tok-p">;</span>
+  <span class="tok-n">Result</span> <span class="tok-o">:</span> <span class="tok-nb">LOGICAL</span><span class="tok-p">;</span>
 <span class="tok-kd">END_LOCAL</span><span class="tok-p">;</span>
+
 <span class="tok-kd">IF</span> <span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-n">Relations</span><span class="tok-p">)</span> <span class="tok-o">=</span> <span class="tok-m">0</span> <span class="tok-kd">THEN</span>
-<span class="tok-k">RETURN</span><span class="tok-p">(</span><span class="tok-n">TRUE</span><span class="tok-p">)</span><span class="tok-p">;</span>
+  <span class="tok-k">RETURN</span><span class="tok-p">(</span><span class="tok-n">TRUE</span><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-kd">END_IF</span><span class="tok-p">;</span>
+
 <span class="tok-kd">REPEAT</span> <span class="tok-n">i</span><span class="tok-o">:=</span><span class="tok-m">1</span> <span class="tok-k">TO</span> <span class="tok-nb">HIINDEX</span><span class="tok-p">(</span><span class="tok-n">Relations</span><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">Definition</span> <span class="tok-o">:=</span> <span class="tok-n">Relations</span><span class="tok-p">[</span><span class="tok-n">i</span><span class="tok-p">]</span><span class="tok-p">.</span><span class="tok-n">RelatingPropertyDefinition</span><span class="tok-p">;</span>
-<span class="tok-kd">IF</span> <span class="tok-s1">'IFC4X3_ADD2_DEV_20260526.IFCPROPERTYSETDEFINITION'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">Definition</span><span class="tok-p">)</span> <span class="tok-kd">THEN</span>
-<span class="tok-n">Properties</span> <span class="tok-o">:=</span> <span class="tok-n">Properties</span> <span class="tok-o">+</span> <span class="tok-n">Definition</span><span class="tok-p">;</span>
-<span class="tok-kd">ELSE</span>
-<span class="tok-kd">IF</span> <span class="tok-s1">'IFC4X3_ADD2_DEV_20260526.IFCPROPERTYSETDEFINITIONSET'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">Definition</span><span class="tok-p">)</span> <span class="tok-kd">THEN</span>
-<span class="tok-kd">BEGIN</span>
-<span class="tok-n">DefinitionSet</span> <span class="tok-o">:=</span> <span class="tok-n">Definition</span><span class="tok-p">;</span>
-<span class="tok-kd">REPEAT</span> <span class="tok-n">j</span><span class="tok-o">:=</span> <span class="tok-m">1</span> <span class="tok-k">TO</span> <span class="tok-nb">HIINDEX</span><span class="tok-p">(</span><span class="tok-n">DefinitionSet</span><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">Properties</span> <span class="tok-o">:=</span> <span class="tok-n">Properties</span> <span class="tok-o">+</span> <span class="tok-n">DefinitionSet</span><span class="tok-p">[</span><span class="tok-n">j</span><span class="tok-p">]</span><span class="tok-p">;</span>
+  <span class="tok-n">Definition</span> <span class="tok-o">:=</span> <span class="tok-n">Relations</span><span class="tok-p">[</span><span class="tok-n">i</span><span class="tok-p">]</span><span class="tok-p">.</span><span class="tok-n">RelatingPropertyDefinition</span><span class="tok-p">;</span>
+  <span class="tok-kd">IF</span> <span class="tok-s1">'IFC4X3_ADD2_DEV_20260526.IFCPROPERTYSETDEFINITION'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">Definition</span><span class="tok-p">)</span> <span class="tok-kd">THEN</span>
+    <span class="tok-n">Properties</span> <span class="tok-o">:=</span> <span class="tok-n">Properties</span> <span class="tok-o">+</span> <span class="tok-n">Definition</span><span class="tok-p">;</span>
+  <span class="tok-kd">ELSE</span> 
+    <span class="tok-kd">IF</span> <span class="tok-s1">'IFC4X3_ADD2_DEV_20260526.IFCPROPERTYSETDEFINITIONSET'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">Definition</span><span class="tok-p">)</span> <span class="tok-kd">THEN</span>
+      <span class="tok-kd">BEGIN</span>
+        <span class="tok-n">DefinitionSet</span> <span class="tok-o">:=</span> <span class="tok-n">Definition</span><span class="tok-p">;</span>
+        <span class="tok-kd">REPEAT</span> <span class="tok-n">j</span><span class="tok-o">:=</span> <span class="tok-m">1</span> <span class="tok-k">TO</span> <span class="tok-nb">HIINDEX</span><span class="tok-p">(</span><span class="tok-n">DefinitionSet</span><span class="tok-p">)</span><span class="tok-p">;</span>
+          <span class="tok-n">Properties</span> <span class="tok-o">:=</span> <span class="tok-n">Properties</span> <span class="tok-o">+</span> <span class="tok-n">DefinitionSet</span><span class="tok-p">[</span><span class="tok-n">j</span><span class="tok-p">]</span><span class="tok-p">;</span>
+        <span class="tok-kd">END_REPEAT</span><span class="tok-p">;</span>
+      <span class="tok-kd">END</span><span class="tok-p">;</span>
+ <span class="tok-kd">END_IF</span><span class="tok-p">;</span>
+  <span class="tok-kd">END_IF</span><span class="tok-p">;</span>
 <span class="tok-kd">END_REPEAT</span><span class="tok-p">;</span>
-<span class="tok-kd">END</span><span class="tok-p">;</span>
-<span class="tok-kd">END_IF</span><span class="tok-p">;</span>
-<span class="tok-kd">END_IF</span><span class="tok-p">;</span>
-<span class="tok-kd">END_REPEAT</span><span class="tok-p">;</span>
+
 <span class="tok-n">Result</span> <span class="tok-o">:=</span> <a href="IfcUniquePropertySetNames.html"><span class="tok-nc">IfcUniquePropertySetNames</span></a><span class="tok-p">(</span><span class="tok-n">Properties</span><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-k">RETURN</span> <span class="tok-p">(</span><span class="tok-n">Result</span><span class="tok-p">)</span><span class="tok-p">;</span>
+
 <span class="tok-kd">END_FUNCTION</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="5.1.6.1.3-References"></a>
     5.1.6.1.3 References

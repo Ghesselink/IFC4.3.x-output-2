@@ -783,22 +783,22 @@ Note: this is not necessarily the same as the task duration (<a href="IfcTaskTim
     8.5.3.7.4 Formal representation
 <a class="link" href="#8.5.3.7.4-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcResourceTime.html"><span class="tok-nc">IfcResourceTime</span></a>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcSchedulingTime.html"><span class="tok-nc">IfcSchedulingTime</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">ScheduleWork</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDuration.html"><span class="tok-nc">IfcDuration</span></a><span class="tok-p">;</span>
-<span class="tok-n">ScheduleUsage</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcPositiveRatioMeasure.html"><span class="tok-nc">IfcPositiveRatioMeasure</span></a><span class="tok-p">;</span>
-<span class="tok-n">ScheduleStart</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
-<span class="tok-n">ScheduleFinish</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
-<span class="tok-n">ScheduleContour</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
-<span class="tok-n">LevelingDelay</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDuration.html"><span class="tok-nc">IfcDuration</span></a><span class="tok-p">;</span>
-<span class="tok-n">IsOverAllocated</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcBoolean.html"><span class="tok-nc">IfcBoolean</span></a><span class="tok-p">;</span>
-<span class="tok-n">StatusTime</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
-<span class="tok-n">ActualWork</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDuration.html"><span class="tok-nc">IfcDuration</span></a><span class="tok-p">;</span>
-<span class="tok-n">ActualUsage</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcPositiveRatioMeasure.html"><span class="tok-nc">IfcPositiveRatioMeasure</span></a><span class="tok-p">;</span>
-<span class="tok-n">ActualStart</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
-<span class="tok-n">ActualFinish</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
-<span class="tok-n">RemainingWork</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDuration.html"><span class="tok-nc">IfcDuration</span></a><span class="tok-p">;</span>
-<span class="tok-n">RemainingUsage</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcPositiveRatioMeasure.html"><span class="tok-nc">IfcPositiveRatioMeasure</span></a><span class="tok-p">;</span>
-<span class="tok-n">Completion</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcPositiveRatioMeasure.html"><span class="tok-nc">IfcPositiveRatioMeasure</span></a><span class="tok-p">;</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcSchedulingTime.html"><span class="tok-nc">IfcSchedulingTime</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">ScheduleWork</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDuration.html"><span class="tok-nc">IfcDuration</span></a><span class="tok-p">;</span>
+	<span class="tok-n">ScheduleUsage</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcPositiveRatioMeasure.html"><span class="tok-nc">IfcPositiveRatioMeasure</span></a><span class="tok-p">;</span>
+	<span class="tok-n">ScheduleStart</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
+	<span class="tok-n">ScheduleFinish</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
+	<span class="tok-n">ScheduleContour</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
+	<span class="tok-n">LevelingDelay</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDuration.html"><span class="tok-nc">IfcDuration</span></a><span class="tok-p">;</span>
+	<span class="tok-n">IsOverAllocated</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcBoolean.html"><span class="tok-nc">IfcBoolean</span></a><span class="tok-p">;</span>
+	<span class="tok-n">StatusTime</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
+	<span class="tok-n">ActualWork</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDuration.html"><span class="tok-nc">IfcDuration</span></a><span class="tok-p">;</span>
+	<span class="tok-n">ActualUsage</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcPositiveRatioMeasure.html"><span class="tok-nc">IfcPositiveRatioMeasure</span></a><span class="tok-p">;</span>
+	<span class="tok-n">ActualStart</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
+	<span class="tok-n">ActualFinish</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
+	<span class="tok-n">RemainingWork</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDuration.html"><span class="tok-nc">IfcDuration</span></a><span class="tok-p">;</span>
+	<span class="tok-n">RemainingUsage</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcPositiveRatioMeasure.html"><span class="tok-nc">IfcPositiveRatioMeasure</span></a><span class="tok-p">;</span>
+	<span class="tok-n">Completion</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcPositiveRatioMeasure.html"><span class="tok-nc">IfcPositiveRatioMeasure</span></a><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.5.3.7.5-References"></a>
     8.5.3.7.5 References

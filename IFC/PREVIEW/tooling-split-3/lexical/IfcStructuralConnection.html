@@ -1467,14 +1467,14 @@
     7.10.3.7.6 Formal representation
 <a class="link" href="#7.10.3.7.6-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcStructuralConnection.html"><span class="tok-nc">IfcStructuralConnection</span></a>
-<span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcStructuralCurveConnection.html"><span class="tok-nc">IfcStructuralCurveConnection</span></a>
-<span class="tok-p">,</span><a href="IfcStructuralPointConnection.html"><span class="tok-nc">IfcStructuralPointConnection</span></a>
-<span class="tok-p">,</span><a href="IfcStructuralSurfaceConnection.html"><span class="tok-nc">IfcStructuralSurfaceConnection</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcStructuralItem.html"><span class="tok-nc">IfcStructuralItem</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">AppliedCondition</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcBoundaryCondition.html"><span class="tok-nc">IfcBoundaryCondition</span></a><span class="tok-p">;</span>
-<span class="tok-k">INVERSE</span>
-<span class="tok-n">ConnectsStructuralMembers</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelConnectsStructuralMember.html"><span class="tok-nc">IfcRelConnectsStructuralMember</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatedStructuralConnection</span><span class="tok-p">;</span>
+ <span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcStructuralCurveConnection.html"><span class="tok-nc">IfcStructuralCurveConnection</span></a>
+	<span class="tok-p">,</span><a href="IfcStructuralPointConnection.html"><span class="tok-nc">IfcStructuralPointConnection</span></a>
+	<span class="tok-p">,</span><a href="IfcStructuralSurfaceConnection.html"><span class="tok-nc">IfcStructuralSurfaceConnection</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcStructuralItem.html"><span class="tok-nc">IfcStructuralItem</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">AppliedCondition</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcBoundaryCondition.html"><span class="tok-nc">IfcBoundaryCondition</span></a><span class="tok-p">;</span>
+ <span class="tok-k">INVERSE</span>
+	<span class="tok-n">ConnectsStructuralMembers</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelConnectsStructuralMember.html"><span class="tok-nc">IfcRelConnectsStructuralMember</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatedStructuralConnection</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="7.10.3.7.7-References"></a>
     7.10.3.7.7 References

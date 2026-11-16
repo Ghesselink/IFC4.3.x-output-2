@@ -676,19 +676,19 @@
     8.5.3.12.4 Formal representation
 <a class="link" href="#8.5.3.12.4-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcTimeSeries.html"><span class="tok-nc">IfcTimeSeries</span></a>
-<span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcIrregularTimeSeries.html"><span class="tok-nc">IfcIrregularTimeSeries</span></a>
-<span class="tok-p">,</span><a href="IfcRegularTimeSeries.html"><span class="tok-nc">IfcRegularTimeSeries</span></a><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">Name</span> <span class="tok-o">:</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
-<span class="tok-n">Description</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcText.html"><span class="tok-nc">IfcText</span></a><span class="tok-p">;</span>
-<span class="tok-n">StartTime</span> <span class="tok-o">:</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
-<span class="tok-n">EndTime</span> <span class="tok-o">:</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
-<span class="tok-n">TimeSeriesDataType</span> <span class="tok-o">:</span> <a href="IfcTimeSeriesDataTypeEnum.html"><span class="tok-nc">IfcTimeSeriesDataTypeEnum</span></a><span class="tok-p">;</span>
-<span class="tok-n">DataOrigin</span> <span class="tok-o">:</span> <a href="IfcDataOriginEnum.html"><span class="tok-nc">IfcDataOriginEnum</span></a><span class="tok-p">;</span>
-<span class="tok-n">UserDefinedDataOrigin</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
-<span class="tok-n">Unit</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcUnit.html"><span class="tok-nc">IfcUnit</span></a><span class="tok-p">;</span>
-<span class="tok-k">INVERSE</span>
-<span class="tok-n">HasExternalReference</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcExternalReferenceRelationship.html"><span class="tok-nc">IfcExternalReferenceRelationship</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatedResourceObjects</span><span class="tok-p">;</span>
+ <span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcIrregularTimeSeries.html"><span class="tok-nc">IfcIrregularTimeSeries</span></a>
+	<span class="tok-p">,</span><a href="IfcRegularTimeSeries.html"><span class="tok-nc">IfcRegularTimeSeries</span></a><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">Name</span> <span class="tok-o">:</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
+	<span class="tok-n">Description</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcText.html"><span class="tok-nc">IfcText</span></a><span class="tok-p">;</span>
+	<span class="tok-n">StartTime</span> <span class="tok-o">:</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
+	<span class="tok-n">EndTime</span> <span class="tok-o">:</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
+	<span class="tok-n">TimeSeriesDataType</span> <span class="tok-o">:</span> <a href="IfcTimeSeriesDataTypeEnum.html"><span class="tok-nc">IfcTimeSeriesDataTypeEnum</span></a><span class="tok-p">;</span>
+	<span class="tok-n">DataOrigin</span> <span class="tok-o">:</span> <a href="IfcDataOriginEnum.html"><span class="tok-nc">IfcDataOriginEnum</span></a><span class="tok-p">;</span>
+	<span class="tok-n">UserDefinedDataOrigin</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
+	<span class="tok-n">Unit</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcUnit.html"><span class="tok-nc">IfcUnit</span></a><span class="tok-p">;</span>
+ <span class="tok-k">INVERSE</span>
+	<span class="tok-n">HasExternalReference</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcExternalReferenceRelationship.html"><span class="tok-nc">IfcExternalReferenceRelationship</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatedResourceObjects</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.5.3.12.5-References"></a>
     8.5.3.12.5 References

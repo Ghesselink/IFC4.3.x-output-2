@@ -605,12 +605,12 @@
     8.12.3.42.4 Formal representation
 <a class="link" href="#8.12.3.42.4-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcTextureCoordinateIndices.html"><span class="tok-nc">IfcTextureCoordinateIndices</span></a>
-<span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcTextureCoordinateIndicesWithVoids.html"><span class="tok-nc">IfcTextureCoordinateIndicesWithVoids</span></a><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">TexCoordIndex</span> <span class="tok-o">:</span> <span class="tok-nb">LIST</span> <span class="tok-p">[</span><span class="tok-m">3</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcPositiveInteger.html"><span class="tok-nc">IfcPositiveInteger</span></a><span class="tok-p">;</span>
-<span class="tok-n">TexCoordsOf</span> <span class="tok-o">:</span> <a href="IfcIndexedPolygonalFace.html"><span class="tok-nc">IfcIndexedPolygonalFace</span></a><span class="tok-p">;</span>
-<span class="tok-k">INVERSE</span>
-<span class="tok-n">ToTexMap</span> <span class="tok-o">:</span> <a href="IfcIndexedPolygonalTextureMap.html"><span class="tok-nc">IfcIndexedPolygonalTextureMap</span></a> <span class="tok-k">FOR</span> <span class="tok-n">TexCoordIndices</span><span class="tok-p">;</span>
+ <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcTextureCoordinateIndicesWithVoids.html"><span class="tok-nc">IfcTextureCoordinateIndicesWithVoids</span></a><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">TexCoordIndex</span> <span class="tok-o">:</span> <span class="tok-nb">LIST</span> <span class="tok-p">[</span><span class="tok-m">3</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcPositiveInteger.html"><span class="tok-nc">IfcPositiveInteger</span></a><span class="tok-p">;</span>
+	<span class="tok-n">TexCoordsOf</span> <span class="tok-o">:</span> <a href="IfcIndexedPolygonalFace.html"><span class="tok-nc">IfcIndexedPolygonalFace</span></a><span class="tok-p">;</span>
+ <span class="tok-k">INVERSE</span>
+	<span class="tok-n">ToTexMap</span> <span class="tok-o">:</span> <a href="IfcIndexedPolygonalTextureMap.html"><span class="tok-nc">IfcIndexedPolygonalTextureMap</span></a> <span class="tok-k">FOR</span> <span class="tok-n">TexCoordIndices</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.12.3.42.5-References"></a>
     8.12.3.42.5 References

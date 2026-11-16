@@ -297,24 +297,28 @@ IFC2x Edition 4.</font></small></aside>
 <a class="link" href="#8.8.6.2.2-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">FUNCTION</span> <a href="IfcTaperedSweptAreaProfiles.html"><span class="tok-nc">IfcTaperedSweptAreaProfiles</span></a>
 <span class="tok-p">(</span><span class="tok-n">StartArea</span><span class="tok-p">,</span> <span class="tok-n">EndArea</span> <span class="tok-o">:</span> <a href="IfcProfileDef.html"><span class="tok-nc">IfcProfileDef</span></a><span class="tok-p">)</span>
-<span class="tok-o">:</span> <span class="tok-nb">LOGICAL</span><span class="tok-p">;</span>
+ <span class="tok-o">:</span> <span class="tok-nb">LOGICAL</span><span class="tok-p">;</span>
+
 <span class="tok-kd">LOCAL</span>
-<span class="tok-n">Result</span> <span class="tok-o">:</span> <span class="tok-nb">LOGICAL</span> <span class="tok-o">:=</span> <span class="tok-n">FALSE</span><span class="tok-p">;</span>
+   <span class="tok-n">Result</span> <span class="tok-o">:</span> <span class="tok-nb">LOGICAL</span> <span class="tok-o">:=</span> <span class="tok-n">FALSE</span><span class="tok-p">;</span>
 <span class="tok-kd">END_LOCAL</span><span class="tok-p">;</span>
+   
 <span class="tok-kd">IF</span> <span class="tok-p">(</span><span class="tok-s1">'IFC4X3_ADD2_DEV_20260526.IFCPARAMETERIZEDPROFILEDEF'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">StartArea</span><span class="tok-p">)</span><span class="tok-p">)</span> <span class="tok-kd">THEN</span>
-<span class="tok-kd">IF</span> <span class="tok-p">(</span><span class="tok-s1">'IFC4X3_ADD2_DEV_20260526.IFCDERIVEDPROFILEDEF'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">EndArea</span><span class="tok-p">)</span><span class="tok-p">)</span> <span class="tok-kd">THEN</span>
-<span class="tok-n">Result</span> <span class="tok-o">:=</span> <span class="tok-p">(</span><span class="tok-n">StartArea</span> <span class="tok-o">:=:</span> <span class="tok-n">EndArea</span><span class="tok-o">\</span><a href="IfcDerivedProfileDef.html"><span class="tok-nc">IfcDerivedProfileDef</span></a><span class="tok-p">.</span><span class="tok-n">ParentProfile</span><span class="tok-p">)</span><span class="tok-p">;</span>
+   <span class="tok-kd">IF</span> <span class="tok-p">(</span><span class="tok-s1">'IFC4X3_ADD2_DEV_20260526.IFCDERIVEDPROFILEDEF'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">EndArea</span><span class="tok-p">)</span><span class="tok-p">)</span> <span class="tok-kd">THEN</span>
+      <span class="tok-n">Result</span> <span class="tok-o">:=</span> <span class="tok-p">(</span><span class="tok-n">StartArea</span> <span class="tok-o">:=:</span> <span class="tok-n">EndArea</span><span class="tok-o">\</span><a href="IfcDerivedProfileDef.html"><span class="tok-nc">IfcDerivedProfileDef</span></a><span class="tok-p">.</span><span class="tok-n">ParentProfile</span><span class="tok-p">)</span><span class="tok-p">;</span>
+   <span class="tok-kd">ELSE</span>
+      <span class="tok-n">Result</span> <span class="tok-o">:=</span> <span class="tok-p">(</span><span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">StartArea</span><span class="tok-p">)</span> <span class="tok-o">=</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">EndArea</span><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
+   <span class="tok-kd">END_IF</span><span class="tok-p">;</span>
 <span class="tok-kd">ELSE</span>
-<span class="tok-n">Result</span> <span class="tok-o">:=</span> <span class="tok-p">(</span><span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">StartArea</span><span class="tok-p">)</span> <span class="tok-o">=</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">EndArea</span><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
+   <span class="tok-kd">IF</span> <span class="tok-p">(</span><span class="tok-s1">'IFC4X3_ADD2_DEV_20260526.IFCDERIVEDPROFILEDEF'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">EndArea</span><span class="tok-p">)</span><span class="tok-p">)</span> <span class="tok-kd">THEN</span>
+      <span class="tok-n">Result</span> <span class="tok-o">:=</span> <span class="tok-p">(</span><span class="tok-n">StartArea</span> <span class="tok-o">:=:</span> <span class="tok-n">EndArea</span><span class="tok-o">\</span><a href="IfcDerivedProfileDef.html"><span class="tok-nc">IfcDerivedProfileDef</span></a><span class="tok-p">.</span><span class="tok-n">ParentProfile</span><span class="tok-p">)</span><span class="tok-p">;</span>
+   <span class="tok-kd">ELSE</span>
+      <span class="tok-n">Result</span> <span class="tok-o">:=</span> <span class="tok-n">FALSE</span><span class="tok-p">;</span>
+   <span class="tok-kd">END_IF</span><span class="tok-p">;</span>
 <span class="tok-kd">END_IF</span><span class="tok-p">;</span>
-<span class="tok-kd">ELSE</span>
-<span class="tok-kd">IF</span> <span class="tok-p">(</span><span class="tok-s1">'IFC4X3_ADD2_DEV_20260526.IFCDERIVEDPROFILEDEF'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">EndArea</span><span class="tok-p">)</span><span class="tok-p">)</span> <span class="tok-kd">THEN</span>
-<span class="tok-n">Result</span> <span class="tok-o">:=</span> <span class="tok-p">(</span><span class="tok-n">StartArea</span> <span class="tok-o">:=:</span> <span class="tok-n">EndArea</span><span class="tok-o">\</span><a href="IfcDerivedProfileDef.html"><span class="tok-nc">IfcDerivedProfileDef</span></a><span class="tok-p">.</span><span class="tok-n">ParentProfile</span><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-kd">ELSE</span>
-<span class="tok-n">Result</span> <span class="tok-o">:=</span> <span class="tok-n">FALSE</span><span class="tok-p">;</span>
-<span class="tok-kd">END_IF</span><span class="tok-p">;</span>
-<span class="tok-kd">END_IF</span><span class="tok-p">;</span>
+
 <span class="tok-k">RETURN</span><span class="tok-p">(</span><span class="tok-n">Result</span><span class="tok-p">)</span><span class="tok-p">;</span>
+
 <span class="tok-kd">END_FUNCTION</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.8.6.2.3-References"></a>
     8.8.6.2.3 References

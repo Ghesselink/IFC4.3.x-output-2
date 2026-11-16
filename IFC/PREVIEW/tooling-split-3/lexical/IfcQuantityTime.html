@@ -702,7 +702,7 @@
 <tr>
 <td colspan="2">
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-nb">NOT</span><span class="tok-p">(</span><span class="tok-nb">EXISTS</span><span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcPhysicalSimpleQuantity.html"><span class="tok-nc">IfcPhysicalSimpleQuantity</span></a><span class="tok-p">.</span><span class="tok-n">Unit</span><span class="tok-p">)</span><span class="tok-p">)</span> <span class="tok-nb">OR</span>
-<span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcPhysicalSimpleQuantity.html"><span class="tok-nc">IfcPhysicalSimpleQuantity</span></a><span class="tok-p">.</span><span class="tok-n">Unit</span><span class="tok-p">.</span><span class="tok-n">UnitType</span> <span class="tok-o">=</span> <a href="IfcUnitEnum.html"><span class="tok-nc">IfcUnitEnum</span></a><span class="tok-p">.</span><span class="tok-n">TIMEUNIT</span><span class="tok-p">)</span></code></pre>
+   <span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcPhysicalSimpleQuantity.html"><span class="tok-nc">IfcPhysicalSimpleQuantity</span></a><span class="tok-p">.</span><span class="tok-n">Unit</span><span class="tok-p">.</span><span class="tok-n">UnitType</span> <span class="tok-o">=</span> <a href="IfcUnitEnum.html"><span class="tok-nc">IfcUnitEnum</span></a><span class="tok-p">.</span><span class="tok-n">TIMEUNIT</span><span class="tok-p">)</span></code></pre>
 </td>
 </tr>
 <tr>
@@ -722,13 +722,13 @@
     8.17.3.8.5 Formal representation
 <a class="link" href="#8.17.3.8.5-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcQuantityTime.html"><span class="tok-nc">IfcQuantityTime</span></a>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcPhysicalSimpleQuantity.html"><span class="tok-nc">IfcPhysicalSimpleQuantity</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">TimeValue</span> <span class="tok-o">:</span> <a href="IfcTimeMeasure.html"><span class="tok-nc">IfcTimeMeasure</span></a><span class="tok-p">;</span>
-<span class="tok-n">Formula</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">WR21</span> <span class="tok-o">:</span> <span class="tok-nb">NOT</span><span class="tok-p">(</span><span class="tok-nb">EXISTS</span><span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcPhysicalSimpleQuantity.html"><span class="tok-nc">IfcPhysicalSimpleQuantity</span></a><span class="tok-p">.</span><span class="tok-n">Unit</span><span class="tok-p">)</span><span class="tok-p">)</span> <span class="tok-nb">OR</span>
-<span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcPhysicalSimpleQuantity.html"><span class="tok-nc">IfcPhysicalSimpleQuantity</span></a><span class="tok-p">.</span><span class="tok-n">Unit</span><span class="tok-p">.</span><span class="tok-n">UnitType</span> <span class="tok-o">=</span> <a href="IfcUnitEnum.html"><span class="tok-nc">IfcUnitEnum</span></a><span class="tok-p">.</span><span class="tok-n">TIMEUNIT</span><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">WR22</span> <span class="tok-o">:</span> <span class="tok-n">TimeValue</span> <span class="tok-o">&gt;=</span> <span class="tok-m">0.</span><span class="tok-p">;</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcPhysicalSimpleQuantity.html"><span class="tok-nc">IfcPhysicalSimpleQuantity</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">TimeValue</span> <span class="tok-o">:</span> <a href="IfcTimeMeasure.html"><span class="tok-nc">IfcTimeMeasure</span></a><span class="tok-p">;</span>
+	<span class="tok-n">Formula</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">WR21</span> <span class="tok-o">:</span> <span class="tok-nb">NOT</span><span class="tok-p">(</span><span class="tok-nb">EXISTS</span><span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcPhysicalSimpleQuantity.html"><span class="tok-nc">IfcPhysicalSimpleQuantity</span></a><span class="tok-p">.</span><span class="tok-n">Unit</span><span class="tok-p">)</span><span class="tok-p">)</span> <span class="tok-nb">OR</span>
+   <span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcPhysicalSimpleQuantity.html"><span class="tok-nc">IfcPhysicalSimpleQuantity</span></a><span class="tok-p">.</span><span class="tok-n">Unit</span><span class="tok-p">.</span><span class="tok-n">UnitType</span> <span class="tok-o">=</span> <a href="IfcUnitEnum.html"><span class="tok-nc">IfcUnitEnum</span></a><span class="tok-p">.</span><span class="tok-n">TIMEUNIT</span><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">WR22</span> <span class="tok-o">:</span> <span class="tok-n">TimeValue</span> <span class="tok-o">&gt;=</span> <span class="tok-m">0.</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.17.3.8.6-References"></a>
     8.17.3.8.6 References

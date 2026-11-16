@@ -586,77 +586,77 @@
     8.11.2.14.3 Formal representation
 <a class="link" href="#8.11.2.14.3-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">TYPE</span> <a href="IfcDerivedMeasureValue.html"><span class="tok-nc">IfcDerivedMeasureValue</span></a> <span class="tok-o">=</span> <span class="tok-k">SELECT</span>
-<span class="tok-p">(</span><a href="IfcAbsorbedDoseMeasure.html"><span class="tok-nc">IfcAbsorbedDoseMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcAccelerationMeasure.html"><span class="tok-nc">IfcAccelerationMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcAngularVelocityMeasure.html"><span class="tok-nc">IfcAngularVelocityMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcAreaDensityMeasure.html"><span class="tok-nc">IfcAreaDensityMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcCompoundPlaneAngleMeasure.html"><span class="tok-nc">IfcCompoundPlaneAngleMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcCurvatureMeasure.html"><span class="tok-nc">IfcCurvatureMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcDoseEquivalentMeasure.html"><span class="tok-nc">IfcDoseEquivalentMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcDynamicViscosityMeasure.html"><span class="tok-nc">IfcDynamicViscosityMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcElectricCapacitanceMeasure.html"><span class="tok-nc">IfcElectricCapacitanceMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcElectricChargeMeasure.html"><span class="tok-nc">IfcElectricChargeMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcElectricConductanceMeasure.html"><span class="tok-nc">IfcElectricConductanceMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcElectricResistanceMeasure.html"><span class="tok-nc">IfcElectricResistanceMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcElectricVoltageMeasure.html"><span class="tok-nc">IfcElectricVoltageMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcEnergyMeasure.html"><span class="tok-nc">IfcEnergyMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcForceMeasure.html"><span class="tok-nc">IfcForceMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcFrequencyMeasure.html"><span class="tok-nc">IfcFrequencyMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcHeatFluxDensityMeasure.html"><span class="tok-nc">IfcHeatFluxDensityMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcHeatingValueMeasure.html"><span class="tok-nc">IfcHeatingValueMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcIlluminanceMeasure.html"><span class="tok-nc">IfcIlluminanceMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcInductanceMeasure.html"><span class="tok-nc">IfcInductanceMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcIntegerCountRateMeasure.html"><span class="tok-nc">IfcIntegerCountRateMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcIonConcentrationMeasure.html"><span class="tok-nc">IfcIonConcentrationMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcIsothermalMoistureCapacityMeasure.html"><span class="tok-nc">IfcIsothermalMoistureCapacityMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcKinematicViscosityMeasure.html"><span class="tok-nc">IfcKinematicViscosityMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcLinearForceMeasure.html"><span class="tok-nc">IfcLinearForceMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcLinearMomentMeasure.html"><span class="tok-nc">IfcLinearMomentMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcLinearStiffnessMeasure.html"><span class="tok-nc">IfcLinearStiffnessMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcLinearVelocityMeasure.html"><span class="tok-nc">IfcLinearVelocityMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcLuminousFluxMeasure.html"><span class="tok-nc">IfcLuminousFluxMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcLuminousIntensityDistributionMeasure.html"><span class="tok-nc">IfcLuminousIntensityDistributionMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcMagneticFluxDensityMeasure.html"><span class="tok-nc">IfcMagneticFluxDensityMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcMagneticFluxMeasure.html"><span class="tok-nc">IfcMagneticFluxMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcMassDensityMeasure.html"><span class="tok-nc">IfcMassDensityMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcMassFlowRateMeasure.html"><span class="tok-nc">IfcMassFlowRateMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcMassPerLengthMeasure.html"><span class="tok-nc">IfcMassPerLengthMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcModulusOfElasticityMeasure.html"><span class="tok-nc">IfcModulusOfElasticityMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcModulusOfLinearSubgradeReactionMeasure.html"><span class="tok-nc">IfcModulusOfLinearSubgradeReactionMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcModulusOfRotationalSubgradeReactionMeasure.html"><span class="tok-nc">IfcModulusOfRotationalSubgradeReactionMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcModulusOfSubgradeReactionMeasure.html"><span class="tok-nc">IfcModulusOfSubgradeReactionMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcMoistureDiffusivityMeasure.html"><span class="tok-nc">IfcMoistureDiffusivityMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcMolecularWeightMeasure.html"><span class="tok-nc">IfcMolecularWeightMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcMomentOfInertiaMeasure.html"><span class="tok-nc">IfcMomentOfInertiaMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcMonetaryMeasure.html"><span class="tok-nc">IfcMonetaryMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcPHMeasure.html"><span class="tok-nc">IfcPHMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcPlanarForceMeasure.html"><span class="tok-nc">IfcPlanarForceMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcPowerMeasure.html"><span class="tok-nc">IfcPowerMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcPressureMeasure.html"><span class="tok-nc">IfcPressureMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcRadioActivityMeasure.html"><span class="tok-nc">IfcRadioActivityMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcRotationalFrequencyMeasure.html"><span class="tok-nc">IfcRotationalFrequencyMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcRotationalMassMeasure.html"><span class="tok-nc">IfcRotationalMassMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcRotationalStiffnessMeasure.html"><span class="tok-nc">IfcRotationalStiffnessMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcSectionModulusMeasure.html"><span class="tok-nc">IfcSectionModulusMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcSectionalAreaIntegralMeasure.html"><span class="tok-nc">IfcSectionalAreaIntegralMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcShearModulusMeasure.html"><span class="tok-nc">IfcShearModulusMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcSoundPowerLevelMeasure.html"><span class="tok-nc">IfcSoundPowerLevelMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcSoundPowerMeasure.html"><span class="tok-nc">IfcSoundPowerMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcSoundPressureLevelMeasure.html"><span class="tok-nc">IfcSoundPressureLevelMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcSoundPressureMeasure.html"><span class="tok-nc">IfcSoundPressureMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcSpecificHeatCapacityMeasure.html"><span class="tok-nc">IfcSpecificHeatCapacityMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcTemperatureGradientMeasure.html"><span class="tok-nc">IfcTemperatureGradientMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcTemperatureRateOfChangeMeasure.html"><span class="tok-nc">IfcTemperatureRateOfChangeMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcThermalAdmittanceMeasure.html"><span class="tok-nc">IfcThermalAdmittanceMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcThermalConductivityMeasure.html"><span class="tok-nc">IfcThermalConductivityMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcThermalExpansionCoefficientMeasure.html"><span class="tok-nc">IfcThermalExpansionCoefficientMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcThermalResistanceMeasure.html"><span class="tok-nc">IfcThermalResistanceMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcThermalTransmittanceMeasure.html"><span class="tok-nc">IfcThermalTransmittanceMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcTorqueMeasure.html"><span class="tok-nc">IfcTorqueMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcVaporPermeabilityMeasure.html"><span class="tok-nc">IfcVaporPermeabilityMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcVolumetricFlowRateMeasure.html"><span class="tok-nc">IfcVolumetricFlowRateMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcWarpingConstantMeasure.html"><span class="tok-nc">IfcWarpingConstantMeasure</span></a>
-<span class="tok-p">,</span><a href="IfcWarpingMomentMeasure.html"><span class="tok-nc">IfcWarpingMomentMeasure</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-p">(</span><a href="IfcAbsorbedDoseMeasure.html"><span class="tok-nc">IfcAbsorbedDoseMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcAccelerationMeasure.html"><span class="tok-nc">IfcAccelerationMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcAngularVelocityMeasure.html"><span class="tok-nc">IfcAngularVelocityMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcAreaDensityMeasure.html"><span class="tok-nc">IfcAreaDensityMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcCompoundPlaneAngleMeasure.html"><span class="tok-nc">IfcCompoundPlaneAngleMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcCurvatureMeasure.html"><span class="tok-nc">IfcCurvatureMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcDoseEquivalentMeasure.html"><span class="tok-nc">IfcDoseEquivalentMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcDynamicViscosityMeasure.html"><span class="tok-nc">IfcDynamicViscosityMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcElectricCapacitanceMeasure.html"><span class="tok-nc">IfcElectricCapacitanceMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcElectricChargeMeasure.html"><span class="tok-nc">IfcElectricChargeMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcElectricConductanceMeasure.html"><span class="tok-nc">IfcElectricConductanceMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcElectricResistanceMeasure.html"><span class="tok-nc">IfcElectricResistanceMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcElectricVoltageMeasure.html"><span class="tok-nc">IfcElectricVoltageMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcEnergyMeasure.html"><span class="tok-nc">IfcEnergyMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcForceMeasure.html"><span class="tok-nc">IfcForceMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcFrequencyMeasure.html"><span class="tok-nc">IfcFrequencyMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcHeatFluxDensityMeasure.html"><span class="tok-nc">IfcHeatFluxDensityMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcHeatingValueMeasure.html"><span class="tok-nc">IfcHeatingValueMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcIlluminanceMeasure.html"><span class="tok-nc">IfcIlluminanceMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcInductanceMeasure.html"><span class="tok-nc">IfcInductanceMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcIntegerCountRateMeasure.html"><span class="tok-nc">IfcIntegerCountRateMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcIonConcentrationMeasure.html"><span class="tok-nc">IfcIonConcentrationMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcIsothermalMoistureCapacityMeasure.html"><span class="tok-nc">IfcIsothermalMoistureCapacityMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcKinematicViscosityMeasure.html"><span class="tok-nc">IfcKinematicViscosityMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcLinearForceMeasure.html"><span class="tok-nc">IfcLinearForceMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcLinearMomentMeasure.html"><span class="tok-nc">IfcLinearMomentMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcLinearStiffnessMeasure.html"><span class="tok-nc">IfcLinearStiffnessMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcLinearVelocityMeasure.html"><span class="tok-nc">IfcLinearVelocityMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcLuminousFluxMeasure.html"><span class="tok-nc">IfcLuminousFluxMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcLuminousIntensityDistributionMeasure.html"><span class="tok-nc">IfcLuminousIntensityDistributionMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcMagneticFluxDensityMeasure.html"><span class="tok-nc">IfcMagneticFluxDensityMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcMagneticFluxMeasure.html"><span class="tok-nc">IfcMagneticFluxMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcMassDensityMeasure.html"><span class="tok-nc">IfcMassDensityMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcMassFlowRateMeasure.html"><span class="tok-nc">IfcMassFlowRateMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcMassPerLengthMeasure.html"><span class="tok-nc">IfcMassPerLengthMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcModulusOfElasticityMeasure.html"><span class="tok-nc">IfcModulusOfElasticityMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcModulusOfLinearSubgradeReactionMeasure.html"><span class="tok-nc">IfcModulusOfLinearSubgradeReactionMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcModulusOfRotationalSubgradeReactionMeasure.html"><span class="tok-nc">IfcModulusOfRotationalSubgradeReactionMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcModulusOfSubgradeReactionMeasure.html"><span class="tok-nc">IfcModulusOfSubgradeReactionMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcMoistureDiffusivityMeasure.html"><span class="tok-nc">IfcMoistureDiffusivityMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcMolecularWeightMeasure.html"><span class="tok-nc">IfcMolecularWeightMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcMomentOfInertiaMeasure.html"><span class="tok-nc">IfcMomentOfInertiaMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcMonetaryMeasure.html"><span class="tok-nc">IfcMonetaryMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcPHMeasure.html"><span class="tok-nc">IfcPHMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcPlanarForceMeasure.html"><span class="tok-nc">IfcPlanarForceMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcPowerMeasure.html"><span class="tok-nc">IfcPowerMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcPressureMeasure.html"><span class="tok-nc">IfcPressureMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcRadioActivityMeasure.html"><span class="tok-nc">IfcRadioActivityMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcRotationalFrequencyMeasure.html"><span class="tok-nc">IfcRotationalFrequencyMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcRotationalMassMeasure.html"><span class="tok-nc">IfcRotationalMassMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcRotationalStiffnessMeasure.html"><span class="tok-nc">IfcRotationalStiffnessMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcSectionModulusMeasure.html"><span class="tok-nc">IfcSectionModulusMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcSectionalAreaIntegralMeasure.html"><span class="tok-nc">IfcSectionalAreaIntegralMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcShearModulusMeasure.html"><span class="tok-nc">IfcShearModulusMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcSoundPowerLevelMeasure.html"><span class="tok-nc">IfcSoundPowerLevelMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcSoundPowerMeasure.html"><span class="tok-nc">IfcSoundPowerMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcSoundPressureLevelMeasure.html"><span class="tok-nc">IfcSoundPressureLevelMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcSoundPressureMeasure.html"><span class="tok-nc">IfcSoundPressureMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcSpecificHeatCapacityMeasure.html"><span class="tok-nc">IfcSpecificHeatCapacityMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcTemperatureGradientMeasure.html"><span class="tok-nc">IfcTemperatureGradientMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcTemperatureRateOfChangeMeasure.html"><span class="tok-nc">IfcTemperatureRateOfChangeMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcThermalAdmittanceMeasure.html"><span class="tok-nc">IfcThermalAdmittanceMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcThermalConductivityMeasure.html"><span class="tok-nc">IfcThermalConductivityMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcThermalExpansionCoefficientMeasure.html"><span class="tok-nc">IfcThermalExpansionCoefficientMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcThermalResistanceMeasure.html"><span class="tok-nc">IfcThermalResistanceMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcThermalTransmittanceMeasure.html"><span class="tok-nc">IfcThermalTransmittanceMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcTorqueMeasure.html"><span class="tok-nc">IfcTorqueMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcVaporPermeabilityMeasure.html"><span class="tok-nc">IfcVaporPermeabilityMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcVolumetricFlowRateMeasure.html"><span class="tok-nc">IfcVolumetricFlowRateMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcWarpingConstantMeasure.html"><span class="tok-nc">IfcWarpingConstantMeasure</span></a>
+	<span class="tok-p">,</span><a href="IfcWarpingMomentMeasure.html"><span class="tok-nc">IfcWarpingMomentMeasure</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-kd">END_TYPE</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.11.2.14.4-References"></a>
     8.11.2.14.4 References

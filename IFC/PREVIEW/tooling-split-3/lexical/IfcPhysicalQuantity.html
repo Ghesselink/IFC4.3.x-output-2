@@ -627,14 +627,14 @@
     8.17.3.2.4 Formal representation
 <a class="link" href="#8.17.3.2.4-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcPhysicalQuantity.html"><span class="tok-nc">IfcPhysicalQuantity</span></a>
-<span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcPhysicalComplexQuantity.html"><span class="tok-nc">IfcPhysicalComplexQuantity</span></a>
-<span class="tok-p">,</span><a href="IfcPhysicalSimpleQuantity.html"><span class="tok-nc">IfcPhysicalSimpleQuantity</span></a><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">Name</span> <span class="tok-o">:</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
-<span class="tok-n">Description</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcText.html"><span class="tok-nc">IfcText</span></a><span class="tok-p">;</span>
-<span class="tok-k">INVERSE</span>
-<span class="tok-n">HasExternalReferences</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcExternalReferenceRelationship.html"><span class="tok-nc">IfcExternalReferenceRelationship</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatedResourceObjects</span><span class="tok-p">;</span>
-<span class="tok-n">PartOfComplex</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-m">1</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcPhysicalComplexQuantity.html"><span class="tok-nc">IfcPhysicalComplexQuantity</span></a> <span class="tok-k">FOR</span> <span class="tok-n">HasQuantities</span><span class="tok-p">;</span>
+ <span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcPhysicalComplexQuantity.html"><span class="tok-nc">IfcPhysicalComplexQuantity</span></a>
+	<span class="tok-p">,</span><a href="IfcPhysicalSimpleQuantity.html"><span class="tok-nc">IfcPhysicalSimpleQuantity</span></a><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">Name</span> <span class="tok-o">:</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
+	<span class="tok-n">Description</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcText.html"><span class="tok-nc">IfcText</span></a><span class="tok-p">;</span>
+ <span class="tok-k">INVERSE</span>
+	<span class="tok-n">HasExternalReferences</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcExternalReferenceRelationship.html"><span class="tok-nc">IfcExternalReferenceRelationship</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatedResourceObjects</span><span class="tok-p">;</span>
+	<span class="tok-n">PartOfComplex</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-m">1</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcPhysicalComplexQuantity.html"><span class="tok-nc">IfcPhysicalComplexQuantity</span></a> <span class="tok-k">FOR</span> <span class="tok-n">HasQuantities</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.17.3.2.5-References"></a>
     8.17.3.2.5 References

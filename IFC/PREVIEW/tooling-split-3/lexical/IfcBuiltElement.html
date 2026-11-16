@@ -1023,8 +1023,8 @@
 <tr>
 <td colspan="2">
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-nb">SIZEOF</span> <span class="tok-p">(</span><span class="tok-nb">QUERY</span><span class="tok-p">(</span><span class="tok-n">temp</span> <span class="tok-o">&lt;*</span> <span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcObjectDefinition.html"><span class="tok-nc">IfcObjectDefinition</span></a><span class="tok-p">.</span><span class="tok-n">HasAssociations</span> <span class="tok-p">|</span>
-<span class="tok-s1">'IFC4X3_ADD2_DEV_20260526.IFCRELASSOCIATESMATERIAL'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">temp</span><span class="tok-p">)</span>
-<span class="tok-p">)</span><span class="tok-p">)</span> <span class="tok-o">&lt;=</span> <span class="tok-m">1</span></code></pre>
+  <span class="tok-s1">'IFC4X3_ADD2_DEV_20260526.IFCRELASSOCIATESMATERIAL'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">temp</span><span class="tok-p">)</span>
+  <span class="tok-p">)</span><span class="tok-p">)</span> <span class="tok-o">&lt;=</span> <span class="tok-m">1</span></code></pre>
 </td>
 </tr>
 </tbody>
@@ -2514,42 +2514,42 @@
     5.4.3.11.7 Formal representation
 <a class="link" href="#5.4.3.11.7-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcBuiltElement.html"><span class="tok-nc">IfcBuiltElement</span></a>
-<span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcBeam.html"><span class="tok-nc">IfcBeam</span></a>
-<span class="tok-p">,</span><a href="IfcBearing.html"><span class="tok-nc">IfcBearing</span></a>
-<span class="tok-p">,</span><a href="IfcBuildingElementProxy.html"><span class="tok-nc">IfcBuildingElementProxy</span></a>
-<span class="tok-p">,</span><a href="IfcChimney.html"><span class="tok-nc">IfcChimney</span></a>
-<span class="tok-p">,</span><a href="IfcColumn.html"><span class="tok-nc">IfcColumn</span></a>
-<span class="tok-p">,</span><a href="IfcCourse.html"><span class="tok-nc">IfcCourse</span></a>
-<span class="tok-p">,</span><a href="IfcCovering.html"><span class="tok-nc">IfcCovering</span></a>
-<span class="tok-p">,</span><a href="IfcCurtainWall.html"><span class="tok-nc">IfcCurtainWall</span></a>
-<span class="tok-p">,</span><a href="IfcDeepFoundation.html"><span class="tok-nc">IfcDeepFoundation</span></a>
-<span class="tok-p">,</span><a href="IfcDoor.html"><span class="tok-nc">IfcDoor</span></a>
-<span class="tok-p">,</span><a href="IfcEarthworksElement.html"><span class="tok-nc">IfcEarthworksElement</span></a>
-<span class="tok-p">,</span><a href="IfcFooting.html"><span class="tok-nc">IfcFooting</span></a>
-<span class="tok-p">,</span><a href="IfcKerb.html"><span class="tok-nc">IfcKerb</span></a>
-<span class="tok-p">,</span><a href="IfcMember.html"><span class="tok-nc">IfcMember</span></a>
-<span class="tok-p">,</span><a href="IfcMooringDevice.html"><span class="tok-nc">IfcMooringDevice</span></a>
-<span class="tok-p">,</span><a href="IfcNavigationElement.html"><span class="tok-nc">IfcNavigationElement</span></a>
-<span class="tok-p">,</span><a href="IfcPavement.html"><span class="tok-nc">IfcPavement</span></a>
-<span class="tok-p">,</span><a href="IfcPlate.html"><span class="tok-nc">IfcPlate</span></a>
-<span class="tok-p">,</span><a href="IfcRail.html"><span class="tok-nc">IfcRail</span></a>
-<span class="tok-p">,</span><a href="IfcRailing.html"><span class="tok-nc">IfcRailing</span></a>
-<span class="tok-p">,</span><a href="IfcRamp.html"><span class="tok-nc">IfcRamp</span></a>
-<span class="tok-p">,</span><a href="IfcRampFlight.html"><span class="tok-nc">IfcRampFlight</span></a>
-<span class="tok-p">,</span><a href="IfcRoof.html"><span class="tok-nc">IfcRoof</span></a>
-<span class="tok-p">,</span><a href="IfcShadingDevice.html"><span class="tok-nc">IfcShadingDevice</span></a>
-<span class="tok-p">,</span><a href="IfcSlab.html"><span class="tok-nc">IfcSlab</span></a>
-<span class="tok-p">,</span><a href="IfcStair.html"><span class="tok-nc">IfcStair</span></a>
-<span class="tok-p">,</span><a href="IfcStairFlight.html"><span class="tok-nc">IfcStairFlight</span></a>
-<span class="tok-p">,</span><a href="IfcTrackElement.html"><span class="tok-nc">IfcTrackElement</span></a>
-<span class="tok-p">,</span><a href="IfcWall.html"><span class="tok-nc">IfcWall</span></a>
-<span class="tok-p">,</span><a href="IfcWindow.html"><span class="tok-nc">IfcWindow</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcElement.html"><span class="tok-nc">IfcElement</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">MaxOneMaterialAssociation</span> <span class="tok-o">:</span> <span class="tok-nb">SIZEOF</span> <span class="tok-p">(</span><span class="tok-nb">QUERY</span><span class="tok-p">(</span><span class="tok-n">temp</span> <span class="tok-o">&lt;*</span> <span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcObjectDefinition.html"><span class="tok-nc">IfcObjectDefinition</span></a><span class="tok-p">.</span><span class="tok-n">HasAssociations</span> <span class="tok-p">|</span>
-<span class="tok-s1">'IFC4X3_ADD2_DEV_20260526.IFCRELASSOCIATESMATERIAL'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">temp</span><span class="tok-p">)</span>
-<span class="tok-p">)</span><span class="tok-p">)</span> <span class="tok-o">&lt;=</span> <span class="tok-m">1</span><span class="tok-p">;</span>
+ <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcBeam.html"><span class="tok-nc">IfcBeam</span></a>
+	<span class="tok-p">,</span><a href="IfcBearing.html"><span class="tok-nc">IfcBearing</span></a>
+	<span class="tok-p">,</span><a href="IfcBuildingElementProxy.html"><span class="tok-nc">IfcBuildingElementProxy</span></a>
+	<span class="tok-p">,</span><a href="IfcChimney.html"><span class="tok-nc">IfcChimney</span></a>
+	<span class="tok-p">,</span><a href="IfcColumn.html"><span class="tok-nc">IfcColumn</span></a>
+	<span class="tok-p">,</span><a href="IfcCourse.html"><span class="tok-nc">IfcCourse</span></a>
+	<span class="tok-p">,</span><a href="IfcCovering.html"><span class="tok-nc">IfcCovering</span></a>
+	<span class="tok-p">,</span><a href="IfcCurtainWall.html"><span class="tok-nc">IfcCurtainWall</span></a>
+	<span class="tok-p">,</span><a href="IfcDeepFoundation.html"><span class="tok-nc">IfcDeepFoundation</span></a>
+	<span class="tok-p">,</span><a href="IfcDoor.html"><span class="tok-nc">IfcDoor</span></a>
+	<span class="tok-p">,</span><a href="IfcEarthworksElement.html"><span class="tok-nc">IfcEarthworksElement</span></a>
+	<span class="tok-p">,</span><a href="IfcFooting.html"><span class="tok-nc">IfcFooting</span></a>
+	<span class="tok-p">,</span><a href="IfcKerb.html"><span class="tok-nc">IfcKerb</span></a>
+	<span class="tok-p">,</span><a href="IfcMember.html"><span class="tok-nc">IfcMember</span></a>
+	<span class="tok-p">,</span><a href="IfcMooringDevice.html"><span class="tok-nc">IfcMooringDevice</span></a>
+	<span class="tok-p">,</span><a href="IfcNavigationElement.html"><span class="tok-nc">IfcNavigationElement</span></a>
+	<span class="tok-p">,</span><a href="IfcPavement.html"><span class="tok-nc">IfcPavement</span></a>
+	<span class="tok-p">,</span><a href="IfcPlate.html"><span class="tok-nc">IfcPlate</span></a>
+	<span class="tok-p">,</span><a href="IfcRail.html"><span class="tok-nc">IfcRail</span></a>
+	<span class="tok-p">,</span><a href="IfcRailing.html"><span class="tok-nc">IfcRailing</span></a>
+	<span class="tok-p">,</span><a href="IfcRamp.html"><span class="tok-nc">IfcRamp</span></a>
+	<span class="tok-p">,</span><a href="IfcRampFlight.html"><span class="tok-nc">IfcRampFlight</span></a>
+	<span class="tok-p">,</span><a href="IfcRoof.html"><span class="tok-nc">IfcRoof</span></a>
+	<span class="tok-p">,</span><a href="IfcShadingDevice.html"><span class="tok-nc">IfcShadingDevice</span></a>
+	<span class="tok-p">,</span><a href="IfcSlab.html"><span class="tok-nc">IfcSlab</span></a>
+	<span class="tok-p">,</span><a href="IfcStair.html"><span class="tok-nc">IfcStair</span></a>
+	<span class="tok-p">,</span><a href="IfcStairFlight.html"><span class="tok-nc">IfcStairFlight</span></a>
+	<span class="tok-p">,</span><a href="IfcTrackElement.html"><span class="tok-nc">IfcTrackElement</span></a>
+	<span class="tok-p">,</span><a href="IfcWall.html"><span class="tok-nc">IfcWall</span></a>
+	<span class="tok-p">,</span><a href="IfcWindow.html"><span class="tok-nc">IfcWindow</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcElement.html"><span class="tok-nc">IfcElement</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">MaxOneMaterialAssociation</span> <span class="tok-o">:</span> <span class="tok-nb">SIZEOF</span> <span class="tok-p">(</span><span class="tok-nb">QUERY</span><span class="tok-p">(</span><span class="tok-n">temp</span> <span class="tok-o">&lt;*</span> <span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcObjectDefinition.html"><span class="tok-nc">IfcObjectDefinition</span></a><span class="tok-p">.</span><span class="tok-n">HasAssociations</span> <span class="tok-p">|</span>
+  <span class="tok-s1">'IFC4X3_ADD2_DEV_20260526.IFCRELASSOCIATESMATERIAL'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">temp</span><span class="tok-p">)</span>
+  <span class="tok-p">)</span><span class="tok-p">)</span> <span class="tok-o">&lt;=</span> <span class="tok-m">1</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="5.4.3.11.8-References"></a>
     5.4.3.11.8 References
