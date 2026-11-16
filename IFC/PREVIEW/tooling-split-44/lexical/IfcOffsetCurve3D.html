@@ -768,12 +768,12 @@ The offset curve 3d takes its parameterization from the basis curve. The offset 
     8.9.3.41.5 Formal representation
 <a class="link" href="#8.9.3.41.5-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcOffsetCurve3D.html"><span class="tok-nc">IfcOffsetCurve3D</span></a>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcOffsetCurve.html"><span class="tok-nc">IfcOffsetCurve</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">Distance</span> <span class="tok-o">:</span> <a href="IfcLengthMeasure.html"><span class="tok-nc">IfcLengthMeasure</span></a><span class="tok-p">;</span>
-<span class="tok-n">SelfIntersect</span> <span class="tok-o">:</span> <a href="IfcLogical.html"><span class="tok-nc">IfcLogical</span></a><span class="tok-p">;</span>
-<span class="tok-n">RefDirection</span> <span class="tok-o">:</span> <a href="IfcDirection.html"><span class="tok-nc">IfcDirection</span></a><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">DimIs2D</span> <span class="tok-o">:</span> <span class="tok-n">BasisCurve</span><span class="tok-p">.</span><span class="tok-n">Dim</span> <span class="tok-o">=</span> <span class="tok-m">3</span><span class="tok-p">;</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcOffsetCurve.html"><span class="tok-nc">IfcOffsetCurve</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">Distance</span> <span class="tok-o">:</span> <a href="IfcLengthMeasure.html"><span class="tok-nc">IfcLengthMeasure</span></a><span class="tok-p">;</span>
+	<span class="tok-n">SelfIntersect</span> <span class="tok-o">:</span> <a href="IfcLogical.html"><span class="tok-nc">IfcLogical</span></a><span class="tok-p">;</span>
+	<span class="tok-n">RefDirection</span> <span class="tok-o">:</span> <a href="IfcDirection.html"><span class="tok-nc">IfcDirection</span></a><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">DimIs2D</span> <span class="tok-o">:</span> <span class="tok-n">BasisCurve</span><span class="tok-p">.</span><span class="tok-n">Dim</span> <span class="tok-o">=</span> <span class="tok-m">3</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 </div>
 <div class="col-md-2 rightpanel">

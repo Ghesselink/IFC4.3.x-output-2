@@ -639,10 +639,10 @@
 <tr>
 <td colspan="2">
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-nb">QUERY</span><span class="tok-p">(</span><span class="tok-n">temp</span> <span class="tok-o">&lt;*</span> <span class="tok-n">AssignedItems</span> <span class="tok-p">|</span> <span class="tok-p">(</span>
-<span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">temp</span><span class="tok-p">)</span> <span class="tok-o">*</span> <span class="tok-p">[</span>
-<span class="tok-s1">'IFC4X4_DEV_20260526.IFCSHAPEREPRESENTATION'</span><span class="tok-p">,</span>
-<span class="tok-s1">'IFC4X4_DEV_20260526.IFCGEOMETRICREPRESENTATIONITEM'</span><span class="tok-p">,</span>
-<span class="tok-s1">'IFC4X4_DEV_20260526.IFCMAPPEDITEM'</span><span class="tok-p">]</span><span class="tok-p">)</span> <span class="tok-o">=</span> <span class="tok-m">1</span><span class="tok-p">)</span>
+  <span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">temp</span><span class="tok-p">)</span> <span class="tok-o">*</span> <span class="tok-p">[</span>
+    <span class="tok-s1">'IFC4X4_DEV_20260526.IFCSHAPEREPRESENTATION'</span><span class="tok-p">,</span>
+    <span class="tok-s1">'IFC4X4_DEV_20260526.IFCGEOMETRICREPRESENTATIONITEM'</span><span class="tok-p">,</span>
+    <span class="tok-s1">'IFC4X4_DEV_20260526.IFCMAPPEDITEM'</span><span class="tok-p">]</span><span class="tok-p">)</span> <span class="tok-o">=</span> <span class="tok-m">1</span><span class="tok-p">)</span>
 <span class="tok-p">)</span><span class="tok-p">)</span> <span class="tok-o">=</span> <span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-n">AssignedItems</span><span class="tok-p">)</span></code></pre>
 </td>
 </tr>
@@ -652,18 +652,18 @@
     8.14.3.9.5 Formal representation
 <a class="link" href="#8.14.3.9.5-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcPresentationLayerAssignment.html"><span class="tok-nc">IfcPresentationLayerAssignment</span></a>
-<span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcPresentationLayerWithStyle.html"><span class="tok-nc">IfcPresentationLayerWithStyle</span></a><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">Name</span> <span class="tok-o">:</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
-<span class="tok-n">Description</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcText.html"><span class="tok-nc">IfcText</span></a><span class="tok-p">;</span>
-<span class="tok-n">AssignedItems</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcLayeredItem.html"><span class="tok-nc">IfcLayeredItem</span></a><span class="tok-p">;</span>
-<span class="tok-n">Identifier</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcIdentifier.html"><span class="tok-nc">IfcIdentifier</span></a><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">ApplicableItems</span> <span class="tok-o">:</span> <span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-nb">QUERY</span><span class="tok-p">(</span><span class="tok-n">temp</span> <span class="tok-o">&lt;*</span> <span class="tok-n">AssignedItems</span> <span class="tok-p">|</span> <span class="tok-p">(</span>
-<span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">temp</span><span class="tok-p">)</span> <span class="tok-o">*</span> <span class="tok-p">[</span>
-<span class="tok-s1">'IFC4X4_DEV_20260526.IFCSHAPEREPRESENTATION'</span><span class="tok-p">,</span>
-<span class="tok-s1">'IFC4X4_DEV_20260526.IFCGEOMETRICREPRESENTATIONITEM'</span><span class="tok-p">,</span>
-<span class="tok-s1">'IFC4X4_DEV_20260526.IFCMAPPEDITEM'</span><span class="tok-p">]</span><span class="tok-p">)</span> <span class="tok-o">=</span> <span class="tok-m">1</span><span class="tok-p">)</span>
+ <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcPresentationLayerWithStyle.html"><span class="tok-nc">IfcPresentationLayerWithStyle</span></a><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">Name</span> <span class="tok-o">:</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
+	<span class="tok-n">Description</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcText.html"><span class="tok-nc">IfcText</span></a><span class="tok-p">;</span>
+	<span class="tok-n">AssignedItems</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcLayeredItem.html"><span class="tok-nc">IfcLayeredItem</span></a><span class="tok-p">;</span>
+	<span class="tok-n">Identifier</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcIdentifier.html"><span class="tok-nc">IfcIdentifier</span></a><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">ApplicableItems</span> <span class="tok-o">:</span> <span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-nb">QUERY</span><span class="tok-p">(</span><span class="tok-n">temp</span> <span class="tok-o">&lt;*</span> <span class="tok-n">AssignedItems</span> <span class="tok-p">|</span> <span class="tok-p">(</span>
+  <span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">temp</span><span class="tok-p">)</span> <span class="tok-o">*</span> <span class="tok-p">[</span>
+    <span class="tok-s1">'IFC4X4_DEV_20260526.IFCSHAPEREPRESENTATION'</span><span class="tok-p">,</span>
+    <span class="tok-s1">'IFC4X4_DEV_20260526.IFCGEOMETRICREPRESENTATIONITEM'</span><span class="tok-p">,</span>
+    <span class="tok-s1">'IFC4X4_DEV_20260526.IFCMAPPEDITEM'</span><span class="tok-p">]</span><span class="tok-p">)</span> <span class="tok-o">=</span> <span class="tok-m">1</span><span class="tok-p">)</span>
 <span class="tok-p">)</span><span class="tok-p">)</span> <span class="tok-o">=</span> <span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-n">AssignedItems</span><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.14.3.9.6-References"></a>

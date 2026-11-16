@@ -2491,16 +2491,16 @@
     5.4.3.30.7 Formal representation
 <a class="link" href="#5.4.3.30.7-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcFeatureElementSubtraction.html"><span class="tok-nc">IfcFeatureElementSubtraction</span></a>
-<span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcEarthworksCut.html"><span class="tok-nc">IfcEarthworksCut</span></a>
-<span class="tok-p">,</span><a href="IfcOpeningElement.html"><span class="tok-nc">IfcOpeningElement</span></a>
-<span class="tok-p">,</span><a href="IfcVoidingFeature.html"><span class="tok-nc">IfcVoidingFeature</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcFeatureElement.html"><span class="tok-nc">IfcFeatureElement</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-k">INVERSE</span>
-<span class="tok-n">VoidsElements</span> <span class="tok-o">:</span> <a href="IfcRelVoidsElement.html"><span class="tok-nc">IfcRelVoidsElement</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatedOpeningElement</span><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">HasNoSubtraction</span> <span class="tok-o">:</span> <span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcElement.html"><span class="tok-nc">IfcElement</span></a><span class="tok-p">.</span><span class="tok-n">HasOpenings</span><span class="tok-p">)</span> <span class="tok-o">=</span> <span class="tok-m">0</span><span class="tok-p">;</span>
-<span class="tok-n">IsNotFilling</span> <span class="tok-o">:</span> <span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcElement.html"><span class="tok-nc">IfcElement</span></a><span class="tok-p">.</span><span class="tok-n">FillsVoids</span><span class="tok-p">)</span> <span class="tok-o">=</span> <span class="tok-m">0</span><span class="tok-p">;</span>
+ <span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcEarthworksCut.html"><span class="tok-nc">IfcEarthworksCut</span></a>
+	<span class="tok-p">,</span><a href="IfcOpeningElement.html"><span class="tok-nc">IfcOpeningElement</span></a>
+	<span class="tok-p">,</span><a href="IfcVoidingFeature.html"><span class="tok-nc">IfcVoidingFeature</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcFeatureElement.html"><span class="tok-nc">IfcFeatureElement</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+ <span class="tok-k">INVERSE</span>
+	<span class="tok-n">VoidsElements</span> <span class="tok-o">:</span> <a href="IfcRelVoidsElement.html"><span class="tok-nc">IfcRelVoidsElement</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatedOpeningElement</span><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">HasNoSubtraction</span> <span class="tok-o">:</span> <span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcElement.html"><span class="tok-nc">IfcElement</span></a><span class="tok-p">.</span><span class="tok-n">HasOpenings</span><span class="tok-p">)</span> <span class="tok-o">=</span> <span class="tok-m">0</span><span class="tok-p">;</span>
+	<span class="tok-n">IsNotFilling</span> <span class="tok-o">:</span> <span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcElement.html"><span class="tok-nc">IfcElement</span></a><span class="tok-p">.</span><span class="tok-n">FillsVoids</span><span class="tok-p">)</span> <span class="tok-o">=</span> <span class="tok-m">0</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="5.4.3.30.8-References"></a>
     5.4.3.30.8 References

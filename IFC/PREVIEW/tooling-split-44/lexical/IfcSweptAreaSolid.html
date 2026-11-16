@@ -743,15 +743,15 @@ The swept area solid entity collects the entities which are defined procedurally
     8.8.3.42.5 Formal representation
 <a class="link" href="#8.8.3.42.5-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcSweptAreaSolid.html"><span class="tok-nc">IfcSweptAreaSolid</span></a>
-<span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcDirectrixCurveSweptAreaSolid.html"><span class="tok-nc">IfcDirectrixCurveSweptAreaSolid</span></a>
-<span class="tok-p">,</span><a href="IfcExtrudedAreaSolid.html"><span class="tok-nc">IfcExtrudedAreaSolid</span></a>
-<span class="tok-p">,</span><a href="IfcRevolvedAreaSolid.html"><span class="tok-nc">IfcRevolvedAreaSolid</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcSolidModel.html"><span class="tok-nc">IfcSolidModel</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">SweptArea</span> <span class="tok-o">:</span> <a href="IfcProfileDef.html"><span class="tok-nc">IfcProfileDef</span></a><span class="tok-p">;</span>
-<span class="tok-n">Position</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcAxis2Placement3D.html"><span class="tok-nc">IfcAxis2Placement3D</span></a><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">SweptAreaType</span> <span class="tok-o">:</span> <span class="tok-n">SweptArea</span><span class="tok-p">.</span><span class="tok-n">ProfileType</span> <span class="tok-o">=</span> <a href="IfcProfileTypeEnum.html"><span class="tok-nc">IfcProfileTypeEnum</span></a><span class="tok-p">.</span><span class="tok-n">Area</span><span class="tok-p">;</span>
+ <span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcDirectrixCurveSweptAreaSolid.html"><span class="tok-nc">IfcDirectrixCurveSweptAreaSolid</span></a>
+	<span class="tok-p">,</span><a href="IfcExtrudedAreaSolid.html"><span class="tok-nc">IfcExtrudedAreaSolid</span></a>
+	<span class="tok-p">,</span><a href="IfcRevolvedAreaSolid.html"><span class="tok-nc">IfcRevolvedAreaSolid</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcSolidModel.html"><span class="tok-nc">IfcSolidModel</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">SweptArea</span> <span class="tok-o">:</span> <a href="IfcProfileDef.html"><span class="tok-nc">IfcProfileDef</span></a><span class="tok-p">;</span>
+	<span class="tok-n">Position</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcAxis2Placement3D.html"><span class="tok-nc">IfcAxis2Placement3D</span></a><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">SweptAreaType</span> <span class="tok-o">:</span> <span class="tok-n">SweptArea</span><span class="tok-p">.</span><span class="tok-n">ProfileType</span> <span class="tok-o">=</span> <a href="IfcProfileTypeEnum.html"><span class="tok-nc">IfcProfileTypeEnum</span></a><span class="tok-p">.</span><span class="tok-n">Area</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.8.3.42.6-References"></a>
     8.8.3.42.6 References

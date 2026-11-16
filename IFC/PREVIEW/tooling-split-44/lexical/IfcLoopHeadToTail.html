@@ -288,16 +288,18 @@
 <a class="link" href="#8.20.6.2.2-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">FUNCTION</span> <a href="IfcLoopHeadToTail.html"><span class="tok-nc">IfcLoopHeadToTail</span></a>
 <span class="tok-p">(</span><span class="tok-n">ALoop</span> <span class="tok-o">:</span> <a href="IfcEdgeLoop.html"><span class="tok-nc">IfcEdgeLoop</span></a><span class="tok-p">)</span> <span class="tok-o">:</span> <span class="tok-nb">LOGICAL</span><span class="tok-p">;</span>
-<span class="tok-kd">LOCAL</span>
-<span class="tok-n">N</span> <span class="tok-o">:</span> <span class="tok-nb">INTEGER</span><span class="tok-p">;</span>
-<span class="tok-n">P</span> <span class="tok-o">:</span> <span class="tok-nb">LOGICAL</span> <span class="tok-o">:=</span> <span class="tok-n">TRUE</span><span class="tok-p">;</span>
-<span class="tok-kd">END_LOCAL</span><span class="tok-p">;</span>
-<span class="tok-n">N</span> <span class="tok-o">:=</span> <span class="tok-nb">SIZEOF</span> <span class="tok-p">(</span><span class="tok-n">ALoop</span><span class="tok-p">.</span><span class="tok-n">EdgeList</span><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-kd">REPEAT</span> <span class="tok-n">i</span> <span class="tok-o">:=</span> <span class="tok-m">2</span> <span class="tok-k">TO</span> <span class="tok-n">N</span><span class="tok-p">;</span>
-<span class="tok-n">P</span> <span class="tok-o">:=</span> <span class="tok-n">P</span> <span class="tok-nb">AND</span> <span class="tok-p">(</span><span class="tok-n">ALoop</span><span class="tok-p">.</span><span class="tok-n">EdgeList</span><span class="tok-p">[</span><span class="tok-n">i</span><span class="tok-m">-1</span><span class="tok-p">]</span><span class="tok-p">.</span><span class="tok-n">EdgeEnd</span> <span class="tok-o">:=:</span>
-<span class="tok-n">ALoop</span><span class="tok-p">.</span><span class="tok-n">EdgeList</span><span class="tok-p">[</span><span class="tok-n">i</span><span class="tok-p">]</span><span class="tok-p">.</span><span class="tok-n">EdgeStart</span><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-kd">END_REPEAT</span><span class="tok-p">;</span>
-<span class="tok-k">RETURN</span> <span class="tok-p">(</span><span class="tok-n">P</span><span class="tok-p">)</span><span class="tok-p">;</span>
+   <span class="tok-kd">LOCAL</span>
+     <span class="tok-n">N</span> <span class="tok-o">:</span> <span class="tok-nb">INTEGER</span><span class="tok-p">;</span>
+     <span class="tok-n">P</span> <span class="tok-o">:</span> <span class="tok-nb">LOGICAL</span> <span class="tok-o">:=</span> <span class="tok-n">TRUE</span><span class="tok-p">;</span>
+   <span class="tok-kd">END_LOCAL</span><span class="tok-p">;</span>
+     
+     <span class="tok-n">N</span> <span class="tok-o">:=</span> <span class="tok-nb">SIZEOF</span> <span class="tok-p">(</span><span class="tok-n">ALoop</span><span class="tok-p">.</span><span class="tok-n">EdgeList</span><span class="tok-p">)</span><span class="tok-p">;</span>
+     <span class="tok-kd">REPEAT</span> <span class="tok-n">i</span> <span class="tok-o">:=</span> <span class="tok-m">2</span> <span class="tok-k">TO</span> <span class="tok-n">N</span><span class="tok-p">;</span>
+       <span class="tok-n">P</span> <span class="tok-o">:=</span> <span class="tok-n">P</span> <span class="tok-nb">AND</span> <span class="tok-p">(</span><span class="tok-n">ALoop</span><span class="tok-p">.</span><span class="tok-n">EdgeList</span><span class="tok-p">[</span><span class="tok-n">i</span><span class="tok-m">-1</span><span class="tok-p">]</span><span class="tok-p">.</span><span class="tok-n">EdgeEnd</span> <span class="tok-o">:=:</span>
+                   <span class="tok-n">ALoop</span><span class="tok-p">.</span><span class="tok-n">EdgeList</span><span class="tok-p">[</span><span class="tok-n">i</span><span class="tok-p">]</span><span class="tok-p">.</span><span class="tok-n">EdgeStart</span><span class="tok-p">)</span><span class="tok-p">;</span>
+     <span class="tok-kd">END_REPEAT</span><span class="tok-p">;</span>     
+     <span class="tok-k">RETURN</span> <span class="tok-p">(</span><span class="tok-n">P</span><span class="tok-p">)</span><span class="tok-p">;</span>
+
 <span class="tok-kd">END_FUNCTION</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.20.6.2.3-References"></a>
     8.20.6.2.3 References

@@ -748,13 +748,13 @@ A composite curve segment is a bounded curve together with transition informatio
     8.9.3.22.5 Formal representation
 <a class="link" href="#8.9.3.22.5-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcCompositeCurveSegment.html"><span class="tok-nc">IfcCompositeCurveSegment</span></a>
-<span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcReparametrisedCompositeCurveSegment.html"><span class="tok-nc">IfcReparametrisedCompositeCurveSegment</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcSegment.html"><span class="tok-nc">IfcSegment</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">SameSense</span> <span class="tok-o">:</span> <a href="IfcBoolean.html"><span class="tok-nc">IfcBoolean</span></a><span class="tok-p">;</span>
-<span class="tok-n">ParentCurve</span> <span class="tok-o">:</span> <a href="IfcCurve.html"><span class="tok-nc">IfcCurve</span></a><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">ParentIsBoundedCurve</span> <span class="tok-o">:</span> <span class="tok-p">(</span><span class="tok-s1">'IFC4X4_DEV_20260526.IFCBOUNDEDCURVE'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">ParentCurve</span><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
+ <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcReparametrisedCompositeCurveSegment.html"><span class="tok-nc">IfcReparametrisedCompositeCurveSegment</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcSegment.html"><span class="tok-nc">IfcSegment</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">SameSense</span> <span class="tok-o">:</span> <a href="IfcBoolean.html"><span class="tok-nc">IfcBoolean</span></a><span class="tok-p">;</span>
+	<span class="tok-n">ParentCurve</span> <span class="tok-o">:</span> <a href="IfcCurve.html"><span class="tok-nc">IfcCurve</span></a><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">ParentIsBoundedCurve</span> <span class="tok-o">:</span> <span class="tok-p">(</span><span class="tok-s1">'IFC4X4_DEV_20260526.IFCBOUNDEDCURVE'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">ParentCurve</span><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.9.3.22.6-References"></a>
     8.9.3.22.6 References

@@ -700,14 +700,14 @@ A half space solid is defined by the half space which is the regular subset of t
     8.8.3.23.4 Formal representation
 <a class="link" href="#8.8.3.23.4-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcHalfSpaceSolid.html"><span class="tok-nc">IfcHalfSpaceSolid</span></a>
-<span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcBoxedHalfSpace.html"><span class="tok-nc">IfcBoxedHalfSpace</span></a>
-<span class="tok-p">,</span><a href="IfcPolygonalBoundedHalfSpace.html"><span class="tok-nc">IfcPolygonalBoundedHalfSpace</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcGeometricRepresentationItem.html"><span class="tok-nc">IfcGeometricRepresentationItem</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">BaseSurface</span> <span class="tok-o">:</span> <a href="IfcSurface.html"><span class="tok-nc">IfcSurface</span></a><span class="tok-p">;</span>
-<span class="tok-n">AgreementFlag</span> <span class="tok-o">:</span> <a href="IfcBoolean.html"><span class="tok-nc">IfcBoolean</span></a><span class="tok-p">;</span>
-<span class="tok-k">DERIVE</span>
-<span class="tok-n">Dim</span> <span class="tok-o">:</span> <a href="IfcDimensionCount.html"><span class="tok-nc">IfcDimensionCount</span></a> <span class="tok-o">:=</span> <span class="tok-m">3</span><span class="tok-p">;</span>
+ <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcBoxedHalfSpace.html"><span class="tok-nc">IfcBoxedHalfSpace</span></a>
+	<span class="tok-p">,</span><a href="IfcPolygonalBoundedHalfSpace.html"><span class="tok-nc">IfcPolygonalBoundedHalfSpace</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcGeometricRepresentationItem.html"><span class="tok-nc">IfcGeometricRepresentationItem</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">BaseSurface</span> <span class="tok-o">:</span> <a href="IfcSurface.html"><span class="tok-nc">IfcSurface</span></a><span class="tok-p">;</span>
+	<span class="tok-n">AgreementFlag</span> <span class="tok-o">:</span> <a href="IfcBoolean.html"><span class="tok-nc">IfcBoolean</span></a><span class="tok-p">;</span>
+ <span class="tok-k">DERIVE</span>
+	<span class="tok-n">Dim</span> <span class="tok-o">:</span> <a href="IfcDimensionCount.html"><span class="tok-nc">IfcDimensionCount</span></a> <span class="tok-o">:=</span> <span class="tok-m">3</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.8.3.23.5-References"></a>
     8.8.3.23.5 References

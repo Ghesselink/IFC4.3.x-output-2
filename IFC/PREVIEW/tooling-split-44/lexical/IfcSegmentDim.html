@@ -288,15 +288,17 @@
     8.9.6.24.2 Formal representation
 <a class="link" href="#8.9.6.24.2-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">FUNCTION</span> <a href="IfcSegmentDim.html"><span class="tok-nc">IfcSegmentDim</span></a>
-<span class="tok-p">(</span><span class="tok-n">Segment</span> <span class="tok-o">:</span> <a href="IfcSegment.html"><span class="tok-nc">IfcSegment</span></a><span class="tok-p">)</span>
-<span class="tok-o">:</span> <a href="IfcDimensionCount.html"><span class="tok-nc">IfcDimensionCount</span></a><span class="tok-p">;</span>
-<span class="tok-kd">IF</span> <span class="tok-p">(</span><span class="tok-s1">'IFC4X4_DEV_20260526.IFCCURVESEGMENT'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">Segment</span><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-kd">THEN</span> <span class="tok-k">RETURN</span><span class="tok-p">(</span><span class="tok-n">Segment</span><span class="tok-o">\</span><a href="IfcCurveSegment.html"><span class="tok-nc">IfcCurveSegment</span></a><span class="tok-p">.</span><span class="tok-n">ParentCurve</span><span class="tok-p">.</span><span class="tok-n">Dim</span><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-kd">END_IF</span><span class="tok-p">;</span>
-<span class="tok-kd">IF</span> <span class="tok-p">(</span><span class="tok-s1">'IFC4X4_DEV_20260526.IFCCOMPOSITECURVESEGMENT'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">Segment</span><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-kd">THEN</span> <span class="tok-k">RETURN</span><span class="tok-p">(</span><span class="tok-n">Segment</span><span class="tok-o">\</span><a href="IfcCompositeCurveSegment.html"><span class="tok-nc">IfcCompositeCurveSegment</span></a><span class="tok-p">.</span><span class="tok-n">ParentCurve</span><span class="tok-p">.</span><span class="tok-n">Dim</span><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-kd">END_IF</span><span class="tok-p">;</span>
-<span class="tok-k">RETURN</span> <span class="tok-p">(</span><span class="tok-err">?</span><span class="tok-p">)</span><span class="tok-p">;</span>
+ <span class="tok-p">(</span><span class="tok-n">Segment</span> <span class="tok-o">:</span> <a href="IfcSegment.html"><span class="tok-nc">IfcSegment</span></a><span class="tok-p">)</span>
+ <span class="tok-o">:</span> <a href="IfcDimensionCount.html"><span class="tok-nc">IfcDimensionCount</span></a><span class="tok-p">;</span>
+
+  <span class="tok-kd">IF</span> <span class="tok-p">(</span><span class="tok-s1">'IFC4X4_DEV_20260526.IFCCURVESEGMENT'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">Segment</span><span class="tok-p">)</span><span class="tok-p">)</span>
+    <span class="tok-kd">THEN</span> <span class="tok-k">RETURN</span><span class="tok-p">(</span><span class="tok-n">Segment</span><span class="tok-o">\</span><a href="IfcCurveSegment.html"><span class="tok-nc">IfcCurveSegment</span></a><span class="tok-p">.</span><span class="tok-n">ParentCurve</span><span class="tok-p">.</span><span class="tok-n">Dim</span><span class="tok-p">)</span><span class="tok-p">;</span>
+  <span class="tok-kd">END_IF</span><span class="tok-p">;</span>
+  <span class="tok-kd">IF</span> <span class="tok-p">(</span><span class="tok-s1">'IFC4X4_DEV_20260526.IFCCOMPOSITECURVESEGMENT'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">Segment</span><span class="tok-p">)</span><span class="tok-p">)</span>
+    <span class="tok-kd">THEN</span> <span class="tok-k">RETURN</span><span class="tok-p">(</span><span class="tok-n">Segment</span><span class="tok-o">\</span><a href="IfcCompositeCurveSegment.html"><span class="tok-nc">IfcCompositeCurveSegment</span></a><span class="tok-p">.</span><span class="tok-n">ParentCurve</span><span class="tok-p">.</span><span class="tok-n">Dim</span><span class="tok-p">)</span><span class="tok-p">;</span>
+  <span class="tok-kd">END_IF</span><span class="tok-p">;</span>
+  <span class="tok-k">RETURN</span> <span class="tok-p">(</span><span class="tok-err">?</span><span class="tok-p">)</span><span class="tok-p">;</span>
+
 <span class="tok-kd">END_FUNCTION</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.9.6.24.3-References"></a>
     8.9.6.24.3 References

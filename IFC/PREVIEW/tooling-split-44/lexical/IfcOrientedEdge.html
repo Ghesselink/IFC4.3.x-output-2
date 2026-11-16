@@ -696,7 +696,7 @@ An oriented edge is an edge constructed from another edge and contains a BOOLEAN
 <p class="search-skip">
                     This attribute is formally derived.
                 </p>
-<pre><code class="language-express pygments" data-highlighted="generator"> <a href="IfcBooleanChoose.html"><span class="tok-nc">IfcBooleanChoose</span></a>
+<pre><code class="language-express pygments" data-highlighted="generator"> <a href="IfcBooleanChoose.html"><span class="tok-nc">IfcBooleanChoose</span></a> 
 <span class="tok-p">(</span><span class="tok-n">Orientation</span><span class="tok-p">,</span> <span class="tok-n">EdgeElement</span><span class="tok-p">.</span><span class="tok-n">EdgeStart</span><span class="tok-p">,</span> <span class="tok-n">EdgeElement</span><span class="tok-p">.</span><span class="tok-n">EdgeEnd</span><span class="tok-p">)</span></code></pre>
 <p>The start vertex of the oriented edge. It derives from the vertices of the edge element after taking account of the orientation.</p>
 </td>
@@ -711,7 +711,7 @@ An oriented edge is an edge constructed from another edge and contains a BOOLEAN
 <p class="search-skip">
                     This attribute is formally derived.
                 </p>
-<pre><code class="language-express pygments" data-highlighted="generator"> <a href="IfcBooleanChoose.html"><span class="tok-nc">IfcBooleanChoose</span></a>
+<pre><code class="language-express pygments" data-highlighted="generator"> <a href="IfcBooleanChoose.html"><span class="tok-nc">IfcBooleanChoose</span></a> 
 <span class="tok-p">(</span><span class="tok-n">Orientation</span><span class="tok-p">,</span> <span class="tok-n">EdgeElement</span><span class="tok-p">.</span><span class="tok-n">EdgeEnd</span><span class="tok-p">,</span> <span class="tok-n">EdgeElement</span><span class="tok-p">.</span><span class="tok-n">EdgeStart</span><span class="tok-p">)</span></code></pre>
 <p>The end vertex of the oriented edge. It derives from the vertices of the edge element after taking account of the orientation.</p>
 </td>
@@ -746,16 +746,16 @@ An oriented edge is an edge constructed from another edge and contains a BOOLEAN
     8.20.3.13.5 Formal representation
 <a class="link" href="#8.20.3.13.5-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcOrientedEdge.html"><span class="tok-nc">IfcOrientedEdge</span></a>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcEdge.html"><span class="tok-nc">IfcEdge</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">EdgeElement</span> <span class="tok-o">:</span> <a href="IfcEdge.html"><span class="tok-nc">IfcEdge</span></a><span class="tok-p">;</span>
-<span class="tok-n">Orientation</span> <span class="tok-o">:</span> <a href="IfcBoolean.html"><span class="tok-nc">IfcBoolean</span></a><span class="tok-p">;</span>
-<span class="tok-k">DERIVE</span>
-<span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcEdge.html"><span class="tok-nc">IfcEdge</span></a><span class="tok-p">.</span><span class="tok-n">EdgeStart</span> <span class="tok-o">:</span> <a href="IfcVertex.html"><span class="tok-nc">IfcVertex</span></a> <span class="tok-o">:=</span> <a href="IfcBooleanChoose.html"><span class="tok-nc">IfcBooleanChoose</span></a>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcEdge.html"><span class="tok-nc">IfcEdge</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">EdgeElement</span> <span class="tok-o">:</span> <a href="IfcEdge.html"><span class="tok-nc">IfcEdge</span></a><span class="tok-p">;</span>
+	<span class="tok-n">Orientation</span> <span class="tok-o">:</span> <a href="IfcBoolean.html"><span class="tok-nc">IfcBoolean</span></a><span class="tok-p">;</span>
+ <span class="tok-k">DERIVE</span>
+	<span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcEdge.html"><span class="tok-nc">IfcEdge</span></a><span class="tok-p">.</span><span class="tok-n">EdgeStart</span> <span class="tok-o">:</span> <a href="IfcVertex.html"><span class="tok-nc">IfcVertex</span></a> <span class="tok-o">:=</span> <a href="IfcBooleanChoose.html"><span class="tok-nc">IfcBooleanChoose</span></a> 
 <span class="tok-p">(</span><span class="tok-n">Orientation</span><span class="tok-p">,</span> <span class="tok-n">EdgeElement</span><span class="tok-p">.</span><span class="tok-n">EdgeStart</span><span class="tok-p">,</span> <span class="tok-n">EdgeElement</span><span class="tok-p">.</span><span class="tok-n">EdgeEnd</span><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcEdge.html"><span class="tok-nc">IfcEdge</span></a><span class="tok-p">.</span><span class="tok-n">EdgeEnd</span> <span class="tok-o">:</span> <a href="IfcVertex.html"><span class="tok-nc">IfcVertex</span></a> <span class="tok-o">:=</span> <a href="IfcBooleanChoose.html"><span class="tok-nc">IfcBooleanChoose</span></a>
+	<span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcEdge.html"><span class="tok-nc">IfcEdge</span></a><span class="tok-p">.</span><span class="tok-n">EdgeEnd</span> <span class="tok-o">:</span> <a href="IfcVertex.html"><span class="tok-nc">IfcVertex</span></a> <span class="tok-o">:=</span> <a href="IfcBooleanChoose.html"><span class="tok-nc">IfcBooleanChoose</span></a> 
 <span class="tok-p">(</span><span class="tok-n">Orientation</span><span class="tok-p">,</span> <span class="tok-n">EdgeElement</span><span class="tok-p">.</span><span class="tok-n">EdgeEnd</span><span class="tok-p">,</span> <span class="tok-n">EdgeElement</span><span class="tok-p">.</span><span class="tok-n">EdgeStart</span><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">EdgeElementNotOriented</span> <span class="tok-o">:</span> <span class="tok-nb">NOT</span><span class="tok-p">(</span><span class="tok-s1">'IFC4X4_DEV_20260526.IFCORIENTEDEDGE'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">EdgeElement</span><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">EdgeElementNotOriented</span> <span class="tok-o">:</span> <span class="tok-nb">NOT</span><span class="tok-p">(</span><span class="tok-s1">'IFC4X4_DEV_20260526.IFCORIENTEDEDGE'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">EdgeElement</span><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.20.3.13.6-References"></a>
     8.20.3.13.6 References

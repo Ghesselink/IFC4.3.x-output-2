@@ -805,11 +805,11 @@
 </tr>
 <tr>
 <td colspan="2">
-<pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-nb">NOT</span><span class="tok-p">(</span><span class="tok-nb">EXISTS</span><span class="tok-p">(</span><span class="tok-n">EnumerationReference</span><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-nb">OR</span> <span class="tok-nb">NOT</span><span class="tok-p">(</span><span class="tok-nb">EXISTS</span><span class="tok-p">(</span><span class="tok-n">EnumerationValues</span><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-nb">OR</span> <span class="tok-p">(</span><span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-nb">QUERY</span><span class="tok-p">(</span><span class="tok-n">temp</span> <span class="tok-o">&lt;*</span> <span class="tok-n">EnumerationValues</span> <span class="tok-p">|</span>
-<span class="tok-n">temp</span> <span class="tok-nb">IN</span> <span class="tok-n">EnumerationReference</span><span class="tok-p">.</span><span class="tok-n">EnumerationValues</span><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-o">=</span> <span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-n">EnumerationValues</span><span class="tok-p">)</span><span class="tok-p">)</span></code></pre>
+<pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-nb">NOT</span><span class="tok-p">(</span><span class="tok-nb">EXISTS</span><span class="tok-p">(</span><span class="tok-n">EnumerationReference</span><span class="tok-p">)</span><span class="tok-p">)</span> 
+<span class="tok-nb">OR</span>  <span class="tok-nb">NOT</span><span class="tok-p">(</span><span class="tok-nb">EXISTS</span><span class="tok-p">(</span><span class="tok-n">EnumerationValues</span><span class="tok-p">)</span><span class="tok-p">)</span> 
+<span class="tok-nb">OR</span>  <span class="tok-p">(</span><span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-nb">QUERY</span><span class="tok-p">(</span><span class="tok-n">temp</span> <span class="tok-o">&lt;*</span> <span class="tok-n">EnumerationValues</span> <span class="tok-p">|</span>
+    <span class="tok-n">temp</span> <span class="tok-nb">IN</span> <span class="tok-n">EnumerationReference</span><span class="tok-p">.</span><span class="tok-n">EnumerationValues</span><span class="tok-p">)</span><span class="tok-p">)</span>
+    <span class="tok-o">=</span> <span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-n">EnumerationValues</span><span class="tok-p">)</span><span class="tok-p">)</span></code></pre>
 </td>
 </tr>
 </tbody>
@@ -818,15 +818,15 @@
     8.16.3.8.5 Formal representation
 <a class="link" href="#8.16.3.8.5-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcPropertyEnumeratedValue.html"><span class="tok-nc">IfcPropertyEnumeratedValue</span></a>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcSimpleProperty.html"><span class="tok-nc">IfcSimpleProperty</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">EnumerationValues</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <span class="tok-nb">LIST</span> <span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcValue.html"><span class="tok-nc">IfcValue</span></a><span class="tok-p">;</span>
-<span class="tok-n">EnumerationReference</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcPropertyEnumeration.html"><span class="tok-nc">IfcPropertyEnumeration</span></a><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">WR21</span> <span class="tok-o">:</span> <span class="tok-nb">NOT</span><span class="tok-p">(</span><span class="tok-nb">EXISTS</span><span class="tok-p">(</span><span class="tok-n">EnumerationReference</span><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-nb">OR</span> <span class="tok-nb">NOT</span><span class="tok-p">(</span><span class="tok-nb">EXISTS</span><span class="tok-p">(</span><span class="tok-n">EnumerationValues</span><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-nb">OR</span> <span class="tok-p">(</span><span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-nb">QUERY</span><span class="tok-p">(</span><span class="tok-n">temp</span> <span class="tok-o">&lt;*</span> <span class="tok-n">EnumerationValues</span> <span class="tok-p">|</span>
-<span class="tok-n">temp</span> <span class="tok-nb">IN</span> <span class="tok-n">EnumerationReference</span><span class="tok-p">.</span><span class="tok-n">EnumerationValues</span><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-o">=</span> <span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-n">EnumerationValues</span><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcSimpleProperty.html"><span class="tok-nc">IfcSimpleProperty</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">EnumerationValues</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <span class="tok-nb">LIST</span> <span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcValue.html"><span class="tok-nc">IfcValue</span></a><span class="tok-p">;</span>
+	<span class="tok-n">EnumerationReference</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcPropertyEnumeration.html"><span class="tok-nc">IfcPropertyEnumeration</span></a><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">WR21</span> <span class="tok-o">:</span> <span class="tok-nb">NOT</span><span class="tok-p">(</span><span class="tok-nb">EXISTS</span><span class="tok-p">(</span><span class="tok-n">EnumerationReference</span><span class="tok-p">)</span><span class="tok-p">)</span> 
+<span class="tok-nb">OR</span>  <span class="tok-nb">NOT</span><span class="tok-p">(</span><span class="tok-nb">EXISTS</span><span class="tok-p">(</span><span class="tok-n">EnumerationValues</span><span class="tok-p">)</span><span class="tok-p">)</span> 
+<span class="tok-nb">OR</span>  <span class="tok-p">(</span><span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-nb">QUERY</span><span class="tok-p">(</span><span class="tok-n">temp</span> <span class="tok-o">&lt;*</span> <span class="tok-n">EnumerationValues</span> <span class="tok-p">|</span>
+    <span class="tok-n">temp</span> <span class="tok-nb">IN</span> <span class="tok-n">EnumerationReference</span><span class="tok-p">.</span><span class="tok-n">EnumerationValues</span><span class="tok-p">)</span><span class="tok-p">)</span>
+    <span class="tok-o">=</span> <span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-n">EnumerationValues</span><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.16.3.8.6-References"></a>
     8.16.3.8.6 References

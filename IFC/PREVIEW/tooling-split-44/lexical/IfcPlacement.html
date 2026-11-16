@@ -691,15 +691,15 @@ A placement locates a geometric item with respect to the coordinate system of it
     8.9.3.45.4 Formal representation
 <a class="link" href="#8.9.3.45.4-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcPlacement.html"><span class="tok-nc">IfcPlacement</span></a>
-<span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcAxis1Placement.html"><span class="tok-nc">IfcAxis1Placement</span></a>
-<span class="tok-p">,</span><a href="IfcAxis2Placement2D.html"><span class="tok-nc">IfcAxis2Placement2D</span></a>
-<span class="tok-p">,</span><a href="IfcAxis2Placement3D.html"><span class="tok-nc">IfcAxis2Placement3D</span></a>
-<span class="tok-p">,</span><a href="IfcAxis2PlacementLinear.html"><span class="tok-nc">IfcAxis2PlacementLinear</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcGeometricRepresentationItem.html"><span class="tok-nc">IfcGeometricRepresentationItem</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">Location</span> <span class="tok-o">:</span> <a href="IfcPoint.html"><span class="tok-nc">IfcPoint</span></a><span class="tok-p">;</span>
-<span class="tok-k">DERIVE</span>
-<span class="tok-n">Dim</span> <span class="tok-o">:</span> <a href="IfcDimensionCount.html"><span class="tok-nc">IfcDimensionCount</span></a> <span class="tok-o">:=</span> <span class="tok-n">Location</span><span class="tok-p">.</span><span class="tok-n">Dim</span><span class="tok-p">;</span>
+ <span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcAxis1Placement.html"><span class="tok-nc">IfcAxis1Placement</span></a>
+	<span class="tok-p">,</span><a href="IfcAxis2Placement2D.html"><span class="tok-nc">IfcAxis2Placement2D</span></a>
+	<span class="tok-p">,</span><a href="IfcAxis2Placement3D.html"><span class="tok-nc">IfcAxis2Placement3D</span></a>
+	<span class="tok-p">,</span><a href="IfcAxis2PlacementLinear.html"><span class="tok-nc">IfcAxis2PlacementLinear</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcGeometricRepresentationItem.html"><span class="tok-nc">IfcGeometricRepresentationItem</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">Location</span> <span class="tok-o">:</span> <a href="IfcPoint.html"><span class="tok-nc">IfcPoint</span></a><span class="tok-p">;</span>
+ <span class="tok-k">DERIVE</span>
+	<span class="tok-n">Dim</span> <span class="tok-o">:</span> <a href="IfcDimensionCount.html"><span class="tok-nc">IfcDimensionCount</span></a> <span class="tok-o">:=</span> <span class="tok-n">Location</span><span class="tok-p">.</span><span class="tok-n">Dim</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.9.3.45.5-References"></a>
     8.9.3.45.5 References

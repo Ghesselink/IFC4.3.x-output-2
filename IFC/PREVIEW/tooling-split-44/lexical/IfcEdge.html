@@ -527,7 +527,7 @@ An edge is the topological construct corresponding to the connection of two vert
 <figure><a class="anchor" id="Figure-B"></a><img alt="Image" src="../figures/ifcedge-math1.gif"/>
 where <em>V</em> = 1 or 2, and <em>G^e^</em> = 1 or 0. Specifically, the topological edge defining data shall satisfy: &gt; * an edge has two vertices  <img alt="Image" src="../figures/ifcedge-math2.gif"/>
 * the vertices need not be distinct  <img alt="Image" src="../figures/ifcedge-math3.gif"/>
-* Equation shall hold  <img alt="Image" src="../figures/ifcedge-math4.gif"/><figcaption>Figure B<a class="link" href="#Figure-B"><i data-feather="link"></i></a></figcaption><figcaption>Figure e8b30289-5e1a-4eb7-a062-e8e53614d898</figcaption><figcaption>Figure b3004533-e230-42f7-b87a-a9b5b2267fdf</figcaption><figcaption>Figure 79cd97b9-161f-4a21-b7e9-bc4dbb5be67f</figcaption></figure>
+* Equation shall hold  <img alt="Image" src="../figures/ifcedge-math4.gif"/><figcaption>Figure B<a class="link" href="#Figure-B"><i data-feather="link"></i></a></figcaption><figcaption>Figure 7f1342e6-9dfd-4b6c-80b7-1df809b3dbdd</figcaption><figcaption>Figure 2994df68-1fb9-40f2-9ec0-6dafbf79f8f9</figcaption><figcaption>Figure 1af38430-526c-4f82-957f-d0f101c67d77</figcaption></figure>
 </blockquote>
 </blockquote>
 <p><strong>Informal Propositions</strong></p>
@@ -674,13 +674,13 @@ where <em>V</em> = 1 or 2, and <em>G^e^</em> = 1 or 0. Specifically, the topolog
     8.20.3.4.4 Formal representation
 <a class="link" href="#8.20.3.4.4-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcEdge.html"><span class="tok-nc">IfcEdge</span></a>
-<span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcEdgeCurve.html"><span class="tok-nc">IfcEdgeCurve</span></a>
-<span class="tok-p">,</span><a href="IfcOrientedEdge.html"><span class="tok-nc">IfcOrientedEdge</span></a>
-<span class="tok-p">,</span><a href="IfcSubedge.html"><span class="tok-nc">IfcSubedge</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcTopologicalRepresentationItem.html"><span class="tok-nc">IfcTopologicalRepresentationItem</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">EdgeStart</span> <span class="tok-o">:</span> <a href="IfcVertex.html"><span class="tok-nc">IfcVertex</span></a><span class="tok-p">;</span>
-<span class="tok-n">EdgeEnd</span> <span class="tok-o">:</span> <a href="IfcVertex.html"><span class="tok-nc">IfcVertex</span></a><span class="tok-p">;</span>
+ <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcEdgeCurve.html"><span class="tok-nc">IfcEdgeCurve</span></a>
+	<span class="tok-p">,</span><a href="IfcOrientedEdge.html"><span class="tok-nc">IfcOrientedEdge</span></a>
+	<span class="tok-p">,</span><a href="IfcSubedge.html"><span class="tok-nc">IfcSubedge</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcTopologicalRepresentationItem.html"><span class="tok-nc">IfcTopologicalRepresentationItem</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">EdgeStart</span> <span class="tok-o">:</span> <a href="IfcVertex.html"><span class="tok-nc">IfcVertex</span></a><span class="tok-p">;</span>
+	<span class="tok-n">EdgeEnd</span> <span class="tok-o">:</span> <a href="IfcVertex.html"><span class="tok-nc">IfcVertex</span></a><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.20.3.4.5-References"></a>
     8.20.3.4.5 References

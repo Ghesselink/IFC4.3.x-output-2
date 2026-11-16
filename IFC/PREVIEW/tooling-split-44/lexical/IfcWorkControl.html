@@ -1202,17 +1202,17 @@
     5.3.3.9.6 Formal representation
 <a class="link" href="#5.3.3.9.6-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcWorkControl.html"><span class="tok-nc">IfcWorkControl</span></a>
-<span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcWorkPlan.html"><span class="tok-nc">IfcWorkPlan</span></a>
-<span class="tok-p">,</span><a href="IfcWorkSchedule.html"><span class="tok-nc">IfcWorkSchedule</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcControl.html"><span class="tok-nc">IfcControl</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">CreationDate</span> <span class="tok-o">:</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
-<span class="tok-n">Creators</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcPerson.html"><span class="tok-nc">IfcPerson</span></a><span class="tok-p">;</span>
-<span class="tok-n">Purpose</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
-<span class="tok-n">Duration</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDuration.html"><span class="tok-nc">IfcDuration</span></a><span class="tok-p">;</span>
-<span class="tok-n">TotalFloat</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDuration.html"><span class="tok-nc">IfcDuration</span></a><span class="tok-p">;</span>
-<span class="tok-n">StartTime</span> <span class="tok-o">:</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
-<span class="tok-n">FinishTime</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
+ <span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcWorkPlan.html"><span class="tok-nc">IfcWorkPlan</span></a>
+	<span class="tok-p">,</span><a href="IfcWorkSchedule.html"><span class="tok-nc">IfcWorkSchedule</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcControl.html"><span class="tok-nc">IfcControl</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">CreationDate</span> <span class="tok-o">:</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
+	<span class="tok-n">Creators</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcPerson.html"><span class="tok-nc">IfcPerson</span></a><span class="tok-p">;</span>
+	<span class="tok-n">Purpose</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
+	<span class="tok-n">Duration</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDuration.html"><span class="tok-nc">IfcDuration</span></a><span class="tok-p">;</span>
+	<span class="tok-n">TotalFloat</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDuration.html"><span class="tok-nc">IfcDuration</span></a><span class="tok-p">;</span>
+	<span class="tok-n">StartTime</span> <span class="tok-o">:</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
+	<span class="tok-n">FinishTime</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="5.3.3.9.7-References"></a>
     5.3.3.9.7 References

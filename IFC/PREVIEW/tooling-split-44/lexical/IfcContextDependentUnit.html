@@ -637,10 +637,10 @@ A context dependent unit is a unit which is not related to the SI system.</aside
     8.11.3.1.4 Formal representation
 <a class="link" href="#8.11.3.1.4-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcContextDependentUnit.html"><span class="tok-nc">IfcContextDependentUnit</span></a>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcNamedUnit.html"><span class="tok-nc">IfcNamedUnit</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">Name</span> <span class="tok-o">:</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
-<span class="tok-k">INVERSE</span>
-<span class="tok-n">HasExternalReference</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcExternalReferenceRelationship.html"><span class="tok-nc">IfcExternalReferenceRelationship</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatedResourceObjects</span><span class="tok-p">;</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcNamedUnit.html"><span class="tok-nc">IfcNamedUnit</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">Name</span> <span class="tok-o">:</span> <a href="IfcLabel.html"><span class="tok-nc">IfcLabel</span></a><span class="tok-p">;</span>
+ <span class="tok-k">INVERSE</span>
+	<span class="tok-n">HasExternalReference</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcExternalReferenceRelationship.html"><span class="tok-nc">IfcExternalReferenceRelationship</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatedResourceObjects</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.11.3.1.5-References"></a>
     8.11.3.1.5 References

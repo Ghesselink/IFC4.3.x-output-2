@@ -746,14 +746,14 @@ A swept surface is one that is constructed by sweeping a curve along another cur
     8.9.3.71.5 Formal representation
 <a class="link" href="#8.9.3.71.5-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcSweptSurface.html"><span class="tok-nc">IfcSweptSurface</span></a>
-<span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcSurfaceOfLinearExtrusion.html"><span class="tok-nc">IfcSurfaceOfLinearExtrusion</span></a>
-<span class="tok-p">,</span><a href="IfcSurfaceOfRevolution.html"><span class="tok-nc">IfcSurfaceOfRevolution</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcSurface.html"><span class="tok-nc">IfcSurface</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">SweptCurve</span> <span class="tok-o">:</span> <a href="IfcProfileDef.html"><span class="tok-nc">IfcProfileDef</span></a><span class="tok-p">;</span>
-<span class="tok-n">Position</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcAxis2Placement3D.html"><span class="tok-nc">IfcAxis2Placement3D</span></a><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">SweptCurveType</span> <span class="tok-o">:</span> <span class="tok-n">SweptCurve</span><span class="tok-p">.</span><span class="tok-n">ProfileType</span> <span class="tok-o">=</span> <a href="IfcProfileTypeEnum.html"><span class="tok-nc">IfcProfileTypeEnum</span></a><span class="tok-p">.</span><span class="tok-n">Curve</span><span class="tok-p">;</span>
+ <span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcSurfaceOfLinearExtrusion.html"><span class="tok-nc">IfcSurfaceOfLinearExtrusion</span></a>
+	<span class="tok-p">,</span><a href="IfcSurfaceOfRevolution.html"><span class="tok-nc">IfcSurfaceOfRevolution</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcSurface.html"><span class="tok-nc">IfcSurface</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">SweptCurve</span> <span class="tok-o">:</span> <a href="IfcProfileDef.html"><span class="tok-nc">IfcProfileDef</span></a><span class="tok-p">;</span>
+	<span class="tok-n">Position</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcAxis2Placement3D.html"><span class="tok-nc">IfcAxis2Placement3D</span></a><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">SweptCurveType</span> <span class="tok-o">:</span> <span class="tok-n">SweptCurve</span><span class="tok-p">.</span><span class="tok-n">ProfileType</span> <span class="tok-o">=</span> <a href="IfcProfileTypeEnum.html"><span class="tok-nc">IfcProfileTypeEnum</span></a><span class="tok-p">.</span><span class="tok-n">Curve</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.9.3.71.6-References"></a>
     8.9.3.71.6 References

@@ -697,7 +697,7 @@ This entity is intended for the transfer of models when a topological structure 
 <tr>
 <td colspan="2">
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-nb">QUERY</span><span class="tok-p">(</span><span class="tok-n">Temp</span> <span class="tok-o">&lt;*</span> <span class="tok-n">Elements</span> <span class="tok-p">|</span>
-<span class="tok-n">Temp</span><span class="tok-p">.</span><span class="tok-n">Dim</span> <span class="tok-o">&lt;&gt;</span> <span class="tok-n">Elements</span><span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-p">]</span><span class="tok-p">.</span><span class="tok-n">Dim</span><span class="tok-p">)</span><span class="tok-p">)</span>
+  <span class="tok-n">Temp</span><span class="tok-p">.</span><span class="tok-n">Dim</span> <span class="tok-o">&lt;&gt;</span> <span class="tok-n">Elements</span><span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-p">]</span><span class="tok-p">.</span><span class="tok-n">Dim</span><span class="tok-p">)</span><span class="tok-p">)</span>
 <span class="tok-o">=</span> <span class="tok-m">0</span></code></pre>
 </td>
 </tr>
@@ -707,15 +707,15 @@ This entity is intended for the transfer of models when a topological structure 
     8.8.3.22.5 Formal representation
 <a class="link" href="#8.8.3.22.5-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcGeometricSet.html"><span class="tok-nc">IfcGeometricSet</span></a>
-<span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcGeometricCurveSet.html"><span class="tok-nc">IfcGeometricCurveSet</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcGeometricRepresentationItem.html"><span class="tok-nc">IfcGeometricRepresentationItem</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">Elements</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcGeometricSetSelect.html"><span class="tok-nc">IfcGeometricSetSelect</span></a><span class="tok-p">;</span>
-<span class="tok-k">DERIVE</span>
-<span class="tok-n">Dim</span> <span class="tok-o">:</span> <a href="IfcDimensionCount.html"><span class="tok-nc">IfcDimensionCount</span></a> <span class="tok-o">:=</span> <span class="tok-n">Elements</span><span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-p">]</span><span class="tok-p">.</span><span class="tok-n">Dim</span><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">ConsistentDim</span> <span class="tok-o">:</span> <span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-nb">QUERY</span><span class="tok-p">(</span><span class="tok-n">Temp</span> <span class="tok-o">&lt;*</span> <span class="tok-n">Elements</span> <span class="tok-p">|</span>
-<span class="tok-n">Temp</span><span class="tok-p">.</span><span class="tok-n">Dim</span> <span class="tok-o">&lt;&gt;</span> <span class="tok-n">Elements</span><span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-p">]</span><span class="tok-p">.</span><span class="tok-n">Dim</span><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcGeometricCurveSet.html"><span class="tok-nc">IfcGeometricCurveSet</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcGeometricRepresentationItem.html"><span class="tok-nc">IfcGeometricRepresentationItem</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">Elements</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcGeometricSetSelect.html"><span class="tok-nc">IfcGeometricSetSelect</span></a><span class="tok-p">;</span>
+ <span class="tok-k">DERIVE</span>
+	<span class="tok-n">Dim</span> <span class="tok-o">:</span> <a href="IfcDimensionCount.html"><span class="tok-nc">IfcDimensionCount</span></a> <span class="tok-o">:=</span> <span class="tok-n">Elements</span><span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-p">]</span><span class="tok-p">.</span><span class="tok-n">Dim</span><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">ConsistentDim</span> <span class="tok-o">:</span> <span class="tok-nb">SIZEOF</span><span class="tok-p">(</span><span class="tok-nb">QUERY</span><span class="tok-p">(</span><span class="tok-n">Temp</span> <span class="tok-o">&lt;*</span> <span class="tok-n">Elements</span> <span class="tok-p">|</span>
+  <span class="tok-n">Temp</span><span class="tok-p">.</span><span class="tok-n">Dim</span> <span class="tok-o">&lt;&gt;</span> <span class="tok-n">Elements</span><span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-p">]</span><span class="tok-p">.</span><span class="tok-n">Dim</span><span class="tok-p">)</span><span class="tok-p">)</span>
 <span class="tok-o">=</span> <span class="tok-m">0</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.8.3.22.6-References"></a>

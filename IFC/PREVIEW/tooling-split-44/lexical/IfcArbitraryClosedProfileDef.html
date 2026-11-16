@@ -841,14 +841,14 @@
     8.15.3.1.7 Formal representation
 <a class="link" href="#8.15.3.1.7-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcArbitraryClosedProfileDef.html"><span class="tok-nc">IfcArbitraryClosedProfileDef</span></a>
-<span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcArbitraryProfileDefWithVoids.html"><span class="tok-nc">IfcArbitraryProfileDefWithVoids</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcProfileDef.html"><span class="tok-nc">IfcProfileDef</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">OuterCurve</span> <span class="tok-o">:</span> <a href="IfcCurve.html"><span class="tok-nc">IfcCurve</span></a><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">WR1</span> <span class="tok-o">:</span> <span class="tok-n">OuterCurve</span><span class="tok-p">.</span><span class="tok-n">Dim</span> <span class="tok-o">=</span> <span class="tok-m">2</span><span class="tok-p">;</span>
-<span class="tok-n">WR2</span> <span class="tok-o">:</span> <span class="tok-nb">NOT</span><span class="tok-p">(</span><span class="tok-s1">'IFC4X4_DEV_20260526.IFCLINE'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">OuterCurve</span><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">WR3</span> <span class="tok-o">:</span> <span class="tok-nb">NOT</span><span class="tok-p">(</span><span class="tok-s1">'IFC4X4_DEV_20260526.IFCOFFSETCURVE2D'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">OuterCurve</span><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
+ <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcArbitraryProfileDefWithVoids.html"><span class="tok-nc">IfcArbitraryProfileDefWithVoids</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcProfileDef.html"><span class="tok-nc">IfcProfileDef</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">OuterCurve</span> <span class="tok-o">:</span> <a href="IfcCurve.html"><span class="tok-nc">IfcCurve</span></a><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">WR1</span> <span class="tok-o">:</span> <span class="tok-n">OuterCurve</span><span class="tok-p">.</span><span class="tok-n">Dim</span> <span class="tok-o">=</span> <span class="tok-m">2</span><span class="tok-p">;</span>
+	<span class="tok-n">WR2</span> <span class="tok-o">:</span> <span class="tok-nb">NOT</span><span class="tok-p">(</span><span class="tok-s1">'IFC4X4_DEV_20260526.IFCLINE'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">OuterCurve</span><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">WR3</span> <span class="tok-o">:</span> <span class="tok-nb">NOT</span><span class="tok-p">(</span><span class="tok-s1">'IFC4X4_DEV_20260526.IFCOFFSETCURVE2D'</span> <span class="tok-nb">IN</span> <span class="tok-nb">TYPEOF</span><span class="tok-p">(</span><span class="tok-n">OuterCurve</span><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.15.3.1.8-References"></a>
     8.15.3.1.8 References

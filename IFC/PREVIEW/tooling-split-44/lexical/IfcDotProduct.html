@@ -287,31 +287,33 @@ This function returns the scalar (or dot) product of two directions. The input a
     8.9.6.10.2 Formal representation
 <a class="link" href="#8.9.6.10.2-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">FUNCTION</span> <a href="IfcDotProduct.html"><span class="tok-nc">IfcDotProduct</span></a>
-<span class="tok-p">(</span><span class="tok-n">Arg1</span><span class="tok-p">,</span> <span class="tok-n">Arg2</span> <span class="tok-o">:</span> <a href="IfcDirection.html"><span class="tok-nc">IfcDirection</span></a><span class="tok-p">)</span>
-<span class="tok-o">:</span> <span class="tok-nb">REAL</span><span class="tok-p">;</span>
+  <span class="tok-p">(</span><span class="tok-n">Arg1</span><span class="tok-p">,</span> <span class="tok-n">Arg2</span> <span class="tok-o">:</span> <a href="IfcDirection.html"><span class="tok-nc">IfcDirection</span></a><span class="tok-p">)</span> 
+    <span class="tok-o">:</span> <span class="tok-nb">REAL</span><span class="tok-p">;</span>
 <span class="tok-kd">LOCAL</span>
-<span class="tok-n">Scalar</span> <span class="tok-o">:</span> <span class="tok-nb">REAL</span><span class="tok-p">;</span>
-<span class="tok-n">Vec1</span><span class="tok-p">,</span> <span class="tok-n">Vec2</span> <span class="tok-o">:</span> <a href="IfcDirection.html"><span class="tok-nc">IfcDirection</span></a><span class="tok-p">;</span>
-<span class="tok-n">Ndim</span> <span class="tok-o">:</span> <span class="tok-nb">INTEGER</span><span class="tok-p">;</span>
+  <span class="tok-n">Scalar</span> <span class="tok-o">:</span> <span class="tok-nb">REAL</span><span class="tok-p">;</span>
+  <span class="tok-n">Vec1</span><span class="tok-p">,</span> <span class="tok-n">Vec2</span> <span class="tok-o">:</span> <a href="IfcDirection.html"><span class="tok-nc">IfcDirection</span></a><span class="tok-p">;</span>
+  <span class="tok-n">Ndim</span>   <span class="tok-o">:</span> <span class="tok-nb">INTEGER</span><span class="tok-p">;</span>
 <span class="tok-kd">END_LOCAL</span><span class="tok-p">;</span>
-<span class="tok-kd">IF</span> <span class="tok-nb">NOT</span> <span class="tok-nb">EXISTS</span> <span class="tok-p">(</span><span class="tok-n">Arg1</span><span class="tok-p">)</span> <span class="tok-nb">OR</span> <span class="tok-nb">NOT</span> <span class="tok-nb">EXISTS</span> <span class="tok-p">(</span><span class="tok-n">Arg2</span><span class="tok-p">)</span> <span class="tok-kd">THEN</span>
-<span class="tok-n">Scalar</span> <span class="tok-o">:=</span> <span class="tok-err">?</span><span class="tok-p">;</span>
-<span class="tok-kd">ELSE</span>
-<span class="tok-kd">IF</span> <span class="tok-p">(</span><span class="tok-n">Arg1</span><span class="tok-p">.</span><span class="tok-n">Dim</span> <span class="tok-o">&lt;&gt;</span> <span class="tok-n">Arg2</span><span class="tok-p">.</span><span class="tok-n">Dim</span><span class="tok-p">)</span> <span class="tok-kd">THEN</span>
-<span class="tok-n">Scalar</span> <span class="tok-o">:=</span> <span class="tok-err">?</span><span class="tok-p">;</span>
-<span class="tok-kd">ELSE</span>
-<span class="tok-kd">BEGIN</span>
-<span class="tok-n">Vec1</span> <span class="tok-o">:=</span> <a href="IfcNormalise.html"><span class="tok-nc">IfcNormalise</span></a><span class="tok-p">(</span><span class="tok-n">Arg1</span><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">Vec2</span> <span class="tok-o">:=</span> <a href="IfcNormalise.html"><span class="tok-nc">IfcNormalise</span></a><span class="tok-p">(</span><span class="tok-n">Arg2</span><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">Ndim</span> <span class="tok-o">:=</span> <span class="tok-n">Arg1</span><span class="tok-p">.</span><span class="tok-n">Dim</span><span class="tok-p">;</span>
-<span class="tok-n">Scalar</span> <span class="tok-o">:=</span> <span class="tok-m">0.0</span><span class="tok-p">;</span>
-<span class="tok-kd">REPEAT</span> <span class="tok-n">i</span> <span class="tok-o">:=</span> <span class="tok-m">1</span> <span class="tok-k">TO</span> <span class="tok-n">Ndim</span><span class="tok-p">;</span>
-<span class="tok-n">Scalar</span> <span class="tok-o">:=</span> <span class="tok-n">Scalar</span> <span class="tok-o">+</span> <span class="tok-n">Vec1</span><span class="tok-p">.</span><span class="tok-n">DirectionRatios</span><span class="tok-p">[</span><span class="tok-n">i</span><span class="tok-p">]</span><span class="tok-o">*</span><span class="tok-n">Vec2</span><span class="tok-p">.</span><span class="tok-n">DirectionRatios</span><span class="tok-p">[</span><span class="tok-n">i</span><span class="tok-p">]</span><span class="tok-p">;</span>
-<span class="tok-kd">END_REPEAT</span><span class="tok-p">;</span>
-<span class="tok-kd">END</span><span class="tok-p">;</span>
-<span class="tok-kd">END_IF</span><span class="tok-p">;</span>
-<span class="tok-kd">END_IF</span><span class="tok-p">;</span>
-<span class="tok-k">RETURN</span> <span class="tok-p">(</span><span class="tok-n">Scalar</span><span class="tok-p">)</span><span class="tok-p">;</span>
+
+  <span class="tok-kd">IF</span> <span class="tok-nb">NOT</span> <span class="tok-nb">EXISTS</span> <span class="tok-p">(</span><span class="tok-n">Arg1</span><span class="tok-p">)</span> <span class="tok-nb">OR</span> <span class="tok-nb">NOT</span> <span class="tok-nb">EXISTS</span> <span class="tok-p">(</span><span class="tok-n">Arg2</span><span class="tok-p">)</span> <span class="tok-kd">THEN</span>
+    <span class="tok-n">Scalar</span> <span class="tok-o">:=</span> <span class="tok-err">?</span><span class="tok-p">;</span>
+  <span class="tok-kd">ELSE</span>
+    <span class="tok-kd">IF</span> <span class="tok-p">(</span><span class="tok-n">Arg1</span><span class="tok-p">.</span><span class="tok-n">Dim</span> <span class="tok-o">&lt;&gt;</span> <span class="tok-n">Arg2</span><span class="tok-p">.</span><span class="tok-n">Dim</span><span class="tok-p">)</span> <span class="tok-kd">THEN</span>
+      <span class="tok-n">Scalar</span> <span class="tok-o">:=</span> <span class="tok-err">?</span><span class="tok-p">;</span>
+    <span class="tok-kd">ELSE</span>
+      <span class="tok-kd">BEGIN</span>
+        <span class="tok-n">Vec1</span> <span class="tok-o">:=</span> <a href="IfcNormalise.html"><span class="tok-nc">IfcNormalise</span></a><span class="tok-p">(</span><span class="tok-n">Arg1</span><span class="tok-p">)</span><span class="tok-p">;</span>
+        <span class="tok-n">Vec2</span> <span class="tok-o">:=</span> <a href="IfcNormalise.html"><span class="tok-nc">IfcNormalise</span></a><span class="tok-p">(</span><span class="tok-n">Arg2</span><span class="tok-p">)</span><span class="tok-p">;</span>
+        <span class="tok-n">Ndim</span> <span class="tok-o">:=</span> <span class="tok-n">Arg1</span><span class="tok-p">.</span><span class="tok-n">Dim</span><span class="tok-p">;</span>
+        <span class="tok-n">Scalar</span> <span class="tok-o">:=</span> <span class="tok-m">0.0</span><span class="tok-p">;</span>
+        <span class="tok-kd">REPEAT</span> <span class="tok-n">i</span> <span class="tok-o">:=</span> <span class="tok-m">1</span> <span class="tok-k">TO</span> <span class="tok-n">Ndim</span><span class="tok-p">;</span>
+          <span class="tok-n">Scalar</span> <span class="tok-o">:=</span> <span class="tok-n">Scalar</span> <span class="tok-o">+</span> <span class="tok-n">Vec1</span><span class="tok-p">.</span><span class="tok-n">DirectionRatios</span><span class="tok-p">[</span><span class="tok-n">i</span><span class="tok-p">]</span><span class="tok-o">*</span><span class="tok-n">Vec2</span><span class="tok-p">.</span><span class="tok-n">DirectionRatios</span><span class="tok-p">[</span><span class="tok-n">i</span><span class="tok-p">]</span><span class="tok-p">;</span>
+        <span class="tok-kd">END_REPEAT</span><span class="tok-p">;</span>
+      <span class="tok-kd">END</span><span class="tok-p">;</span>
+    <span class="tok-kd">END_IF</span><span class="tok-p">;</span>
+  <span class="tok-kd">END_IF</span><span class="tok-p">;</span>
+  <span class="tok-k">RETURN</span> <span class="tok-p">(</span><span class="tok-n">Scalar</span><span class="tok-p">)</span><span class="tok-p">;</span>
+
 <span class="tok-kd">END_FUNCTION</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.9.6.10.3-References"></a>
     8.9.6.10.3 References

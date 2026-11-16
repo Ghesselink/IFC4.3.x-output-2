@@ -630,18 +630,18 @@
     8.10.3.5.4 Formal representation
 <a class="link" href="#8.10.3.5.4-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcMaterialDefinition.html"><span class="tok-nc">IfcMaterialDefinition</span></a>
-<span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcMaterial.html"><span class="tok-nc">IfcMaterial</span></a>
-<span class="tok-p">,</span><a href="IfcMaterialConstituent.html"><span class="tok-nc">IfcMaterialConstituent</span></a>
-<span class="tok-p">,</span><a href="IfcMaterialConstituentSet.html"><span class="tok-nc">IfcMaterialConstituentSet</span></a>
-<span class="tok-p">,</span><a href="IfcMaterialLayer.html"><span class="tok-nc">IfcMaterialLayer</span></a>
-<span class="tok-p">,</span><a href="IfcMaterialLayerSet.html"><span class="tok-nc">IfcMaterialLayerSet</span></a>
-<span class="tok-p">,</span><a href="IfcMaterialProfile.html"><span class="tok-nc">IfcMaterialProfile</span></a>
-<span class="tok-p">,</span><a href="IfcMaterialProfileSet.html"><span class="tok-nc">IfcMaterialProfileSet</span></a><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-k">INVERSE</span>
-<span class="tok-n">AssociatedTo</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelAssociatesMaterial.html"><span class="tok-nc">IfcRelAssociatesMaterial</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatingMaterial</span><span class="tok-p">;</span>
-<span class="tok-n">HasExternalReferences</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcExternalReferenceRelationship.html"><span class="tok-nc">IfcExternalReferenceRelationship</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatedResourceObjects</span><span class="tok-p">;</span>
-<span class="tok-n">HasProperties</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcMaterialProperties.html"><span class="tok-nc">IfcMaterialProperties</span></a> <span class="tok-k">FOR</span> <span class="tok-n">Material</span><span class="tok-p">;</span>
+ <span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcMaterial.html"><span class="tok-nc">IfcMaterial</span></a>
+	<span class="tok-p">,</span><a href="IfcMaterialConstituent.html"><span class="tok-nc">IfcMaterialConstituent</span></a>
+	<span class="tok-p">,</span><a href="IfcMaterialConstituentSet.html"><span class="tok-nc">IfcMaterialConstituentSet</span></a>
+	<span class="tok-p">,</span><a href="IfcMaterialLayer.html"><span class="tok-nc">IfcMaterialLayer</span></a>
+	<span class="tok-p">,</span><a href="IfcMaterialLayerSet.html"><span class="tok-nc">IfcMaterialLayerSet</span></a>
+	<span class="tok-p">,</span><a href="IfcMaterialProfile.html"><span class="tok-nc">IfcMaterialProfile</span></a>
+	<span class="tok-p">,</span><a href="IfcMaterialProfileSet.html"><span class="tok-nc">IfcMaterialProfileSet</span></a><span class="tok-p">)</span><span class="tok-p">)</span><span class="tok-p">;</span>
+ <span class="tok-k">INVERSE</span>
+	<span class="tok-n">AssociatedTo</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelAssociatesMaterial.html"><span class="tok-nc">IfcRelAssociatesMaterial</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatingMaterial</span><span class="tok-p">;</span>
+	<span class="tok-n">HasExternalReferences</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcExternalReferenceRelationship.html"><span class="tok-nc">IfcExternalReferenceRelationship</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatedResourceObjects</span><span class="tok-p">;</span>
+	<span class="tok-n">HasProperties</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcMaterialProperties.html"><span class="tok-nc">IfcMaterialProperties</span></a> <span class="tok-k">FOR</span> <span class="tok-n">Material</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.10.3.5.5-References"></a>
     8.10.3.5.5 References

@@ -766,12 +766,12 @@
     8.9.3.35.5 Formal representation
 <a class="link" href="#8.9.3.35.5-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcIndexedPolyCurve.html"><span class="tok-nc">IfcIndexedPolyCurve</span></a>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcBoundedCurve.html"><span class="tok-nc">IfcBoundedCurve</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">Points</span> <span class="tok-o">:</span> <a href="IfcCartesianPointList.html"><span class="tok-nc">IfcCartesianPointList</span></a><span class="tok-p">;</span>
-<span class="tok-n">Segments</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <span class="tok-nb">LIST</span> <span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcSegmentIndexSelect.html"><span class="tok-nc">IfcSegmentIndexSelect</span></a><span class="tok-p">;</span>
-<span class="tok-n">SelfIntersect</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcBoolean.html"><span class="tok-nc">IfcBoolean</span></a><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">Consecutive</span> <span class="tok-o">:</span> <span class="tok-nb">NOT</span><span class="tok-p">(</span><span class="tok-nb">EXISTS</span><span class="tok-p">(</span><span class="tok-n">Segments</span><span class="tok-p">)</span><span class="tok-p">)</span> <span class="tok-nb">OR</span> <a href="IfcConsecutiveSegments.html"><span class="tok-nc">IfcConsecutiveSegments</span></a><span class="tok-p">(</span><span class="tok-n">Segments</span><span class="tok-p">)</span><span class="tok-p">;</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcBoundedCurve.html"><span class="tok-nc">IfcBoundedCurve</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">Points</span> <span class="tok-o">:</span> <a href="IfcCartesianPointList.html"><span class="tok-nc">IfcCartesianPointList</span></a><span class="tok-p">;</span>
+	<span class="tok-n">Segments</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <span class="tok-nb">LIST</span> <span class="tok-p">[</span><span class="tok-m">1</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcSegmentIndexSelect.html"><span class="tok-nc">IfcSegmentIndexSelect</span></a><span class="tok-p">;</span>
+	<span class="tok-n">SelfIntersect</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcBoolean.html"><span class="tok-nc">IfcBoolean</span></a><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">Consecutive</span> <span class="tok-o">:</span> <span class="tok-nb">NOT</span><span class="tok-p">(</span><span class="tok-nb">EXISTS</span><span class="tok-p">(</span><span class="tok-n">Segments</span><span class="tok-p">)</span><span class="tok-p">)</span> <span class="tok-nb">OR</span> <a href="IfcConsecutiveSegments.html"><span class="tok-nc">IfcConsecutiveSegments</span></a><span class="tok-p">(</span><span class="tok-n">Segments</span><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.9.3.35.6-References"></a>
     8.9.3.35.6 References

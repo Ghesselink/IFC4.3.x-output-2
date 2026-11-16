@@ -653,11 +653,11 @@ An SI unit is the fixed quantity used as a standard in terms of which items are 
     8.11.3.10.4 Formal representation
 <a class="link" href="#8.11.3.10.4-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcSIUnit.html"><span class="tok-nc">IfcSIUnit</span></a>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcNamedUnit.html"><span class="tok-nc">IfcNamedUnit</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">Prefix</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcSIPrefix.html"><span class="tok-nc">IfcSIPrefix</span></a><span class="tok-p">;</span>
-<span class="tok-n">Name</span> <span class="tok-o">:</span> <a href="IfcSIUnitName.html"><span class="tok-nc">IfcSIUnitName</span></a><span class="tok-p">;</span>
-<span class="tok-k">DERIVE</span>
-<span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcNamedUnit.html"><span class="tok-nc">IfcNamedUnit</span></a><span class="tok-p">.</span><span class="tok-n">Dimensions</span> <span class="tok-o">:</span> <a href="IfcDimensionalExponents.html"><span class="tok-nc">IfcDimensionalExponents</span></a> <span class="tok-o">:=</span> <a href="IfcDimensionsForSIUnit.html"><span class="tok-nc">IfcDimensionsForSIUnit</span></a> <span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-p">.</span><span class="tok-n">Name</span><span class="tok-p">)</span><span class="tok-p">;</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcNamedUnit.html"><span class="tok-nc">IfcNamedUnit</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">Prefix</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcSIPrefix.html"><span class="tok-nc">IfcSIPrefix</span></a><span class="tok-p">;</span>
+	<span class="tok-n">Name</span> <span class="tok-o">:</span> <a href="IfcSIUnitName.html"><span class="tok-nc">IfcSIUnitName</span></a><span class="tok-p">;</span>
+ <span class="tok-k">DERIVE</span>
+	<span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcNamedUnit.html"><span class="tok-nc">IfcNamedUnit</span></a><span class="tok-p">.</span><span class="tok-n">Dimensions</span> <span class="tok-o">:</span> <a href="IfcDimensionalExponents.html"><span class="tok-nc">IfcDimensionalExponents</span></a> <span class="tok-o">:=</span> <a href="IfcDimensionsForSIUnit.html"><span class="tok-nc">IfcDimensionsForSIUnit</span></a> <span class="tok-p">(</span><span class="tok-nb">SELF</span><span class="tok-p">.</span><span class="tok-n">Name</span><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.11.3.10.5-References"></a>
     8.11.3.10.5 References

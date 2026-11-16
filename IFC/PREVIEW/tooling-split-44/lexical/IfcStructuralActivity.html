@@ -1526,14 +1526,14 @@ an explicit or implied representation and its parameter space).</p>
     7.10.3.5.6 Formal representation
 <a class="link" href="#7.10.3.5.6-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcStructuralActivity.html"><span class="tok-nc">IfcStructuralActivity</span></a>
-<span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcStructuralAction.html"><span class="tok-nc">IfcStructuralAction</span></a>
-<span class="tok-p">,</span><a href="IfcStructuralReaction.html"><span class="tok-nc">IfcStructuralReaction</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcProduct.html"><span class="tok-nc">IfcProduct</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">AppliedLoad</span> <span class="tok-o">:</span> <a href="IfcStructuralLoad.html"><span class="tok-nc">IfcStructuralLoad</span></a><span class="tok-p">;</span>
-<span class="tok-n">GlobalOrLocal</span> <span class="tok-o">:</span> <a href="IfcGlobalOrLocalEnum.html"><span class="tok-nc">IfcGlobalOrLocalEnum</span></a><span class="tok-p">;</span>
-<span class="tok-k">INVERSE</span>
-<span class="tok-n">AssignedToStructuralItem</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-m">1</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelConnectsStructuralActivity.html"><span class="tok-nc">IfcRelConnectsStructuralActivity</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatedStructuralActivity</span><span class="tok-p">;</span>
+ <span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcStructuralAction.html"><span class="tok-nc">IfcStructuralAction</span></a>
+	<span class="tok-p">,</span><a href="IfcStructuralReaction.html"><span class="tok-nc">IfcStructuralReaction</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcProduct.html"><span class="tok-nc">IfcProduct</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">AppliedLoad</span> <span class="tok-o">:</span> <a href="IfcStructuralLoad.html"><span class="tok-nc">IfcStructuralLoad</span></a><span class="tok-p">;</span>
+	<span class="tok-n">GlobalOrLocal</span> <span class="tok-o">:</span> <a href="IfcGlobalOrLocalEnum.html"><span class="tok-nc">IfcGlobalOrLocalEnum</span></a><span class="tok-p">;</span>
+ <span class="tok-k">INVERSE</span>
+	<span class="tok-n">AssignedToStructuralItem</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-m">1</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelConnectsStructuralActivity.html"><span class="tok-nc">IfcRelConnectsStructuralActivity</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatedStructuralActivity</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="7.10.3.5.7-References"></a>
     7.10.3.5.7 References

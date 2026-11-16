@@ -699,10 +699,10 @@ an object coordinate system for instances of <em><a href="IfcProduct.html">IfcPr
     8.7.3.14.5 Formal representation
 <a class="link" href="#8.7.3.14.5-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcLocalPlacement.html"><span class="tok-nc">IfcLocalPlacement</span></a>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcObjectPlacement.html"><span class="tok-nc">IfcObjectPlacement</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">RelativePlacement</span> <span class="tok-o">:</span> <a href="IfcAxis2Placement.html"><span class="tok-nc">IfcAxis2Placement</span></a><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">WR21</span> <span class="tok-o">:</span> <a href="IfcCorrectLocalPlacement.html"><span class="tok-nc">IfcCorrectLocalPlacement</span></a><span class="tok-p">(</span><span class="tok-n">RelativePlacement</span><span class="tok-p">,</span> <span class="tok-n">PlacementRelTo</span><span class="tok-p">)</span><span class="tok-p">;</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcObjectPlacement.html"><span class="tok-nc">IfcObjectPlacement</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">RelativePlacement</span> <span class="tok-o">:</span> <a href="IfcAxis2Placement.html"><span class="tok-nc">IfcAxis2Placement</span></a><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">WR21</span> <span class="tok-o">:</span> <a href="IfcCorrectLocalPlacement.html"><span class="tok-nc">IfcCorrectLocalPlacement</span></a><span class="tok-p">(</span><span class="tok-n">RelativePlacement</span><span class="tok-p">,</span> <span class="tok-n">PlacementRelTo</span><span class="tok-p">)</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.7.3.14.6-References"></a>
     8.7.3.14.6 References

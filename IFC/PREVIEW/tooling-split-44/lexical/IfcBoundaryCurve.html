@@ -806,11 +806,11 @@ A boundary curve is a type of bounded curve suitable for the definition of a sur
     8.9.3.9.5 Formal representation
 <a class="link" href="#8.9.3.9.5-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcBoundaryCurve.html"><span class="tok-nc">IfcBoundaryCurve</span></a>
-<span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcOuterBoundaryCurve.html"><span class="tok-nc">IfcOuterBoundaryCurve</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcCompositeCurveOnSurface.html"><span class="tok-nc">IfcCompositeCurveOnSurface</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">IsClosed</span> <span class="tok-o">:</span> <span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcCompositeCurve.html"><span class="tok-nc">IfcCompositeCurve</span></a><span class="tok-p">.</span><span class="tok-n">ClosedCurve</span><span class="tok-p">;</span>
+ <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcOuterBoundaryCurve.html"><span class="tok-nc">IfcOuterBoundaryCurve</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcCompositeCurveOnSurface.html"><span class="tok-nc">IfcCompositeCurveOnSurface</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">IsClosed</span> <span class="tok-o">:</span> <span class="tok-nb">SELF</span><span class="tok-o">\</span><a href="IfcCompositeCurve.html"><span class="tok-nc">IfcCompositeCurve</span></a><span class="tok-p">.</span><span class="tok-n">ClosedCurve</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.9.3.9.6-References"></a>
     8.9.3.9.6 References

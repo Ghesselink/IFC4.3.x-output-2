@@ -1166,17 +1166,17 @@ A process is a set of activities that are interrelated or that interact with one
     5.1.3.9.6 Formal representation
 <a class="link" href="#5.1.3.9.6-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcProcess.html"><span class="tok-nc">IfcProcess</span></a>
-<span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcEvent.html"><span class="tok-nc">IfcEvent</span></a>
-<span class="tok-p">,</span><a href="IfcProcedure.html"><span class="tok-nc">IfcProcedure</span></a>
-<span class="tok-p">,</span><a href="IfcTask.html"><span class="tok-nc">IfcTask</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcObject.html"><span class="tok-nc">IfcObject</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">Identification</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcIdentifier.html"><span class="tok-nc">IfcIdentifier</span></a><span class="tok-p">;</span>
-<span class="tok-n">LongDescription</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcText.html"><span class="tok-nc">IfcText</span></a><span class="tok-p">;</span>
-<span class="tok-k">INVERSE</span>
-<span class="tok-n">IsPredecessorTo</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelSequence.html"><span class="tok-nc">IfcRelSequence</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatingProcess</span><span class="tok-p">;</span>
-<span class="tok-n">IsSuccessorFrom</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelSequence.html"><span class="tok-nc">IfcRelSequence</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatedProcess</span><span class="tok-p">;</span>
-<span class="tok-n">OperatesOn</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelAssignsToProcess.html"><span class="tok-nc">IfcRelAssignsToProcess</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatingProcess</span><span class="tok-p">;</span>
+ <span class="tok-k">ABSTRACT</span> <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcEvent.html"><span class="tok-nc">IfcEvent</span></a>
+	<span class="tok-p">,</span><a href="IfcProcedure.html"><span class="tok-nc">IfcProcedure</span></a>
+	<span class="tok-p">,</span><a href="IfcTask.html"><span class="tok-nc">IfcTask</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcObject.html"><span class="tok-nc">IfcObject</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">Identification</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcIdentifier.html"><span class="tok-nc">IfcIdentifier</span></a><span class="tok-p">;</span>
+	<span class="tok-n">LongDescription</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcText.html"><span class="tok-nc">IfcText</span></a><span class="tok-p">;</span>
+ <span class="tok-k">INVERSE</span>
+	<span class="tok-n">IsPredecessorTo</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelSequence.html"><span class="tok-nc">IfcRelSequence</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatingProcess</span><span class="tok-p">;</span>
+	<span class="tok-n">IsSuccessorFrom</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelSequence.html"><span class="tok-nc">IfcRelSequence</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatedProcess</span><span class="tok-p">;</span>
+	<span class="tok-n">OperatesOn</span> <span class="tok-o">:</span> <span class="tok-nb">SET</span> <span class="tok-p">[</span><span class="tok-m">0</span><span class="tok-o">:</span><span class="tok-err">?</span><span class="tok-p">]</span> <span class="tok-k">OF</span> <a href="IfcRelAssignsToProcess.html"><span class="tok-nc">IfcRelAssignsToProcess</span></a> <span class="tok-k">FOR</span> <span class="tok-n">RelatingProcess</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="5.1.3.9.7-References"></a>
     5.1.3.9.7 References

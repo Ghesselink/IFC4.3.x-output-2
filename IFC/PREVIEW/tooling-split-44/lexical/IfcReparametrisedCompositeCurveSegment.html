@@ -525,7 +525,7 @@ The reparametrised composite curve segment is a special type of composite curve 
 <blockquote>
 <figure><a class="anchor" id="Figure-A"></a><img alt="Image" src="../figures/ifcreparametrisedcompositecurvesegment-math1.gif"/> if <em>SameSense</em> = TRUE;
 or by the equation:
-<img alt="Image" src="../figures/ifcreparametrisedcompositecurvesegment-math2.gif"/> if <em>SameSense</em> = FALSE;<figcaption>Figure A<a class="link" href="#Figure-A"><i data-feather="link"></i></a></figcaption><figcaption>Figure 17288fc0-62d7-478a-855d-9fd99b415a95</figcaption></figure>
+<img alt="Image" src="../figures/ifcreparametrisedcompositecurvesegment-math2.gif"/> if <em>SameSense</em> = FALSE;<figcaption>Figure A<a class="link" href="#Figure-A"><i data-feather="link"></i></a></figcaption><figcaption>Figure 6cdc0e88-c61f-42b5-bbb7-050afc84e91d</figcaption></figure>
 </blockquote>
 </blockquote>
 <h2><a class="anchor" id="8.9.3.56.2-Entity-inheritance"></a>
@@ -773,10 +773,10 @@ or by the equation:
     8.9.3.56.5 Formal representation
 <a class="link" href="#8.9.3.56.5-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcReparametrisedCompositeCurveSegment.html"><span class="tok-nc">IfcReparametrisedCompositeCurveSegment</span></a>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcCompositeCurveSegment.html"><span class="tok-nc">IfcCompositeCurveSegment</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">ParamLength</span> <span class="tok-o">:</span> <a href="IfcParameterValue.html"><span class="tok-nc">IfcParameterValue</span></a><span class="tok-p">;</span>
-<span class="tok-k">WHERE</span>
-<span class="tok-n">PositiveLengthParameter</span> <span class="tok-o">:</span> <span class="tok-n">ParamLength</span> <span class="tok-o">&gt;</span> <span class="tok-m">0.0</span><span class="tok-p">;</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcCompositeCurveSegment.html"><span class="tok-nc">IfcCompositeCurveSegment</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">ParamLength</span> <span class="tok-o">:</span> <a href="IfcParameterValue.html"><span class="tok-nc">IfcParameterValue</span></a><span class="tok-p">;</span>
+ <span class="tok-k">WHERE</span>
+	<span class="tok-n">PositiveLengthParameter</span> <span class="tok-o">:</span> <span class="tok-n">ParamLength</span> <span class="tok-o">&gt;</span> <span class="tok-m">0.0</span><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.9.3.56.6-References"></a>
     8.9.3.56.6 References

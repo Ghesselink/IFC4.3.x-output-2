@@ -289,16 +289,19 @@
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">FUNCTION</span> <a href="IfcCurveWeightsPositive.html"><span class="tok-nc">IfcCurveWeightsPositive</span></a>
 <span class="tok-p">(</span> <span class="tok-n">B</span><span class="tok-o">:</span> <a href="IfcRationalBSplineCurveWithKnots.html"><span class="tok-nc">IfcRationalBSplineCurveWithKnots</span></a><span class="tok-p">)</span>
 <span class="tok-o">:</span> <span class="tok-n">BOOLEAN</span><span class="tok-p">;</span>
-<span class="tok-kd">LOCAL</span>
-<span class="tok-n">Result</span> <span class="tok-o">:</span> <span class="tok-n">BOOLEAN</span> <span class="tok-o">:=</span> <span class="tok-n">TRUE</span><span class="tok-p">;</span>
-<span class="tok-kd">END_LOCAL</span><span class="tok-p">;</span>
-<span class="tok-kd">REPEAT</span> <span class="tok-n">i</span> <span class="tok-o">:=</span> <span class="tok-m">0</span> <span class="tok-k">TO</span> <span class="tok-n">B</span><span class="tok-p">.</span><span class="tok-n">UpperIndexOnControlPoints</span><span class="tok-p">;</span>
-<span class="tok-kd">IF</span> <span class="tok-n">B</span><span class="tok-p">.</span><span class="tok-n">Weights</span><span class="tok-p">[</span><span class="tok-n">i</span><span class="tok-p">]</span> <span class="tok-o">&lt;=</span> <span class="tok-m">0.0</span> <span class="tok-kd">THEN</span>
-<span class="tok-n">Result</span> <span class="tok-o">:=</span> <span class="tok-n">FALSE</span><span class="tok-p">;</span>
-<span class="tok-k">RETURN</span><span class="tok-p">(</span><span class="tok-n">Result</span><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-kd">END_IF</span><span class="tok-p">;</span>
-<span class="tok-kd">END_REPEAT</span><span class="tok-p">;</span>
-<span class="tok-k">RETURN</span><span class="tok-p">(</span><span class="tok-n">Result</span><span class="tok-p">)</span><span class="tok-p">;</span>
+
+  <span class="tok-kd">LOCAL</span>
+    <span class="tok-n">Result</span> <span class="tok-o">:</span> <span class="tok-n">BOOLEAN</span> <span class="tok-o">:=</span> <span class="tok-n">TRUE</span><span class="tok-p">;</span>
+  <span class="tok-kd">END_LOCAL</span><span class="tok-p">;</span>
+
+  <span class="tok-kd">REPEAT</span> <span class="tok-n">i</span> <span class="tok-o">:=</span> <span class="tok-m">0</span> <span class="tok-k">TO</span> <span class="tok-n">B</span><span class="tok-p">.</span><span class="tok-n">UpperIndexOnControlPoints</span><span class="tok-p">;</span>
+    <span class="tok-kd">IF</span> <span class="tok-n">B</span><span class="tok-p">.</span><span class="tok-n">Weights</span><span class="tok-p">[</span><span class="tok-n">i</span><span class="tok-p">]</span> <span class="tok-o">&lt;=</span> <span class="tok-m">0.0</span>  <span class="tok-kd">THEN</span>
+      <span class="tok-n">Result</span> <span class="tok-o">:=</span> <span class="tok-n">FALSE</span><span class="tok-p">;</span>
+      <span class="tok-k">RETURN</span><span class="tok-p">(</span><span class="tok-n">Result</span><span class="tok-p">)</span><span class="tok-p">;</span>
+    <span class="tok-kd">END_IF</span><span class="tok-p">;</span>
+  <span class="tok-kd">END_REPEAT</span><span class="tok-p">;</span>
+  <span class="tok-k">RETURN</span><span class="tok-p">(</span><span class="tok-n">Result</span><span class="tok-p">)</span><span class="tok-p">;</span>
+
 <span class="tok-kd">END_FUNCTION</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.9.6.9.3-References"></a>
     8.9.6.9.3 References

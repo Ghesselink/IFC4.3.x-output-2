@@ -817,26 +817,26 @@
     8.5.3.9.4 Formal representation
 <a class="link" href="#8.5.3.9.4-Formal-representation"><i data-feather="link"></i></a></h2>
 <pre><code class="language-express pygments" data-highlighted="generator"><span class="tok-kd">ENTITY</span> <a href="IfcTaskTime.html"><span class="tok-nc">IfcTaskTime</span></a>
-<span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
-<span class="tok-p">(</span><a href="IfcTaskTimeRecurring.html"><span class="tok-nc">IfcTaskTimeRecurring</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
-<span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcSchedulingTime.html"><span class="tok-nc">IfcSchedulingTime</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
-<span class="tok-n">DurationType</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcTaskDurationEnum.html"><span class="tok-nc">IfcTaskDurationEnum</span></a><span class="tok-p">;</span>
-<span class="tok-n">ScheduleDuration</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDuration.html"><span class="tok-nc">IfcDuration</span></a><span class="tok-p">;</span>
-<span class="tok-n">ScheduleStart</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
-<span class="tok-n">ScheduleFinish</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
-<span class="tok-n">EarlyStart</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
-<span class="tok-n">EarlyFinish</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
-<span class="tok-n">LateStart</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
-<span class="tok-n">LateFinish</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
-<span class="tok-n">FreeFloat</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDuration.html"><span class="tok-nc">IfcDuration</span></a><span class="tok-p">;</span>
-<span class="tok-n">TotalFloat</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDuration.html"><span class="tok-nc">IfcDuration</span></a><span class="tok-p">;</span>
-<span class="tok-n">IsCritical</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcBoolean.html"><span class="tok-nc">IfcBoolean</span></a><span class="tok-p">;</span>
-<span class="tok-n">StatusTime</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
-<span class="tok-n">ActualDuration</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDuration.html"><span class="tok-nc">IfcDuration</span></a><span class="tok-p">;</span>
-<span class="tok-n">ActualStart</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
-<span class="tok-n">ActualFinish</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
-<span class="tok-n">RemainingTime</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDuration.html"><span class="tok-nc">IfcDuration</span></a><span class="tok-p">;</span>
-<span class="tok-n">Completion</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcPositiveRatioMeasure.html"><span class="tok-nc">IfcPositiveRatioMeasure</span></a><span class="tok-p">;</span>
+ <span class="tok-k">SUPERTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><span class="tok-nb">ONEOF</span>
+	<span class="tok-p">(</span><a href="IfcTaskTimeRecurring.html"><span class="tok-nc">IfcTaskTimeRecurring</span></a><span class="tok-p">)</span><span class="tok-p">)</span>
+ <span class="tok-k">SUBTYPE</span> <span class="tok-k">OF</span> <span class="tok-p">(</span><a href="IfcSchedulingTime.html"><span class="tok-nc">IfcSchedulingTime</span></a><span class="tok-p">)</span><span class="tok-p">;</span>
+	<span class="tok-n">DurationType</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcTaskDurationEnum.html"><span class="tok-nc">IfcTaskDurationEnum</span></a><span class="tok-p">;</span>
+	<span class="tok-n">ScheduleDuration</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDuration.html"><span class="tok-nc">IfcDuration</span></a><span class="tok-p">;</span>
+	<span class="tok-n">ScheduleStart</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
+	<span class="tok-n">ScheduleFinish</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
+	<span class="tok-n">EarlyStart</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
+	<span class="tok-n">EarlyFinish</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
+	<span class="tok-n">LateStart</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
+	<span class="tok-n">LateFinish</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
+	<span class="tok-n">FreeFloat</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDuration.html"><span class="tok-nc">IfcDuration</span></a><span class="tok-p">;</span>
+	<span class="tok-n">TotalFloat</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDuration.html"><span class="tok-nc">IfcDuration</span></a><span class="tok-p">;</span>
+	<span class="tok-n">IsCritical</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcBoolean.html"><span class="tok-nc">IfcBoolean</span></a><span class="tok-p">;</span>
+	<span class="tok-n">StatusTime</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
+	<span class="tok-n">ActualDuration</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDuration.html"><span class="tok-nc">IfcDuration</span></a><span class="tok-p">;</span>
+	<span class="tok-n">ActualStart</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
+	<span class="tok-n">ActualFinish</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDateTime.html"><span class="tok-nc">IfcDateTime</span></a><span class="tok-p">;</span>
+	<span class="tok-n">RemainingTime</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcDuration.html"><span class="tok-nc">IfcDuration</span></a><span class="tok-p">;</span>
+	<span class="tok-n">Completion</span> <span class="tok-o">:</span> <span class="tok-nb">OPTIONAL</span> <a href="IfcPositiveRatioMeasure.html"><span class="tok-nc">IfcPositiveRatioMeasure</span></a><span class="tok-p">;</span>
 <span class="tok-kd">END_ENTITY</span><span class="tok-p">;</span></code></pre>
 <h2><a class="anchor" id="8.5.3.9.5-References"></a>
     8.5.3.9.5 References
