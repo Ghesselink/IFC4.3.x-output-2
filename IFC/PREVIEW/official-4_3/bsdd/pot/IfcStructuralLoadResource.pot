@@ -1,0 +1,18 @@
+# Industry Foundation Classes IFC.
+# Copyright (C) 2026 buildingSMART
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: bsdd_support@buildingsmart.org\n"
+"POT-Creation-Date: 2026-11-16 00:00\n"
+"X-Crowdin-SourceKey: msgstr\n"
+"Language-Team: buildingSMART community\n"
+
+msgid "IfcStructuralLoad"
+msgstr "Structural Load"
+
+msgid "IfcStructuralLoad_DEFINITION"
+msgstr "This abstract entity is the supertype of all loads (actions or reactions) or of certain requirements resulting from structural analysis, or certain provisions which influence structural analysis."
+
